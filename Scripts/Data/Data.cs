@@ -55,7 +55,7 @@ public class MonsterStatData : ILoader<string, MonsterStat>
 }
 
 
-
+[Serializable]
 public class itemStat
 {
     public int _No;
@@ -83,7 +83,7 @@ public class itemStat
     public string _NickName;
 }// 상속으로 넘겨줌 나머지는 구분용
 
-
+[Serializable]
 public class axe : itemStat { }
 [Serializable]
 public class axeStatData : ILoader<int, axe>
@@ -101,7 +101,7 @@ public class axeStatData : ILoader<int, axe>
     }
 }
 
-
+[Serializable]
 public class axe_randart : itemStat { }
 [Serializable]
 public class axe_randartStatData : ILoader<int, axe_randart>
@@ -119,7 +119,7 @@ public class axe_randartStatData : ILoader<int, axe_randart>
     }
 }
 
-
+[Serializable]
 public class boot : itemStat { }
 [Serializable]
 public class bootStatData : ILoader<int, boot>
@@ -137,7 +137,7 @@ public class bootStatData : ILoader<int, boot>
     }
 }
 
-
+[Serializable]
 public class bow : itemStat { }
 [Serializable]
 public class bowStatData : ILoader<int, bow>
@@ -155,7 +155,7 @@ public class bowStatData : ILoader<int, bow>
     }
 }
 
-
+[Serializable]
 public class bow_randart : itemStat { }
 [Serializable]
 public class bow_randartStatData : ILoader<int, bow_randart>
@@ -173,7 +173,7 @@ public class bow_randartStatData : ILoader<int, bow_randart>
     }
 }
 
-
+[Serializable]
 public class glove : itemStat { }
 [Serializable]
 public class gloveStatData : ILoader<int, glove>
@@ -191,7 +191,7 @@ public class gloveStatData : ILoader<int, glove>
     }
 }
 
-
+[Serializable]
 public class helmet : itemStat { }
 [Serializable]
 public class helmetStatData : ILoader<int, helmet>
@@ -209,7 +209,7 @@ public class helmetStatData : ILoader<int, helmet>
     }
 }
 
-
+[Serializable]
 public class helmet_randart : itemStat { }
 [Serializable]
 public class helmet_randartStatData : ILoader<int, helmet_randart>
@@ -227,7 +227,7 @@ public class helmet_randartStatData : ILoader<int, helmet_randart>
     }
 }
 
-
+[Serializable]
 public class mace : itemStat { }
 [Serializable]
 public class maceStatData : ILoader<int, mace>
@@ -245,7 +245,7 @@ public class maceStatData : ILoader<int, mace>
     }
 }
 
-
+[Serializable]
 public class mace_randart : itemStat { }
 [Serializable]
 public class mace_randartStatData : ILoader<int, mace_randart>
@@ -263,7 +263,7 @@ public class mace_randartStatData : ILoader<int, mace_randart>
     }
 }
 
-
+[Serializable]
 public class ring : itemStat { }
 [Serializable]
 public class ringStatData : ILoader<int, ring>
@@ -281,7 +281,7 @@ public class ringStatData : ILoader<int, ring>
     }
 }
 
-
+[Serializable]
 public class ring_randart : itemStat { }
 [Serializable]
 public class ring_randartStatData : ILoader<int, ring_randart>
@@ -299,7 +299,7 @@ public class ring_randartStatData : ILoader<int, ring_randart>
     }
 }
 
-
+[Serializable]
 public class robe : itemStat { }
 [Serializable]
 public class robeStatData : ILoader<int, robe>
@@ -317,7 +317,7 @@ public class robeStatData : ILoader<int, robe>
     }
 }
 
-
+[Serializable]
 public class robe_randart : itemStat { }
 [Serializable]
 public class robe_randartStatData : ILoader<int, robe_randart>
@@ -335,7 +335,7 @@ public class robe_randartStatData : ILoader<int, robe_randart>
     }
 }
 
-
+[Serializable]
 public class shield : itemStat { }
 [Serializable]
 public class shieldStatData : ILoader<int, shield>
@@ -353,7 +353,7 @@ public class shieldStatData : ILoader<int, shield>
     }
 }
 
-
+[Serializable]
 public class spear : itemStat { }
 [Serializable]
 public class spearStatData : ILoader<int, spear>
@@ -371,7 +371,7 @@ public class spearStatData : ILoader<int, spear>
     }
 }
 
-
+[Serializable]
 public class spear_randart : itemStat { }
 [Serializable]
 public class spear_randartStatData : ILoader<int, spear_randart>
@@ -389,7 +389,7 @@ public class spear_randartStatData : ILoader<int, spear_randart>
     }
 }
 
-
+[Serializable]
 public class staff : itemStat { }
 [Serializable]
 public class staffStatData : ILoader<int, staff>
@@ -407,7 +407,7 @@ public class staffStatData : ILoader<int, staff>
     }
 }
 
-
+[Serializable]
 public class sword : itemStat { }
 [Serializable]
 public class swordStatData
@@ -427,6 +427,7 @@ public class swordStatData
     }
 }
 
+[Serializable]
 public class sword_randart : itemStat { }
 [Serializable]
 public class sword_randartStatData : ILoader<int, sword_randart>
