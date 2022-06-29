@@ -78,13 +78,27 @@ public class SummonManager
             };
 
             ItemController ic = item.GetOrAddComponent<ItemController>();
-            ic.CellPos = itemPos;
+
         }
 
     }
 
     public void ItemPool()
     {
+        int itemCheck = UnityEngine.Random.Range(0, 2);
+        
+        switch (itemCheck)
+        {
+            case 0:
+                itemComsum(); 
+                break;
+            case 1: 
+                itemEquip();
+                break;
+        }
+
+
+
         //아이템 소모품 확률을 어느정도로 할지 생각해야됨 지금은 대충 50%?? 정도 구상
         //플레이어 스킬레벨에 따른 아이템 드랍율도 생각해야됨
 
@@ -130,6 +144,16 @@ public class SummonManager
             NoArti();
 
     }
+
+    public void itemComsum()
+    {
+
+    }
+    public void itemEquip()
+    {
+
+    }
+
 
     public void NoArti()
     {

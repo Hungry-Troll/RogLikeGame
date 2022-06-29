@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c4fde71f544b40458fc9f4f89823e4a
+guid: a6a335af277039b4eb6fe2f8c252fcb9
 TextureImporter:
   fileIDToRecycleName:
     21300000: sword21 0
@@ -92,7 +92,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f42573030b6ba4244bef3fbf01109283
+      spriteID: 8b0a1398a614a7840a1ea183e296e1a7
       vertices: []
       indices: 
       edges: []
@@ -112,7 +112,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67192b64deab8634e92f7d676b7b3fd2
+      spriteID: 6d7870f745f7b034e819d598322a6f76
       vertices: []
       indices: 
       edges: []
@@ -132,7 +132,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1b562aa3ab987a4eaccd444cf8761f6
+      spriteID: 7c1b6983fef78fb44bcdb7627a438d2c
       vertices: []
       indices: 
       edges: []
@@ -152,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80adf155968d8b7419d6e03a6b88d7f6
+      spriteID: 686b0a0364f6f5149911523bd1db05f0
       vertices: []
       indices: 
       edges: []
@@ -172,7 +172,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2484fdcadf330cc4b9b5b8b2a1e91d3e
+      spriteID: 8624e18dbbe3f0947aedd37f7f34db91
       vertices: []
       indices: 
       edges: []
@@ -180,7 +180,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0c5023423cf0e3f4887f9dae9188142a
+    spriteID: 66d8dc383c972be43b6f454cda0b5843
     vertices: []
     indices: 
     edges: []

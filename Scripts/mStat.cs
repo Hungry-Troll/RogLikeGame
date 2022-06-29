@@ -182,5 +182,6 @@ public class mStat : MonoBehaviour
     public int Exp { get { return _exp; } }
     public int Skill { get { return _skill; } set { _skill = value; } }
     public int Avoid { get { return _avoid; } set { _avoid = value; } }
+    public int Accuracy { get { return _accuracy; } set { _accuracy = value; } }
 
 }
