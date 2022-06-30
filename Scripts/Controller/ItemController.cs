@@ -77,13 +77,4 @@ public class ItemController : CreatureController
 
 }
 
-class Monster1
-{
-    public int damage = 10;
-}
-
-class Orc : Monster1
-{
-
-}
 

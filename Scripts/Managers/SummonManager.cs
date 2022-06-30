@@ -85,18 +85,11 @@ public class SummonManager
 
     public void ItemPool()
     {
-        int itemCheck = UnityEngine.Random.Range(0, 2);
-        
-        switch (itemCheck)
-        {
-            case 0:
-                itemComsum(); 
-                break;
-            case 1: 
-                itemEquip();
-                break;
-        }
-
+        //소모성 아이템 장착 아이템 계산 추후 확률을 바꿔야 될거 같음
+        //아이템 셀렉에서 어떤 종류의 아이템 까지 결정됨
+        itemSelect();
+        //아이템 등급을 결정
+        itemGradeCal();
 
 
         //아이템 소모품 확률을 어느정도로 할지 생각해야됨 지금은 대충 50%?? 정도 구상
@@ -106,9 +99,35 @@ public class SummonManager
         //구현만 하고 테스트는 모든 장비를 다 하나씩 불러와서 해야됨 그때는 아이템 풀로 하지말고 하드코딩
         //특히 랜다트 쪽은 버그가 날 수 있음 주의
 
+        // 확률에 따라서 노멀 // 랜다트 // 픽다트 나옴
 
-        // 아이템 종류 선정
-        int itemRan = UnityEngine.Random.Range(0, 20);
+
+    }
+
+    public void itemSelect()
+    {
+        int itemCheck = Random.Range(0, 10);
+        if (itemCheck <= 5)
+            itemComsum();
+        else
+            itemEquip();
+    }
+
+    public void itemComsum()
+    {
+        int itemRan = Random.Range(0, 100);
+        if (itemRan <= 39)
+            _itemList = ItemList.Potion;
+        if (itemRan > 40 && itemRan <= 69)
+            _itemList = ItemList.Scroll;
+        else
+            _itemList = ItemList.Magic;
+
+    }
+
+    public void itemEquip()
+    {
+        int itemRan = Random.Range(0, 20);
         switch (itemRan)
         {
             case 0: _itemList = ItemList.Axe; break;
@@ -117,7 +136,7 @@ public class SummonManager
             case 3: _itemList = ItemList.Bow; break;
             case 4: _itemList = ItemList.Bow_randart; break;
             case 5: _itemList = ItemList.Glove; break;
-            case 6: _itemList = ItemList.Helmet;break;
+            case 6: _itemList = ItemList.Helmet; break;
             case 7: _itemList = ItemList.Helmet_randart; break;
             case 8: _itemList = ItemList.Mace; break;
             case 9: _itemList = ItemList.Mace_randart; break;
@@ -131,56 +150,24 @@ public class SummonManager
             case 17: _itemList = ItemList.Staff; break;
             case 18: _itemList = ItemList.Sword; break;
             case 19: _itemList = ItemList.Sword_randart; break;
-            //case 20: _itemList = Define.ItemList.None; break;
+                //case 20: _itemList = Define.ItemList.None; break;
         }
+    }
 
-        // 확률에 따라서 노멀 // 랜다트 // 픽다트 나옴
-        int ran = UnityEngine.Random.Range(1, 101);
-        if (ran >= 5)
+    public void itemGradeCal()
+    {
+        int ran = Random.Range(1, 101);
+        if (ran <= 5)
             FickArti();
-        else if (ran > 15)
+        else if (ran <= 15)
             RanArti();
         else
             NoArti();
-
     }
-
-    public void itemComsum()
-    {
-
-    }
-    public void itemEquip()
-    {
-
-    }
-
 
     public void NoArti()
     {
-        switch (_itemList)
-        {
-            case ItemList.Axe: break;
-            case ItemList.Axe_randart: break;
-            case ItemList.Boot: break;
-            case ItemList.Bow: break;
-            case ItemList.Bow_randart: break;
-            case ItemList.Glove: break;
-            case ItemList.Helmet: break;
-            case ItemList.Helmet_randart: break;
-            case ItemList.Mace: break;
-            case ItemList.Mace_randart: break;
-            case ItemList.Ring: break;
-            case ItemList.Ring_randart: break;
-            case ItemList.Robe: break;
-            case ItemList.Robe_randart: break;
-            case ItemList.Shield: break;
-            case ItemList.Spear: break;
-            case ItemList.Spear_randart: break;
-            case ItemList.Staff: break;
-            case ItemList.Sword: break;
-            case ItemList.Sword_randart: break;
-                //case 20: _itemList = Define.ItemList.None; break;
-        }
+
     }
 
     public void RanArti()

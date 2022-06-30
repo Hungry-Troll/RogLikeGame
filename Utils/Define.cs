@@ -27,6 +27,9 @@ public class Define
         Staff,
         Sword,
         Sword_randart,
+        Magic,
+        Potion,
+        Scroll,
         None,
     }
 

@@ -445,3 +445,61 @@ public class sword_randartStatData : ILoader<int, sword_randart>
     }
 }
 
+[Serializable]
+public class potion : itemStat
+{
+    public int _current_hp;
+    public int _current_mp;
+    public int _invisible;
+    public int _gold;
+    public int _Lv;
+    public int _noMove;
+    public int _turn;
+}
+[Serializable]
+public class potionStatData : ILoader<int, potion>
+{
+    public List<potion> potionData = new List<potion>();
+
+    public Dictionary<int, potion> MakeDict()
+    {
+        Dictionary<int, potion> dict = new Dictionary<int, potion>();
+
+        foreach (potion stat in potionData)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class scroll : potion { }
+[Serializable]
+public class scrollStatData : ILoader<int, scroll>
+{
+    public List<scroll> scrollData = new List<scroll>();
+
+    public Dictionary<int, scroll> MakeDict()
+    {
+        Dictionary<int, scroll> dict = new Dictionary<int, scroll>();
+
+        foreach (scroll stat in scrollData)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+public class magic : itemStat
+{
+    public int _base_damage;
+    public int _max_damage;
+    public int _reach;
+    public int _range;
+    public int _type;
+    public int _mp_consume;
+    public int _property;
+    public int _skill_level;
+    public int _turn_duration;
+    public int _effect;
+}
