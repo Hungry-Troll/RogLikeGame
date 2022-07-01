@@ -322,13 +322,13 @@ public class robe_randart : itemStat { }
 [Serializable]
 public class robe_randartStatData : ILoader<int, robe_randart>
 {
-    public List<robe_randart> robeData = new List<robe_randart>();
+    public List<robe_randart> robe_randartData = new List<robe_randart>();
 
     public Dictionary<int, robe_randart> MakeDict()
     {
         Dictionary<int, robe_randart> dict = new Dictionary<int, robe_randart>();
 
-        foreach (robe_randart stat in robeData)
+        foreach (robe_randart stat in robe_randartData)
             dict.Add(stat._No, stat);
 
         return dict;
@@ -410,9 +410,7 @@ public class staffStatData : ILoader<int, staff>
 [Serializable]
 public class sword : itemStat { }
 [Serializable]
-public class swordStatData
-
-    : ILoader<int, sword>
+public class swordStatData : ILoader<int, sword>
 {
     public List<sword> swordData = new List<sword>();
 
@@ -502,4 +500,20 @@ public class magic : itemStat
     public int _skill_level;
     public int _turn_duration;
     public int _effect;
+}
+
+[Serializable]
+public class magicStatData : ILoader<int, magic>
+{
+    public List<magic> magicData = new List<magic>();
+
+    public Dictionary<int, magic> MakeDict()
+    {
+        Dictionary<int, magic> dict = new Dictionary<int, magic>();
+
+        foreach (magic stat in magicData)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
 }

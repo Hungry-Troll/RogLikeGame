@@ -8,6 +8,16 @@ public class SummonManager
 {
     public Define.ItemList _itemList = ItemList.None;
 
+    public void Init()
+    {
+        //플레이어 스텟처럼 지금의 데이터를 가지고 와서 저장할
+        //스텟 스크립트를 만들어야 함
+        //그다음에 게임매니저에 연결을 해야 되는대
+        //데이터 다음으로 연결을 해 놔야 에러가 안생김
+
+        //= GameManager.Data.axeStatDict;
+    }
+
     public void MonsterCreat()
     {
         MapManager.SumPos sumPos = new MapManager.SumPos();
@@ -167,12 +177,12 @@ public class SummonManager
 
     public void NoArti()
     {
-
+        
     }
 
     public void RanArti()
     {
-
+        
     }
 
     public void FickArti()

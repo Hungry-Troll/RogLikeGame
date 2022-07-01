@@ -1,5 +1,5 @@
 ﻿{
-  "magic" : [
+  "magicData" : [
     {
       "_No": 1,
       "_Name": "불꽃 발화",

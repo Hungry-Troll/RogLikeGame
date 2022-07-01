@@ -37,8 +37,9 @@ public class DataManager
     public Dictionary<int, staff> staffStatDict { get; private set; } = new Dictionary<int, staff>();
     public Dictionary<int, sword> swordStatDict { get; private set; } = new Dictionary<int, sword>();
     public Dictionary<int, sword_randart> sword_randartStatDict { get; private set; } = new Dictionary<int, sword_randart>();
-    public Dictionary<int, potionStatData> potionStatDict { get; private set; } = new Dictionary<int, potionStatData>();
-
+    public Dictionary<int, potion> potionStatDict { get; private set; } = new Dictionary<int, potion>();
+    public Dictionary<int, scroll> scrollStatDict { get; private set; } = new Dictionary<int, scroll>();
+    public Dictionary<int, magic> magicStatDict { get; private set; } = new Dictionary<int, magic>();
 
 
     public Dictionary<string, Test> TestDict = new Dictionary<string, Test>();
@@ -69,6 +70,9 @@ public class DataManager
         swordStatDict = LoadJson<swordStatData, int, sword>("sword").MakeDict();
         sword_randartStatDict = LoadJson<sword_randartStatData, int, sword_randart>("sword_randart").MakeDict();
         potionStatDict = LoadJson<potionStatData, int, potion>("potion").MakeDict();
+        scrollStatDict = LoadJson<scrollStatData, int, scroll>("scroll").MakeDict();
+        magicStatDict = LoadJson<magicStatData, int, magic>("magic").MakeDict();
+
     }
 
     Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>

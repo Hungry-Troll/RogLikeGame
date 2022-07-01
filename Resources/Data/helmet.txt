@@ -1,5 +1,5 @@
 ﻿{
-  "helmet": [
+  "helmetData": [
     {
       "_No": 1,
       "_Name": "철투구",

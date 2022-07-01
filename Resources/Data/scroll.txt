@@ -1,5 +1,5 @@
 ﻿{
-  "scroll" : [
+  "scrollData" : [
     {
       "_No": 1,
       "_Name": "무기 강화 주문서",
