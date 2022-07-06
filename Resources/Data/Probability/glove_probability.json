@@ -1,0 +1,30 @@
+{
+  "glove_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 1,
+      "endNum": 1
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 3,
+      "endNum": 6
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 2,
+      "endNum": 2
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": null,
+      "endNum": null
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": null,
+      "endNum": null
+    }
+  ]
+}

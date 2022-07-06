@@ -517,3 +517,29 @@ public class magicStatData : ILoader<int, magic>
         return dict;
     }
 }
+
+[Serializable]
+public class itemTable
+{
+    public int _startNum;
+    public int _endNum;
+}
+
+//public class 
+
+
+/*[Serializable]
+public class itemTableData : ILoader<string, magic>
+{
+    public List<magic> magicData = new List<magic>();
+
+    public Dictionary<string, magic> MakeDict()
+    {
+        Dictionary<int, magic> dict = new Dictionary<int, magic>();
+
+        foreach (magic stat in magicData)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}*/

@@ -1,0 +1,30 @@
+{
+  "boot_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 1,
+      "endNum": 1
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 2,
+      "endNum": 7
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 8,
+      "endNum": 8
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": null,
+      "endNum": null
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": null,
+      "endNum": null
+    }
+  ]
+}

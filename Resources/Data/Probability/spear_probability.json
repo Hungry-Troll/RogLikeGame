@@ -1,0 +1,30 @@
+{
+  "spear_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 1,
+      "endNum": 8
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 9,
+      "endNum": 11
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 21,
+      "endNum": 24
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": 1,
+      "endNum": 10
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": 11,
+      "endNum": 20
+    }
+  ]
+}

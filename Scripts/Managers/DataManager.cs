@@ -48,6 +48,7 @@ public class DataManager
 
     public void Init()
     {
+        //아이템
         PlayerStatDict = LoadJson<PlayerStatData, int, PlayerStat>("PlayerStatData").MakeDict();
         MonsterStatDict = LoadJson<MonsterStatData, string, MonsterStat>("MonsterStatData").MakeDict();
         axeStatDict = LoadJson<axeStatData, int, axe>("axe").MakeDict();
@@ -72,6 +73,9 @@ public class DataManager
         potionStatDict = LoadJson<potionStatData, int, potion>("potion").MakeDict();
         scrollStatDict = LoadJson<scrollStatData, int, scroll>("scroll").MakeDict();
         magicStatDict = LoadJson<magicStatData, int, magic>("magic").MakeDict();
+
+        //드랍테이블
+
 
     }
 

@@ -1,0 +1,30 @@
+{
+  "armor_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 1,
+      "endNum": 7
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 8,
+      "endNum": 15
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 22,
+      "endNum": 27
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": 1,
+      "endNum": 10
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": 11,
+      "endNum": 20
+    }
+  ]
+}

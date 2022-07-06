@@ -1,0 +1,30 @@
+{
+  "bow_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 1,
+      "endNum": 3
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 4,
+      "endNum": 5
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 22,
+      "endNum": 22
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": 1,
+      "endNum": 11
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": 12,
+      "endNum": 21
+    }
+  ]
+}

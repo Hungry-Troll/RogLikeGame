@@ -1,0 +1,30 @@
+{
+  "staff_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 1,
+      "endNum": 5
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 10,
+      "endNum": 13
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 6,
+      "endNum": 9
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": null,
+      "endNum": null
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": null,
+      "endNum": null
+    }
+  ]
+}

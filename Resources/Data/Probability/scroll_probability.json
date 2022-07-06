@@ -1,0 +1,30 @@
+{
+  "scroll_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 1,
+      "endNum": 4
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 14,
+      "endNum": 14
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 3,
+      "endNum": 9
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": null,
+      "endNum": null
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": null,
+      "endNum": null
+    }
+  ]
+}

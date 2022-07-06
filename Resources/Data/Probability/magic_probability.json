@@ -1,0 +1,30 @@
+{
+  "magic_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 11,
+      "endNum": 37
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 1,
+      "endNum": 3
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 4,
+      "endNum": 10
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": null,
+      "endNum": null
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": null,
+      "endNum": null
+    }
+  ]
+}

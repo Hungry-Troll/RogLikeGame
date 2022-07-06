@@ -1,5 +1,6 @@
-﻿{
-  "potionData":[
+{
+  "potion": 
+  [
     {
       "_No": 1,
       "_Name": "상태이상 회복 물약",
@@ -56,16 +57,16 @@
     },
     {
       "_No": 3,
-      "_Name": "마법 공격력 증가 물약",
+      "_Name": "마나 회복 물약",
       "_max_hp": null,
       "_current_hp": null,
       "_max_mp": null,
-      "_current_mp": null,
+      "_current_mp": 50,
       "_min_attack": null,
       "_max_attack": null,
       "_defence": null,
-      "_min_magic_attack": 20,
-      "_max_magic_attack": 20,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
       "_fire_res": null,
       "_cold_res": null,
       "_earth_res": null,
@@ -79,7 +80,7 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 1,
-      "_NickName": "IntPotion"
+      "_NickName": "ManaPotion"
     },
     {
       "_No": 4,
@@ -110,60 +111,6 @@
     },
     {
       "_No": 5,
-      "_Name": "레벨 업 물약",
-      "_max_hp": null,
-      "_current_hp": null,
-      "_max_mp": null,
-      "_current_mp": null,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_invisible": null,
-      "_gold": null,
-      "_Lv": 1,
-      "_enhance": null,
-      "_noMove": null,
-      "_turn": 1,
-      "_NickName": "LvUpPotion"
-    },
-    {
-      "_No": 6,
-      "_Name": "마나 회복 물약",
-      "_max_hp": null,
-      "_current_hp": null,
-      "_max_mp": null,
-      "_current_mp": 50,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_invisible": null,
-      "_gold": null,
-      "_Lv": null,
-      "_enhance": null,
-      "_noMove": null,
-      "_turn": 1,
-      "_NickName": "ManaPotion"
-    },
-    {
-      "_No": 7,
       "_Name": "광폭화 물약",
       "_max_hp": 50,
       "_current_hp": 50,
@@ -190,7 +137,7 @@
       "_NickName": "PowPotion"
     },
     {
-      "_No": 8,
+      "_No": 6,
       "_Name": "저항력 증가 물약",
       "_max_hp": null,
       "_current_hp": null,
@@ -217,7 +164,7 @@
       "_NickName": "ResPotion"
     },
     {
-      "_No": 9,
+      "_No": 7,
       "_Name": "속도 증가 물약",
       "_max_hp": null,
       "_current_hp": null,
@@ -244,7 +191,7 @@
       "_NickName": "speedPotion"
     },
     {
-      "_No": 10,
+      "_No": 8,
       "_Name": "나무 변신 물약",
       "_max_hp": 50,
       "_current_hp": 50,
@@ -269,6 +216,60 @@
       "_noMove": 1,
       "_turn": 20,
       "_NickName": "TreePotion"
+    },
+    {
+      "_No": 9,
+      "_Name": "마법 공격력 증가 물약",
+      "_max_hp": null,
+      "_current_hp": null,
+      "_max_mp": null,
+      "_current_mp": null,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": 20,
+      "_max_magic_attack": 20,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_invisible": null,
+      "_gold": null,
+      "_Lv": null,
+      "_enhance": null,
+      "_noMove": null,
+      "_turn": 1,
+      "_NickName": "IntPotion"
+    },
+    {
+      "_No": 10,
+      "_Name": "레벨 업 물약",
+      "_max_hp": null,
+      "_current_hp": null,
+      "_max_mp": null,
+      "_current_mp": null,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_invisible": null,
+      "_gold": null,
+      "_Lv": 1,
+      "_enhance": null,
+      "_noMove": null,
+      "_turn": 1,
+      "_NickName": "LvUpPotion"
     }
   ]
 }

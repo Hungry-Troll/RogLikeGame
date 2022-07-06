@@ -1,0 +1,30 @@
+{
+  "potion_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 1,
+      "endNum": 2
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 10,
+      "endNum": 10
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 3,
+      "endNum": 9
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": null,
+      "endNum": null
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": null,
+      "endNum": null
+    }
+  ]
+}

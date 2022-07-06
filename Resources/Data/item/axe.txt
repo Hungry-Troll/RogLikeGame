@@ -27,7 +27,7 @@
     },
     {
       "_No": 2,
-      "_Name": "axe4",
+      "_Name": "손도끼",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": 10,
@@ -52,7 +52,7 @@
     },
     {
       "_No": 3,
-      "_Name": "axe2",
+      "_Name": "전투도끼",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": 15,
@@ -77,7 +77,7 @@
     },
     {
       "_No": 4,
-      "_Name": "axe3",
+      "_Name": "넓적날 도끼",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": 25,
@@ -102,7 +102,7 @@
     },
     {
       "_No": 5,
-      "_Name": "axe5",
+      "_Name": "양날 도끼",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": 25,
@@ -127,7 +127,7 @@
     },
     {
       "_No": 6,
-      "_Name": "axe8",
+      "_Name": "대형 양날 도끼",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": 30,
@@ -152,7 +152,7 @@
     },
     {
       "_No": 7,
-      "_Name": "axe12",
+      "_Name": "처형인의 도끼",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": 40,
@@ -177,7 +177,7 @@
     },
     {
       "_No": 8,
-      "_Name": "axe6",
+      "_Name": "푸른빛의 넓적날 도끼",
       "_max_hp": 20,
       "_max_mp": null,
       "_min_attack": 30,
@@ -202,7 +202,7 @@
     },
     {
       "_No": 9,
-      "_Name": "axe10",
+      "_Name": "푸른빛의 대형 양날 도끼",
       "_max_hp": 20,
       "_max_mp": null,
       "_min_attack": 35,
@@ -227,7 +227,7 @@
     },
     {
       "_No": 10,
-      "_Name": "axe11",
+      "_Name": "붉은빛의 대형 양날 도끼",
       "_max_hp": 20,
       "_max_mp": null,
       "_min_attack": 35,

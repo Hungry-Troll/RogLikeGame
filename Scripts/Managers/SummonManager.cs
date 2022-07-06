@@ -160,6 +160,7 @@ public class SummonManager
             case 17: _itemList = ItemList.Staff; break;
             case 18: _itemList = ItemList.Sword; break;
             case 19: _itemList = ItemList.Sword_randart; break;
+
                 //case 20: _itemList = Define.ItemList.None; break;
         }
     }
@@ -177,7 +178,32 @@ public class SummonManager
 
     public void NoArti()
     {
-        
+        switch (_itemList)
+        {
+            case ItemList.Axe: ; break;
+            case ItemList.Axe_randart: _itemList = ItemList.Axe_randart; break;
+            case ItemList.Boot: _itemList = ItemList.Boot; break;
+            case ItemList.Bow: _itemList = ItemList.Bow; break;
+            case ItemList.Bow_randart: _itemList = ItemList.Bow_randart; break;
+            case ItemList.Glove: _itemList = ItemList.Glove; break;
+            case ItemList.Helmet: _itemList = ItemList.Helmet; break;
+            case ItemList.Helmet_randart: _itemList = ItemList.Helmet_randart; break;
+            case ItemList.Mace: _itemList = ItemList.Mace; break;
+            case ItemList.Mace_randart: _itemList = ItemList.Mace_randart; break;
+            case ItemList.Ring: _itemList = ItemList.Ring; break;
+            case ItemList.Ring_randart: _itemList = ItemList.Ring_randart; break;
+            case ItemList.Robe: _itemList = ItemList.Robe; break;
+            case ItemList.Robe_randart: _itemList = ItemList.Robe_randart; break;
+            case ItemList.Shield: _itemList = ItemList.Shield; break;
+            case ItemList.Spear: _itemList = ItemList.Spear; break;
+            case ItemList.Spear_randart: _itemList = ItemList.Spear_randart; break;
+            case ItemList.Staff: _itemList = ItemList.Staff; break;
+            case ItemList.Sword: _itemList = ItemList.Sword; break;
+            case ItemList.Sword_randart: _itemList = ItemList.Sword_randart; break;
+            case ItemList.Potion: _itemList = Define.ItemList.None; break;
+            case ItemList.Scroll: _itemList = Define.ItemList.None; break;
+            case ItemList.Magic: _itemList = Define.ItemList.None; break;
+        }
     }
 
     public void RanArti()

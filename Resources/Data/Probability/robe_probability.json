@@ -1,0 +1,30 @@
+{
+  "robe_probability": 
+  [
+    {
+      "_No": "NoArti",
+      "startNum": 1,
+      "endNum": 2
+    },
+    {
+      "_No": "FirckArti",
+      "startNum": 3,
+      "endNum": 6
+    },
+    {
+      "_No": "RanArti",
+      "startNum": 23,
+      "endNum": 23
+    },
+    {
+      "_No": "RanArtiOption1",
+      "startNum": 1,
+      "endNum": 11
+    },
+    {
+      "_No": "RanArtiOption2",
+      "startNum": 12,
+      "endNum": 21
+    }
+  ]
+}
