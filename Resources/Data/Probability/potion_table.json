@@ -1,20 +1,20 @@
 {
-  "boot_probability": 
+  "potion_table": 
   [
     {
       "_No": "NoArti",
       "startNum": 1,
-      "endNum": 1
+      "endNum": 2
     },
     {
       "_No": "FirckArti",
-      "startNum": 2,
-      "endNum": 7
+      "startNum": 10,
+      "endNum": 10
     },
     {
       "_No": "RanArti",
-      "startNum": 8,
-      "endNum": 8
+      "startNum": 3,
+      "endNum": 9
     },
     {
       "_No": "RanArtiOption1",

@@ -1,30 +1,30 @@
 {
-  "armor_probability": 
+  "helmet_table": 
   [
     {
       "_No": "NoArti",
       "startNum": 1,
-      "endNum": 7
+      "endNum": 2
     },
     {
       "_No": "FirckArti",
-      "startNum": 8,
+      "startNum": 3,
       "endNum": 15
     },
     {
       "_No": "RanArti",
-      "startNum": 22,
-      "endNum": 27
+      "startNum": 23,
+      "endNum": 25
     },
     {
       "_No": "RanArtiOption1",
       "startNum": 1,
-      "endNum": 10
+      "endNum": 11
     },
     {
       "_No": "RanArtiOption2",
-      "startNum": 11,
-      "endNum": 20
+      "startNum": 12,
+      "endNum": 22
     }
   ]
 }

@@ -1,30 +1,30 @@
 {
-  "spear_probability": 
+  "boot_table": 
   [
     {
       "_No": "NoArti",
       "startNum": 1,
-      "endNum": 8
+      "endNum": 1
     },
     {
       "_No": "FirckArti",
-      "startNum": 9,
-      "endNum": 11
+      "startNum": 2,
+      "endNum": 7
     },
     {
       "_No": "RanArti",
-      "startNum": 21,
-      "endNum": 24
+      "startNum": 8,
+      "endNum": 8
     },
     {
       "_No": "RanArtiOption1",
-      "startNum": 1,
-      "endNum": 10
+      "startNum": null,
+      "endNum": null
     },
     {
       "_No": "RanArtiOption2",
-      "startNum": 11,
-      "endNum": 20
+      "startNum": null,
+      "endNum": null
     }
   ]
 }

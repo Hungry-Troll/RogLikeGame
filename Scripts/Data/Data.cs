@@ -518,28 +518,337 @@ public class magicStatData : ILoader<int, magic>
     }
 }
 
+
+//이하 드랍테이블
+
 [Serializable]
 public class itemTable
 {
+    public string _No;
     public int _startNum;
     public int _endNum;
 }
 
-//public class 
+[Serializable]
+public class amulet_ItemTable : itemTable { }
 
-
-/*[Serializable]
-public class itemTableData : ILoader<string, magic>
+[Serializable]
+public class amulet_ItemTableData : ILoader<string, amulet_ItemTable>
 {
-    public List<magic> magicData = new List<magic>();
+    public List<amulet_ItemTable> amulet_table = new List<amulet_ItemTable>();
 
-    public Dictionary<string, magic> MakeDict()
+    public Dictionary<string, amulet_ItemTable> MakeDict()
     {
-        Dictionary<int, magic> dict = new Dictionary<int, magic>();
+        Dictionary<string, amulet_ItemTable> dict = new Dictionary<string, amulet_ItemTable>();
 
-        foreach (magic stat in magicData)
+        foreach (amulet_ItemTable stat in amulet_table)
             dict.Add(stat._No, stat);
 
         return dict;
     }
-}*/
+}
+
+[Serializable]
+public class armor_ItemTable : itemTable { }
+
+[Serializable]
+public class armor_ItemTableData : ILoader<string, armor_ItemTable>
+{
+    public List<armor_ItemTable> armor_table = new List<armor_ItemTable>();
+
+    public Dictionary<string, armor_ItemTable> MakeDict()
+    {
+        Dictionary<string, armor_ItemTable> dict = new Dictionary<string, armor_ItemTable>();
+
+        foreach (armor_ItemTable stat in armor_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class axe_ItemTable : itemTable { }
+
+[Serializable]
+public class axe_ItemTableData : ILoader<string, axe_ItemTable>
+{
+    public List<axe_ItemTable> axe_table = new List<axe_ItemTable>();
+
+    public Dictionary<string, axe_ItemTable> MakeDict()
+    {
+        Dictionary<string, axe_ItemTable> dict = new Dictionary<string, axe_ItemTable>();
+
+        foreach (axe_ItemTable stat in axe_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class boot_ItemTable : itemTable { }
+
+[Serializable]
+public class boot_ItemTableData : ILoader<string, boot_ItemTable>
+{
+    public List<boot_ItemTable> boot_table = new List<boot_ItemTable>();
+
+    public Dictionary<string, boot_ItemTable> MakeDict()
+    {
+        Dictionary<string, boot_ItemTable> dict = new Dictionary<string, boot_ItemTable>();
+
+        foreach (boot_ItemTable stat in boot_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class bow_ItemTable : itemTable { }
+
+[Serializable]
+public class bow_ItemTableData : ILoader<string, bow_ItemTable>
+{
+    public List<bow_ItemTable> bow_table = new List<bow_ItemTable>();
+
+    public Dictionary<string, bow_ItemTable> MakeDict()
+    {
+        Dictionary<string, bow_ItemTable> dict = new Dictionary<string, bow_ItemTable>();
+
+        foreach (bow_ItemTable stat in bow_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class glove_ItemTable : itemTable { }
+
+[Serializable]
+public class glove_ItemTableData : ILoader<string, glove_ItemTable>
+{
+    public List<glove_ItemTable> glove_table = new List<glove_ItemTable>();
+
+    public Dictionary<string, glove_ItemTable> MakeDict()
+    {
+        Dictionary<string, glove_ItemTable> dict = new Dictionary<string, glove_ItemTable>();
+
+        foreach (glove_ItemTable stat in glove_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class helmet_ItemTable : itemTable { }
+
+[Serializable]
+public class helmet_ItemTableData : ILoader<string, helmet_ItemTable>
+{
+    public List<helmet_ItemTable> helmet_table = new List<helmet_ItemTable>();
+
+    public Dictionary<string, helmet_ItemTable> MakeDict()
+    {
+        Dictionary<string, helmet_ItemTable> dict = new Dictionary<string, helmet_ItemTable>();
+
+        foreach (helmet_ItemTable stat in helmet_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class mace_ItemTable : itemTable { }
+
+[Serializable]
+public class mace_ItemTableData : ILoader<string, mace_ItemTable>
+{
+    public List<mace_ItemTable> mace_table = new List<mace_ItemTable>();
+
+    public Dictionary<string, mace_ItemTable> MakeDict()
+    {
+        Dictionary<string, mace_ItemTable> dict = new Dictionary<string, mace_ItemTable>();
+
+        foreach (mace_ItemTable stat in mace_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class magic_ItemTable : itemTable { }
+
+[Serializable]
+public class magic_ItemTableData : ILoader<string, magic_ItemTable>
+{
+    public List<magic_ItemTable> magic_table = new List<magic_ItemTable>();
+
+    public Dictionary<string, magic_ItemTable> MakeDict()
+    {
+        Dictionary<string, magic_ItemTable> dict = new Dictionary<string, magic_ItemTable>();
+
+        foreach (magic_ItemTable stat in magic_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class potion_ItemTable : itemTable { }
+
+[Serializable]
+public class potion_ItemTableData : ILoader<string, potion_ItemTable>
+{
+    public List<potion_ItemTable> potion_table = new List<potion_ItemTable>();
+
+    public Dictionary<string, potion_ItemTable> MakeDict()
+    {
+        Dictionary<string, potion_ItemTable> dict = new Dictionary<string, potion_ItemTable>();
+
+        foreach (potion_ItemTable stat in potion_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class ring_ItemTable : itemTable { }
+
+[Serializable]
+public class ring_ItemTableData : ILoader<string, ring_ItemTable>
+{
+    public List<ring_ItemTable> ring_table = new List<ring_ItemTable>();
+
+    public Dictionary<string, ring_ItemTable> MakeDict()
+    {
+        Dictionary<string, ring_ItemTable> dict = new Dictionary<string, ring_ItemTable>();
+
+        foreach (ring_ItemTable stat in ring_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class robe_ItemTable : itemTable { }
+
+[Serializable]
+public class robe_ItemTableData : ILoader<string, robe_ItemTable>
+{
+    public List<robe_ItemTable> robe_table = new List<robe_ItemTable>();
+
+    public Dictionary<string, robe_ItemTable> MakeDict()
+    {
+        Dictionary<string, robe_ItemTable> dict = new Dictionary<string, robe_ItemTable>();
+
+        foreach (robe_ItemTable stat in robe_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class scroll_ItemTable : itemTable { }
+
+[Serializable]
+public class scroll_ItemTableData : ILoader<string, scroll_ItemTable>
+{
+    public List<scroll_ItemTable> scroll_table = new List<scroll_ItemTable>();
+
+    public Dictionary<string, scroll_ItemTable> MakeDict()
+    {
+        Dictionary<string, scroll_ItemTable> dict = new Dictionary<string, scroll_ItemTable>();
+
+        foreach (scroll_ItemTable stat in scroll_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class shield_ItemTable : itemTable { }
+
+[Serializable]
+public class shield_ItemTableData : ILoader<string, shield_ItemTable>
+{
+    public List<shield_ItemTable> shield_table = new List<shield_ItemTable>();
+
+    public Dictionary<string, shield_ItemTable> MakeDict()
+    {
+        Dictionary<string, shield_ItemTable> dict = new Dictionary<string, shield_ItemTable>();
+
+        foreach (shield_ItemTable stat in shield_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class spear_ItemTable : itemTable { }
+
+[Serializable]
+public class spear_ItemTableData : ILoader<string, spear_ItemTable>
+{
+    public List<spear_ItemTable> spear_table = new List<spear_ItemTable>();
+
+    public Dictionary<string, spear_ItemTable> MakeDict()
+    {
+        Dictionary<string, spear_ItemTable> dict = new Dictionary<string, spear_ItemTable>();
+
+        foreach (spear_ItemTable stat in spear_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+[Serializable]
+public class staff_ItemTable : itemTable { }
+
+[Serializable]
+public class staff_ItemTableData : ILoader<string, staff_ItemTable>
+{
+    public List<staff_ItemTable> staff_table = new List<staff_ItemTable>();
+
+    public Dictionary<string, staff_ItemTable> MakeDict()
+    {
+        Dictionary<string, staff_ItemTable> dict = new Dictionary<string, staff_ItemTable>();
+
+        foreach (staff_ItemTable stat in staff_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
+
+
+[Serializable]
+public class sword_ItemTable : itemTable { }
+
+[Serializable]
+public class sword_ItemTableData : ILoader<string, sword_ItemTable>
+{
+    public List<sword_ItemTable> sword_table = new List<sword_ItemTable>();
+
+    public Dictionary<string, sword_ItemTable> MakeDict()
+    {
+        Dictionary<string, sword_ItemTable> dict = new Dictionary<string, sword_ItemTable>();
+
+        foreach (sword_ItemTable stat in sword_table)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}

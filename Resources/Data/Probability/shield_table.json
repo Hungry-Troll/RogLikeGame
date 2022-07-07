@@ -1,20 +1,20 @@
 {
-  "magic_probability": 
+  "shield_table": 
   [
     {
       "_No": "NoArti",
-      "startNum": 11,
-      "endNum": 37
+      "startNum": 1,
+      "endNum": 2
     },
     {
       "_No": "FirckArti",
-      "startNum": 1,
-      "endNum": 3
+      "startNum": 6,
+      "endNum": 10
     },
     {
       "_No": "RanArti",
-      "startNum": 4,
-      "endNum": 10
+      "startNum": 3,
+      "endNum": 5
     },
     {
       "_No": "RanArtiOption1",

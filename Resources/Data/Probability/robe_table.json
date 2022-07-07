@@ -1,30 +1,30 @@
 {
-  "scroll_probability": 
+  "robe_table": 
   [
     {
       "_No": "NoArti",
       "startNum": 1,
-      "endNum": 4
+      "endNum": 2
     },
     {
       "_No": "FirckArti",
-      "startNum": 14,
-      "endNum": 14
+      "startNum": 3,
+      "endNum": 6
     },
     {
       "_No": "RanArti",
-      "startNum": 3,
-      "endNum": 9
+      "startNum": 23,
+      "endNum": 23
     },
     {
       "_No": "RanArtiOption1",
-      "startNum": null,
-      "endNum": null
+      "startNum": 1,
+      "endNum": 11
     },
     {
       "_No": "RanArtiOption2",
-      "startNum": null,
-      "endNum": null
+      "startNum": 12,
+      "endNum": 21
     }
   ]
 }

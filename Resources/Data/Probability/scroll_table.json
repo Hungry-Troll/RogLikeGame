@@ -1,20 +1,20 @@
 {
-  "shield_probability": 
+  "scroll_table": 
   [
     {
       "_No": "NoArti",
       "startNum": 1,
-      "endNum": 2
+      "endNum": 4
     },
     {
       "_No": "FirckArti",
-      "startNum": 6,
-      "endNum": 10
+      "startNum": 14,
+      "endNum": 14
     },
     {
       "_No": "RanArti",
       "startNum": 3,
-      "endNum": 5
+      "endNum": 9
     },
     {
       "_No": "RanArtiOption1",

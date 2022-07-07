@@ -1,30 +1,30 @@
 {
-  "staff_probability": 
+  "bow_table": 
   [
     {
       "_No": "NoArti",
       "startNum": 1,
-      "endNum": 5
+      "endNum": 3
     },
     {
       "_No": "FirckArti",
-      "startNum": 10,
-      "endNum": 13
+      "startNum": 4,
+      "endNum": 5
     },
     {
       "_No": "RanArti",
-      "startNum": 6,
-      "endNum": 9
+      "startNum": 22,
+      "endNum": 22
     },
     {
       "_No": "RanArtiOption1",
-      "startNum": null,
-      "endNum": null
+      "startNum": 1,
+      "endNum": 11
     },
     {
       "_No": "RanArtiOption2",
-      "startNum": null,
-      "endNum": null
+      "startNum": 12,
+      "endNum": 21
     }
   ]
 }

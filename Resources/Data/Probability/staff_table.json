@@ -1,30 +1,30 @@
 {
-  "sword_probability": 
+  "staff_table": 
   [
     {
       "_No": "NoArti",
       "startNum": 1,
-      "endNum": 8
+      "endNum": 5
     },
     {
       "_No": "FirckArti",
       "startNum": 10,
-      "endNum": 19
+      "endNum": 13
     },
     {
       "_No": "RanArti",
-      "startNum": 21,
-      "endNum": 24
+      "startNum": 6,
+      "endNum": 9
     },
     {
       "_No": "RanArtiOption1",
-      "startNum": 1,
-      "endNum": 10
+      "startNum": null,
+      "endNum": null
     },
     {
       "_No": "RanArtiOption2",
-      "startNum": 11,
-      "endNum": 20
+      "startNum": null,
+      "endNum": null
     }
   ]
 }

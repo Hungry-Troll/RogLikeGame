@@ -1,5 +1,5 @@
 {
-  "axe_probability": 
+  "armor_table": 
   [
     {
       "_No": "NoArti",
@@ -9,12 +9,12 @@
     {
       "_No": "FirckArti",
       "startNum": 8,
-      "endNum": 10
+      "endNum": 15
     },
     {
       "_No": "RanArti",
-      "startNum": 21,
-      "endNum": 22
+      "startNum": 22,
+      "endNum": 27
     },
     {
       "_No": "RanArtiOption1",

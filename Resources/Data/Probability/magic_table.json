@@ -1,20 +1,20 @@
 {
-  "glove_probability": 
+  "magic_table": 
   [
     {
       "_No": "NoArti",
-      "startNum": 1,
-      "endNum": 1
+      "startNum": 11,
+      "endNum": 37
     },
     {
       "_No": "FirckArti",
-      "startNum": 3,
-      "endNum": 6
+      "startNum": 1,
+      "endNum": 3
     },
     {
       "_No": "RanArti",
-      "startNum": 2,
-      "endNum": 2
+      "startNum": 4,
+      "endNum": 10
     },
     {
       "_No": "RanArtiOption1",

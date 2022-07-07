@@ -15,6 +15,7 @@ public class Test
 
 public class DataManager 
 {
+    //아이템 데이터
     public Dictionary<int, PlayerStat> PlayerStatDict { get; private set; } = new Dictionary<int, PlayerStat>();
     public Dictionary<string, MonsterStat> MonsterStatDict { get; private set; } = new Dictionary<string, MonsterStat>();
     public Dictionary<int, axe> axeStatDict { get; private set; } = new Dictionary<int, axe>();
@@ -37,9 +38,31 @@ public class DataManager
     public Dictionary<int, staff> staffStatDict { get; private set; } = new Dictionary<int, staff>();
     public Dictionary<int, sword> swordStatDict { get; private set; } = new Dictionary<int, sword>();
     public Dictionary<int, sword_randart> sword_randartStatDict { get; private set; } = new Dictionary<int, sword_randart>();
+
     public Dictionary<int, potion> potionStatDict { get; private set; } = new Dictionary<int, potion>();
     public Dictionary<int, scroll> scrollStatDict { get; private set; } = new Dictionary<int, scroll>();
     public Dictionary<int, magic> magicStatDict { get; private set; } = new Dictionary<int, magic>();
+
+    //드랍 테이블
+    public Dictionary<string, amulet_ItemTable> amulet_TableDict { get; private set; } = new Dictionary<string, amulet_ItemTable>();
+    public Dictionary<string, armor_ItemTable> armor_TableDict { get; private set; } = new Dictionary<string, armor_ItemTable>();
+    public Dictionary<string, axe_ItemTable> axe_TableDict { get; private set; } = new Dictionary<string, axe_ItemTable>();
+    public Dictionary<string, boot_ItemTable> boot_TableDict { get; private set; } = new Dictionary<string, boot_ItemTable>();
+    public Dictionary<string, bow_ItemTable> bow_TableDict { get; private set; } = new Dictionary<string, bow_ItemTable>();
+    public Dictionary<string, glove_ItemTable> glove_TableDict { get; private set; } = new Dictionary<string, glove_ItemTable>();
+    public Dictionary<string, helmet_ItemTable> helmet_TableDict { get; private set; } = new Dictionary<string, helmet_ItemTable>();
+    public Dictionary<string, mace_ItemTable> mace_TableDict { get; private set; } = new Dictionary<string, mace_ItemTable>();
+    public Dictionary<string, magic_ItemTable> magic_TableDict { get; private set; } = new Dictionary<string, magic_ItemTable>();
+    public Dictionary<string, potion_ItemTable> potion_TableDict { get; private set; } = new Dictionary<string, potion_ItemTable>();
+    public Dictionary<string, ring_ItemTable> ring_TableDict { get; private set; } = new Dictionary<string, ring_ItemTable>();
+    public Dictionary<string, robe_ItemTable> robe_TableDict { get; private set; } = new Dictionary<string, robe_ItemTable>();
+    public Dictionary<string, scroll_ItemTable> scroll_TableDict { get; private set; } = new Dictionary<string, scroll_ItemTable>();
+    public Dictionary<string, shield_ItemTable> shield_TableDict { get; private set; } = new Dictionary<string, shield_ItemTable>();
+    public Dictionary<string, spear_ItemTable> spear_TableDict { get; private set; } = new Dictionary<string, spear_ItemTable>();
+    public Dictionary<string, staff_ItemTable> staff_TableDict { get; private set; } = new Dictionary<string, staff_ItemTable>();
+    public Dictionary<string, sword_ItemTable> sword_TableDict { get; private set; } = new Dictionary<string, sword_ItemTable>();
+
+
 
 
     public Dictionary<string, Test> TestDict = new Dictionary<string, Test>();

@@ -1,15 +1,15 @@
 {
-  "mace_probability": 
+  "axe_table": 
   [
     {
       "_No": "NoArti",
       "startNum": 1,
-      "endNum": 6
+      "endNum": 7
     },
     {
       "_No": "FirckArti",
-      "startNum": 7,
-      "endNum": 9
+      "startNum": 8,
+      "endNum": 10
     },
     {
       "_No": "RanArti",
