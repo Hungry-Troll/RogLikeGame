@@ -488,6 +488,7 @@ public class scrollStatData : ILoader<int, scroll>
     }
 }
 
+[Serializable]
 public class magic 
 {
     public int _No;

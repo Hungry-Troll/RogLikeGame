@@ -15,6 +15,7 @@ public class Test
 
 public class DataManager 
 {
+
     //아이템 데이터
     public Dictionary<int, PlayerStat> PlayerStatDict { get; private set; } = new Dictionary<int, PlayerStat>();
     public Dictionary<string, MonsterStat> MonsterStatDict { get; private set; } = new Dictionary<string, MonsterStat>();
@@ -97,11 +98,27 @@ public class DataManager
         scrollStatDict = LoadJson<scrollStatData, int, scroll>("Item/scroll").MakeDict();
         magicStatDict = LoadJson<magicStatData, int, magic>("Item/magic").MakeDict();
 
+
+
         //드랍테이블
-      
 
-        //TestDict = LoadJson<PlayerStatData, int, PlayerStat>("Player/PlayerStatData").MakeDict();
-
+        amulet_TableDict = LoadJson<amulet_ItemTableData, string, amulet_ItemTable>("itemTable/amulet_table").MakeDict();
+        armor_TableDict = LoadJson<armor_ItemTableData, string, armor_ItemTable>("itemTable/armor_table").MakeDict();
+        axe_TableDict = LoadJson<axe_ItemTableData, string, axe_ItemTable>("itemTable/axe_table").MakeDict();
+        boot_TableDict = LoadJson<boot_ItemTableData, string, boot_ItemTable>("itemTable/boot_table").MakeDict();
+        bow_TableDict = LoadJson<bow_ItemTableData, string, bow_ItemTable>("itemTable/bow_table").MakeDict();
+        glove_TableDict = LoadJson<glove_ItemTableData, string, glove_ItemTable>("itemTable/glove_table").MakeDict();
+        helmet_TableDict = LoadJson<helmet_ItemTableData, string, helmet_ItemTable>("itemTable/helmet_table").MakeDict();
+        mace_TableDict = LoadJson<mace_ItemTableData, string, mace_ItemTable>("itemTable/mace_table").MakeDict();
+        magic_TableDict = LoadJson<magic_ItemTableData, string, magic_ItemTable>("itemTable/magic_table").MakeDict();
+        potion_TableDict = LoadJson<potion_ItemTableData, string, potion_ItemTable>("itemTable/potion_table").MakeDict();
+        ring_TableDict = LoadJson<ring_ItemTableData, string, ring_ItemTable>("itemTable/ring_table").MakeDict();
+        robe_TableDict = LoadJson<robe_ItemTableData, string, robe_ItemTable>("itemTable/robe_table").MakeDict();
+        scroll_TableDict = LoadJson<scroll_ItemTableData, string, scroll_ItemTable>("itemTable/scroll_table").MakeDict();
+        shield_TableDict = LoadJson<shield_ItemTableData, string, shield_ItemTable>("itemTable/shield_table").MakeDict();
+        spear_TableDict = LoadJson<spear_ItemTableData, string, spear_ItemTable>("itemTable/spear_table").MakeDict();
+        staff_TableDict = LoadJson<staff_ItemTableData, string, staff_ItemTable>("itemTable/staff_table").MakeDict();
+        sword_TableDict = LoadJson<sword_ItemTableData, string, sword_ItemTable>("itemTable/sword_table").MakeDict();
     }
 
     Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>

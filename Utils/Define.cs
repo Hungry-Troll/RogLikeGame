@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Define 
 {
+    
+    public int Max100 = 100;
+
     //아이템을 선택할 때 사용 예정
     public enum ItemList
     {
