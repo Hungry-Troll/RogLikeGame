@@ -65,40 +65,42 @@ public class DataManager
 
 
 
-    public Dictionary<string, Test> TestDict = new Dictionary<string, Test>();
+    //public Dictionary<int, PlayerStat> TestDict = new Dictionary<int, PlayerStat>();
     
 
 
     public void Init()
     {
         //아이템
-        PlayerStatDict = LoadJson<PlayerStatData, int, PlayerStat>("PlayerStatData").MakeDict();
-        MonsterStatDict = LoadJson<MonsterStatData, string, MonsterStat>("MonsterStatData").MakeDict();
-        axeStatDict = LoadJson<axeStatData, int, axe>("axe").MakeDict();
-        axe_randartStatDict = LoadJson<axe_randartStatData, int, axe_randart>("axe_randart").MakeDict();
-        bootStatDict = LoadJson<bootStatData, int, boot>("boot").MakeDict();
-        bowStatDict = LoadJson<bowStatData, int, bow>("bow").MakeDict();
-        bow_randartStatDict = LoadJson<bow_randartStatData, int, bow_randart>("bow_randart").MakeDict();
-        gloveStatDict = LoadJson<gloveStatData, int, glove>("glove").MakeDict();
-        helmetStatDict = LoadJson<helmetStatData, int, helmet>("helmet").MakeDict();
-        helmet_randartStatDict = LoadJson<helmet_randartStatData, int, helmet_randart>("helmet_randart").MakeDict();
-        maceStatDict = LoadJson<maceStatData, int, mace>("mace").MakeDict();
-        ringStatDict = LoadJson<ringStatData, int, ring>("ring").MakeDict();
-        ring_randartStatDict = LoadJson<ring_randartStatData, int, ring_randart>("ring_randart").MakeDict();
-        robeStatDict = LoadJson<robeStatData, int, robe>("robe").MakeDict();
-        robe_randartStatDict = LoadJson<robe_randartStatData, int, robe_randart>("robe_randart").MakeDict();
-        shieldStatDict = LoadJson<shieldStatData, int, shield>("shield").MakeDict();
-        spearStatDict = LoadJson<spearStatData, int, spear>("spear").MakeDict();
-        spear_randartStatDict = LoadJson<spear_randartStatData, int, spear_randart>("spear_randart").MakeDict();
-        staffStatDict = LoadJson<staffStatData, int, staff>("staff").MakeDict();
-        swordStatDict = LoadJson<swordStatData, int, sword>("sword").MakeDict();
-        sword_randartStatDict = LoadJson<sword_randartStatData, int, sword_randart>("sword_randart").MakeDict();
-        potionStatDict = LoadJson<potionStatData, int, potion>("potion").MakeDict();
-        scrollStatDict = LoadJson<scrollStatData, int, scroll>("scroll").MakeDict();
-        magicStatDict = LoadJson<magicStatData, int, magic>("magic").MakeDict();
+        PlayerStatDict = LoadJson<PlayerStatData, int, PlayerStat>("Player/PlayerStatData").MakeDict();
+        MonsterStatDict = LoadJson<MonsterStatData, string, MonsterStat>("Monster/MonsterStatData").MakeDict();
+        axeStatDict = LoadJson<axeStatData, int, axe>("Item/axe").MakeDict();
+        axe_randartStatDict = LoadJson<axe_randartStatData, int, axe_randart>("Item/axe_randart").MakeDict();
+        bootStatDict = LoadJson<bootStatData, int, boot>("Item/boot").MakeDict();
+        bowStatDict = LoadJson<bowStatData, int, bow>("Item/bow").MakeDict();
+        bow_randartStatDict = LoadJson<bow_randartStatData, int, bow_randart>("Item/bow_randart").MakeDict();
+        gloveStatDict = LoadJson<gloveStatData, int, glove>("Item/glove").MakeDict();
+        helmetStatDict = LoadJson<helmetStatData, int, helmet>("Item/helmet").MakeDict();
+        helmet_randartStatDict = LoadJson<helmet_randartStatData, int, helmet_randart>("Item/helmet_randart").MakeDict();
+        maceStatDict = LoadJson<maceStatData, int, mace>("Item/mace").MakeDict();
+        ringStatDict = LoadJson<ringStatData, int, ring>("Item/ring").MakeDict();
+        ring_randartStatDict = LoadJson<ring_randartStatData, int, ring_randart>("Item/ring_randart").MakeDict();
+        robeStatDict = LoadJson<robeStatData, int, robe>("Item/robe").MakeDict();
+        robe_randartStatDict = LoadJson<robe_randartStatData, int, robe_randart>("Item/robe_randart").MakeDict();
+        shieldStatDict = LoadJson<shieldStatData, int, shield>("Item/shield").MakeDict();
+        spearStatDict = LoadJson<spearStatData, int, spear>("Item/spear").MakeDict();
+        spear_randartStatDict = LoadJson<spear_randartStatData, int, spear_randart>("Item/spear_randart").MakeDict();
+        staffStatDict = LoadJson<staffStatData, int, staff>("Item/staff").MakeDict();
+        swordStatDict = LoadJson<swordStatData, int, sword>("Item/sword").MakeDict();
+        sword_randartStatDict = LoadJson<sword_randartStatData, int, sword_randart>("Item/sword_randart").MakeDict();
+        potionStatDict = LoadJson<potionStatData, int, potion>("Item/potion").MakeDict();
+        scrollStatDict = LoadJson<scrollStatData, int, scroll>("Item/scroll").MakeDict();
+        magicStatDict = LoadJson<magicStatData, int, magic>("Item/magic").MakeDict();
 
         //드랍테이블
+      
 
+        //TestDict = LoadJson<PlayerStatData, int, PlayerStat>("Player/PlayerStatData").MakeDict();
 
     }
 

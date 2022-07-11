@@ -47,7 +47,8 @@ public class MonsterController : CreatureController
         MonsterStat msDict = GameManager.Data.MonsterStatDict["Orc"];
         ms = GetComponent<mStat>();
         ms.MinAttack = msDict.attack;
-        ms.CurrentHp = msDict.hp;
+        ms.MaxHp = msDict.hp;
+        ms.CurrentHp = ms.MaxHp;
 
     }
 

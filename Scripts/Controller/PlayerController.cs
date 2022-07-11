@@ -33,7 +33,8 @@ public class PlayerController : CreatureController
         //나중에 레벨에 따라서 불러오는 값을 변경해야 될 수 있음 Init에 해야되나??
         PlayerStat psDict = GameManager.Data.PlayerStatDict[1];
         ps = GetComponent<pStat>();
-        ps.MaxMp = psDict.hp;
+        ps.MaxHp = psDict.hp;
+        ps.CurrentHp = ps.MaxHp;
         ps.MinAttack = psDict.attack;
 
 

@@ -488,18 +488,36 @@ public class scrollStatData : ILoader<int, scroll>
     }
 }
 
-public class magic : itemStat
+public class magic 
 {
+    public int _No;
+    public string _Name;
     public int _base_damage;
     public int _max_damage;
     public int _reach;
     public int _range;
-    public int _type;
+    public string _type;
     public int _mp_consume;
-    public int _property;
+    public string _property;
     public int _skill_level;
-    public int _turn_duration;
-    public int _effect;
+    public int _turn;
+    public string _effect;
+    public int _max_hp;
+    public int _max_mp;
+    public int _min_attack;
+    public int _max_attack;
+    public int _defence;
+    public int _min_magic_attack;
+    public int _max_magic_attack;
+    public int _fire_res;
+    public int _cold_res;
+    public int _earth_res;
+    public int _dark_res;
+    public int _poison_res;
+    public int _accuracy;
+    public int _avoid;
+    public string _NickName;
+
 }
 
 [Serializable]

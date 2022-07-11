@@ -1,6 +1,5 @@
 {
-  "magic": 
-  [
+  "magicData": [
     {
       "_No": 1,
       "_Name": "화염 폭풍",
@@ -216,7 +215,7 @@
       "_property": "necro",
       "_skill_level": 7,
       "_turn": null,
-      "_effect": half,
+      "_effect": "half",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -535,7 +534,7 @@
       "_property": "ice",
       "_skill_level": 4,
       "_turn": 4,
-      "_effect": freeze,
+      "_effect": "freeze",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -796,7 +795,7 @@
       "_property": "earth",
       "_skill_level": 4,
       "_turn": 4,
-      "_effect": paralysis,
+      "_effect": "paralysis",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
