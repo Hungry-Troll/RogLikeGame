@@ -2,38 +2,38 @@
   "amulet_table": [
     {
       "_No": "NoArti",
-      "startNum": 1,
-      "endNum": 12
+      "_startNum": 1,
+      "_endNum": 12
     },
     {
       "_No": "FirckArti",
-      "startNum": 13,
-      "endNum": 19
+      "_startNum": 13,
+      "_endNum": 19
     },
     {
       "_No": "RanArti",
-      "startNum": 28,
-      "endNum": 30
+      "_startNum": 28,
+      "_endNum": 30
     },
     {
       "_No": "RanArtiOption1",
-      "startNum": 1,
-      "endNum": 12
+      "_startNum": 1,
+      "_endNum": 12
     },
     {
       "_No": "RanArtiOption2",
-      "startNum": 13,
-      "endNum": 24
+      "_startNum": 13,
+      "_endNum": 24
     },
     {
       "_No": "NoArti_Icon",
-      "startNum": 23,
-      "endNum": 28
+      "_startNum": 23,
+      "_endNum": 28
     },
     {
       "_No": "RanArti_Icon",
-      "startNum": 28,
-      "endNum": 30
+      "_startNum": 28,
+      "_endNum": 30
     }
   ]
 }

@@ -73,10 +73,25 @@ public class SummonManager
     {
         MapManager.SumPos sumPos = new MapManager.SumPos();
 
-        for (int i = 0; i < 5; i++)
+        string testWord = "axe";
+
+        for (int i = 0; i < 23; i++)
         {
-            GameObject item = GameManager.Resouce.Instantiate("Item/Equip/sword1");
-            item.name = "sword1";
+            //추후 제거할 코드
+
+            axe _axe = itemSumTest();
+
+            //랜다트 코드 임 테스트용
+            //axe_randart _axeRan = itmeSumTestRandart();
+            string _axeNickName = _axe._NickName;
+            GameObject item = GameManager.Resouce.Instantiate($"Item/Equip/{testWord}/{_axeNickName}");
+
+            //제거 해야 됨
+
+
+            //위에 코드 제거 후 아래 주석 풀어야됨 일단 테스트 용도임
+            //GameObject item = GameManager.Resouce.Instantiate($"Item/Equip/{testWord}/{testWord}{i + 1}");
+            item.name = ($"{testWord}{i+1}");
             GameManager.Obj.ItemAdd(item);
             GameManager.Map._mapControll = MapControll.SumItem;
             sumPos = GameManager.Map.CanSum();
@@ -88,10 +103,60 @@ public class SummonManager
             };
 
             ItemController ic = item.GetOrAddComponent<ItemController>();
+            ic.CellPos = itemPos;
 
         }
 
     }
+
+
+    // 아이템 테스트용 함수 추후 제거 
+    public axe itemSumTest()
+    {
+        //랜덤아티팩트는 딕셔너리가 다름
+        //axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["RanArti"];
+
+
+
+        axe_ItemTable axeItemTable= GameManager.Data.axe_TableDict["FirckArti"];
+        //axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["NoArti"];
+        int startNum = axeItemTable._startNum;
+        int endNum = axeItemTable._endNum;
+
+        int random = Random.Range(startNum, endNum + 1);
+
+        //랜덤 아티팩트는 딕셔너리가 다름 리턴값도 변경해야됨, 일단 테스트니까 넘어감
+        //axe_randart axeSumNum = GameManager.Data.axe_randartStatDict[random];
+
+        axe axeSumNum = GameManager.Data.axeStatDict[random];
+
+        return axeSumNum;
+    }
+
+    // 랜덤 아티팩트 함수 테스트용 추후 제거
+
+    public axe_randart itmeSumTestRandart()
+    {
+        //랜덤아티팩트는 딕셔너리가 다름
+        axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["RanArti"];
+
+
+
+        //axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["FirckArti"];
+        //axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["NoArti"];
+        int startNum = axeItemTable._startNum;
+        int endNum = axeItemTable._endNum;
+
+        int random = Random.Range(startNum, endNum + 1);
+
+        //랜덤 아티팩트는 딕셔너리가 다름 리턴값도 변경해야됨, 일단 테스트니까 넘어감
+        axe_randart axeSumNum = GameManager.Data.axe_randartStatDict[random];
+
+        //axe_randart axeSumNum = GameManager.Data.axeStatDict[random];
+
+        return axeSumNum;
+    }
+
 
     public void ItemPool()
     {
@@ -178,9 +243,11 @@ public class SummonManager
 
     public void NoArti()
     {
+        
+
         switch (_itemList)
         {
-            case ItemList.Axe: ; break;
+            case ItemList.Axe: axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["NoArti"]; break;
             case ItemList.Axe_randart: _itemList = ItemList.Axe_randart; break;
             case ItemList.Boot: _itemList = ItemList.Boot; break;
             case ItemList.Bow: _itemList = ItemList.Bow; break;
@@ -200,9 +267,9 @@ public class SummonManager
             case ItemList.Staff: _itemList = ItemList.Staff; break;
             case ItemList.Sword: _itemList = ItemList.Sword; break;
             case ItemList.Sword_randart: _itemList = ItemList.Sword_randart; break;
-            case ItemList.Potion: _itemList = Define.ItemList.None; break;
-            case ItemList.Scroll: _itemList = Define.ItemList.None; break;
-            case ItemList.Magic: _itemList = Define.ItemList.None; break;
+            case ItemList.Potion: _itemList = ItemList.Potion; break;
+            case ItemList.Scroll: _itemList = ItemList.None; break;
+            case ItemList.Magic: _itemList = ItemList.None; break;
         }
     }
 

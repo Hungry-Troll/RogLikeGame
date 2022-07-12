@@ -3,28 +3,28 @@
   [
     {
       "_No": "NoArti",
-      "startNum": 1,
-      "endNum": 7
+      "_startNum": 1,
+      "_endNum": 7
     },
     {
       "_No": "FirckArti",
-      "startNum": 8,
-      "endNum": 15
+      "_startNum": 8,
+      "_endNum": 15
     },
     {
       "_No": "RanArti",
-      "startNum": 22,
-      "endNum": 27
+      "_startNum": 22,
+      "_endNum": 27
     },
     {
       "_No": "RanArtiOption1",
-      "startNum": 1,
-      "endNum": 10
+      "_startNum": 1,
+      "_endNum": 10
     },
     {
       "_No": "RanArtiOption2",
-      "startNum": 11,
-      "endNum": 20
+      "_startNum": 11,
+      "_endNum": 20
     }
   ]
 }
