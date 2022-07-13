@@ -6,7 +6,11 @@ using static Define;
 
 public class SummonManager
 {
-    public Define.ItemList _itemList = ItemList.None;
+    //아이템 등급 구분용
+    public ItemGrade _itemGrade = ItemGrade.NoArti;
+
+    //아이템 리스트
+    public ItemList _itemList = ItemList.None;
 
     public void Init()
     {
@@ -72,18 +76,56 @@ public class SummonManager
     public void ItemCreate()
     {
         MapManager.SumPos sumPos = new MapManager.SumPos();
+        int item_No;
+        switch (_itemList)
+        {
+            case ItemList.Axe:
+                item_No = axeCreate();
+                break;
 
-        string testWord = "axe";
+            case ItemList.Boot:
+                break;
+            case ItemList.Bow: 
+                break;
+            case ItemList.Glove:
+                break;
+            case ItemList.Helmet:
+                break;
+            case ItemList.Mace:
+                break;
+            case ItemList.Ring: 
+                break;
+            case ItemList.Robe: 
+                break;
+            case ItemList.Shield:
+                break;
+            case ItemList.Spear:
+                break;
+            case ItemList.Staff: 
+                break;
+            case ItemList.Sword: 
+                break;
+
+                //case 20: _itemList = Define.ItemList.None; break;
+        }
+
+
+
+
+
+
+
+        string testWord = "glove";
 
         for (int i = 0; i < 23; i++)
         {
             //추후 제거할 코드
 
-            axe _axe = itemSumTest();
+            glove _glove = itemSumTest();
 
             //랜다트 코드 임 테스트용
-            //axe_randart _axeRan = itmeSumTestRandart();
-            string _axeNickName = _axe._NickName;
+            //bow_randart _bow = itmeSumTestRandart();
+            string _axeNickName = _glove._NickName;
             GameObject item = GameManager.Resouce.Instantiate($"Item/Equip/{testWord}/{_axeNickName}");
 
             //제거 해야 됨
@@ -111,34 +153,33 @@ public class SummonManager
 
 
     // 아이템 테스트용 함수 추후 제거 
-    public axe itemSumTest()
+    public glove itemSumTest()
     {
         //랜덤아티팩트는 딕셔너리가 다름
-        //axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["RanArti"];
+        glove_ItemTable gloveItemTable = GameManager.Data.glove_TableDict["RanArti"];
 
 
-
-        axe_ItemTable axeItemTable= GameManager.Data.axe_TableDict["FirckArti"];
-        //axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["NoArti"];
-        int startNum = axeItemTable._startNum;
-        int endNum = axeItemTable._endNum;
+        //glove_ItemTable gloveItemTable= GameManager.Data.glove_TableDict["FirckArti"];
+        //bow_ItemTable bowItemTable = GameManager.Data.bow_TableDict["NoArti"];
+        int startNum = gloveItemTable._startNum;
+        int endNum = gloveItemTable._endNum;
 
         int random = Random.Range(startNum, endNum + 1);
 
         //랜덤 아티팩트는 딕셔너리가 다름 리턴값도 변경해야됨, 일단 테스트니까 넘어감
         //axe_randart axeSumNum = GameManager.Data.axe_randartStatDict[random];
 
-        axe axeSumNum = GameManager.Data.axeStatDict[random];
+        glove axeSumNum = GameManager.Data.gloveStatDict[random];
 
         return axeSumNum;
     }
 
     // 랜덤 아티팩트 함수 테스트용 추후 제거
 
-    public axe_randart itmeSumTestRandart()
+    public bow_randart itmeSumTestRandart()
     {
         //랜덤아티팩트는 딕셔너리가 다름
-        axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["RanArti"];
+        bow_ItemTable axeItemTable = GameManager.Data.bow_TableDict["RanArti"];
 
 
 
@@ -150,7 +191,7 @@ public class SummonManager
         int random = Random.Range(startNum, endNum + 1);
 
         //랜덤 아티팩트는 딕셔너리가 다름 리턴값도 변경해야됨, 일단 테스트니까 넘어감
-        axe_randart axeSumNum = GameManager.Data.axe_randartStatDict[random];
+        bow_randart axeSumNum = GameManager.Data.bow_randartStatDict[random];
 
         //axe_randart axeSumNum = GameManager.Data.axeStatDict[random];
 
@@ -162,9 +203,9 @@ public class SummonManager
     {
         //소모성 아이템 장착 아이템 계산 추후 확률을 바꿔야 될거 같음
         //아이템 셀렉에서 어떤 종류의 아이템 까지 결정됨
-        itemSelect();
+        ItemSelect();
         //아이템 등급을 결정
-        itemGradeCal();
+        ItemGradeCal();
 
 
         //아이템 소모품 확률을 어느정도로 할지 생각해야됨 지금은 대충 50%?? 정도 구상
@@ -179,16 +220,16 @@ public class SummonManager
 
     }
 
-    public void itemSelect()
+    public void ItemSelect()
     {
         int itemCheck = Random.Range(0, 10);
         if (itemCheck <= 5)
-            itemComsum();
+            ItemComsum();
         else
-            itemEquip();
+            ItemEquip();
     }
 
-    public void itemComsum()
+    public void ItemComsum()
     {
         int itemRan = Random.Range(0, 100);
         if (itemRan <= 39)
@@ -200,88 +241,172 @@ public class SummonManager
 
     }
 
-    public void itemEquip()
+    public void ItemEquip()
     {
-        int itemRan = Random.Range(0, 20);
+        int itemRan = Random.Range(0, 12);
         switch (itemRan)
         {
             case 0: _itemList = ItemList.Axe; break;
-            case 1: _itemList = ItemList.Axe_randart; break;
-            case 2: _itemList = ItemList.Boot; break;
-            case 3: _itemList = ItemList.Bow; break;
-            case 4: _itemList = ItemList.Bow_randart; break;
-            case 5: _itemList = ItemList.Glove; break;
-            case 6: _itemList = ItemList.Helmet; break;
-            case 7: _itemList = ItemList.Helmet_randart; break;
-            case 8: _itemList = ItemList.Mace; break;
-            case 9: _itemList = ItemList.Mace_randart; break;
-            case 10: _itemList = ItemList.Ring; break;
-            case 11: _itemList = ItemList.Ring_randart; break;
-            case 12: _itemList = ItemList.Robe; break;
-            case 13: _itemList = ItemList.Robe_randart; break;
-            case 14: _itemList = ItemList.Shield; break;
-            case 15: _itemList = ItemList.Spear; break;
-            case 16: _itemList = ItemList.Spear_randart; break;
-            case 17: _itemList = ItemList.Staff; break;
-            case 18: _itemList = ItemList.Sword; break;
-            case 19: _itemList = ItemList.Sword_randart; break;
-
+            case 1: _itemList = ItemList.Boot; break;
+            case 2: _itemList = ItemList.Bow; break;
+            case 3: _itemList = ItemList.Glove; break;
+            case 4: _itemList = ItemList.Helmet; break;
+            case 5: _itemList = ItemList.Mace; break;
+            case 6: _itemList = ItemList.Ring; break;
+            case 7: _itemList = ItemList.Robe; break;
+            case 8: _itemList = ItemList.Shield; break;
+            case 9: _itemList = ItemList.Spear; break;
+            case 10: _itemList = ItemList.Staff; break;
+            case 11: _itemList = ItemList.Sword; break;
                 //case 20: _itemList = Define.ItemList.None; break;
         }
     }
 
-    public void itemGradeCal()
+    public void ItemGradeCal()
     {
         int ran = Random.Range(1, 101);
         if (ran <= 5)
-            FickArti();
+            _itemGrade = ItemGrade.FickArti;
         else if (ran <= 15)
-            RanArti();
+            _itemGrade = ItemGrade.RanArti;
         else
-            NoArti();
+            _itemGrade = ItemGrade.NoArti;
     }
 
-    public void NoArti()
-    {
-        
 
-        switch (_itemList)
+    #region itemCreate
+    public int AxeCreate()
+    {
+        axe_ItemTable axeItemTable = null;
+
+        switch(_itemGrade)
         {
-            case ItemList.Axe: axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["NoArti"]; break;
-            case ItemList.Axe_randart: _itemList = ItemList.Axe_randart; break;
-            case ItemList.Boot: _itemList = ItemList.Boot; break;
-            case ItemList.Bow: _itemList = ItemList.Bow; break;
-            case ItemList.Bow_randart: _itemList = ItemList.Bow_randart; break;
-            case ItemList.Glove: _itemList = ItemList.Glove; break;
-            case ItemList.Helmet: _itemList = ItemList.Helmet; break;
-            case ItemList.Helmet_randart: _itemList = ItemList.Helmet_randart; break;
-            case ItemList.Mace: _itemList = ItemList.Mace; break;
-            case ItemList.Mace_randart: _itemList = ItemList.Mace_randart; break;
-            case ItemList.Ring: _itemList = ItemList.Ring; break;
-            case ItemList.Ring_randart: _itemList = ItemList.Ring_randart; break;
-            case ItemList.Robe: _itemList = ItemList.Robe; break;
-            case ItemList.Robe_randart: _itemList = ItemList.Robe_randart; break;
-            case ItemList.Shield: _itemList = ItemList.Shield; break;
-            case ItemList.Spear: _itemList = ItemList.Spear; break;
-            case ItemList.Spear_randart: _itemList = ItemList.Spear_randart; break;
-            case ItemList.Staff: _itemList = ItemList.Staff; break;
-            case ItemList.Sword: _itemList = ItemList.Sword; break;
-            case ItemList.Sword_randart: _itemList = ItemList.Sword_randart; break;
-            case ItemList.Potion: _itemList = ItemList.Potion; break;
-            case ItemList.Scroll: _itemList = ItemList.None; break;
-            case ItemList.Magic: _itemList = ItemList.None; break;
+            case ItemGrade.NoArti:
+                axeItemTable = GameManager.Data.axe_TableDict["NoArti"];
+                break;
+            case ItemGrade.RanArti:
+                axeItemTable = GameManager.Data.axe_TableDict["RanArti"];
+                break;
+            case ItemGrade.FickArti:
+                axeItemTable = GameManager.Data.axe_TableDict["FirckArti"];
+                break;
         }
+
+        int startNum = axeItemTable._startNum; //딕 시작값
+        int endNum = axeItemTable._endNum; //딕 끝값
+        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
+
+        int item_No; //리턴용
+        if (_itemGrade == ItemGrade.RanArti)
+        {
+            axe_randart itemNum = GameManager.Data.axe_randartStatDict[random];
+            item_No = itemNum._No;
+        }
+        else
+        {
+            axe axeSumNum = GameManager.Data.axeStatDict[random];
+            item_No = axeSumNum._No;
+        }
+        return item_No;
     }
 
-    public void RanArti()
+    public int BootCreate()
     {
+        boot_ItemTable bootItemTable = null;
+
+        switch (_itemGrade)
+        {
+            case ItemGrade.NoArti:
+                bootItemTable = GameManager.Data.boot_TableDict["NoArti"];
+                break;
+            case ItemGrade.RanArti:
+                bootItemTable = GameManager.Data.boot_TableDict["RanArti"];
+                break;
+            case ItemGrade.FickArti:
+                bootItemTable = GameManager.Data.boot_TableDict["FirckArti"];
+                break;
+        }
+
+        int startNum = bootItemTable._startNum; //딕 시작값
+        int endNum = bootItemTable._endNum; //딕 끝값
+        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
+
+        int item_No; //리턴용
+
+        //부츠는 랜다트 딕이 없음
+        boot itemNum = GameManager.Data.bootStatDict[random];
+        item_No = itemNum._No;
+
+        return item_No;
+    }
+
+    public int BowCreate()
+    {
+        bow_ItemTable bowItemTable = null;
+
+        switch (_itemGrade)
+        {
+            case ItemGrade.NoArti:
+                bowItemTable = GameManager.Data.bow_TableDict["NoArti"];
+                break;
+            case ItemGrade.RanArti:
+                bowItemTable = GameManager.Data.bow_TableDict["RanArti"];
+                break;
+            case ItemGrade.FickArti:
+                bowItemTable = GameManager.Data.bow_TableDict["FirckArti"];
+                break;
+        }
+
+        int startNum = bowItemTable._startNum; //딕 시작값
+        int endNum = bowItemTable._endNum; //딕 끝값
+        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
+
+        int item_No; //리턴용
+        if (_itemGrade == ItemGrade.RanArti)
+        {
+            bow_randart itemNum = GameManager.Data.bow_randartStatDict[random];
+            item_No = itemNum._No;
+        }
+        else
+        {
+            bow itemNum = GameManager.Data.bowStatDict[random];
+            item_No = itemNum._No;
+        }
+        return item_No;
+    }
+
+    public int GloveCreate()
+    {
+        glove_ItemTable gloveItemTable = null;
+
+        switch (_itemGrade)
+        {
+            case ItemGrade.NoArti:
+                gloveItemTable = GameManager.Data.glove_TableDict["NoArti"];
+                break;
+            case ItemGrade.RanArti:
+                gloveItemTable = GameManager.Data.glove_TableDict["RanArti"];
+                break;
+            case ItemGrade.FickArti:
+                gloveItemTable = GameManager.Data.glove_TableDict["FirckArti"];
+                break;
+        }
+
+        int startNum = gloveItemTable._startNum; //딕 시작값
+        int endNum = gloveItemTable._endNum; //딕 끝값
+        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
+
+        int item_No; //리턴용
+
+        //글러브는 랜다트가 없음
+
+        glove itemNum = GameManager.Data.gloveStatDict[random];
+        item_No = itemNum._No;
         
-    }
-
-    public void FickArti()
-    {
-
+        return item_No;
 
     }
 
-}
+
+        #endregion
+    }

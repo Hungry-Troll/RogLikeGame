@@ -7,29 +7,27 @@ public class Define
     
     public int Max100 = 100;
 
+    public enum ItemGrade
+    {
+        FickArti,
+        RanArti,
+        NoArti,
+    }
     //아이템을 선택할 때 사용 예정
     public enum ItemList
     {
         Axe,
-        Axe_randart,
         Boot,
         Bow,
-        Bow_randart,
         Glove,
         Helmet,
-        Helmet_randart,
         Mace,
-        Mace_randart,
         Ring,
-        Ring_randart,
         Robe,
-        Robe_randart,
         Shield,
         Spear,
-        Spear_randart,
         Staff,
         Sword,
-        Sword_randart,
         Magic,
         Potion,
         Scroll,
