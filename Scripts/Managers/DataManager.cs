@@ -84,6 +84,7 @@ public class DataManager
         helmetStatDict = LoadJson<helmetStatData, int, helmet>("Item/helmet").MakeDict();
         helmet_randartStatDict = LoadJson<helmet_randartStatData, int, helmet_randart>("Item/helmet_randart").MakeDict();
         maceStatDict = LoadJson<maceStatData, int, mace>("Item/mace").MakeDict();
+        mace_randartStatDict = LoadJson<mace_randartStatData, int, mace_randart>("Item/mace_randart").MakeDict();
         ringStatDict = LoadJson<ringStatData, int, ring>("Item/ring").MakeDict();
         ring_randartStatDict = LoadJson<ring_randartStatData, int, ring_randart>("Item/ring_randart").MakeDict();
         robeStatDict = LoadJson<robeStatData, int, robe>("Item/robe").MakeDict();
