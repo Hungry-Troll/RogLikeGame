@@ -1,5 +1,5 @@
 ﻿{
-  "gloveData": [
+  "itemData": [
     {
       "_No": 1,
       "_Name": "가죽 장갑",

@@ -1,5 +1,5 @@
 ﻿{
-  "bow_ranData": [
+  "itemData": [
     {
       "_No": 1,
       "_Name": "튼튼한",

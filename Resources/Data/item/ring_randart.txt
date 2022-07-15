@@ -1,5 +1,5 @@
 ﻿{
-  "ring_randartData": [
+  "itemData": [
     {
       "_No": 1,
       "_Name": "튼튼한",

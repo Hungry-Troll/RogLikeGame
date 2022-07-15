@@ -1,5 +1,5 @@
 ﻿{
-  "swordData": [
+  "itemData": [
     {
       "_No": 1,
       "_Name": "단검",

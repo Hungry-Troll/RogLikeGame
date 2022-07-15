@@ -19,49 +19,49 @@ public class DataManager
     //아이템 데이터
     public Dictionary<int, PlayerStat> PlayerStatDict { get; private set; } = new Dictionary<int, PlayerStat>();
     public Dictionary<string, MonsterStat> MonsterStatDict { get; private set; } = new Dictionary<string, MonsterStat>();
-    public Dictionary<int, axe> axeStatDict { get; private set; } = new Dictionary<int, axe>();
-    public Dictionary<int, axe_randart> axe_randartStatDict { get; private set; } = new Dictionary<int, axe_randart>();
-    public Dictionary<int, boot> bootStatDict { get; private set; } = new Dictionary<int, boot>();
-    public Dictionary<int, bow> bowStatDict { get; private set; } = new Dictionary<int, bow>();
-    public Dictionary<int, bow_randart> bow_randartStatDict { get; private set; } = new Dictionary<int, bow_randart>();
-    public Dictionary<int, glove> gloveStatDict { get; private set; } = new Dictionary<int, glove>();
-    public Dictionary<int, helmet> helmetStatDict { get; private set; } = new Dictionary<int, helmet>();
-    public Dictionary<int, helmet_randart> helmet_randartStatDict { get; private set; } = new Dictionary<int, helmet_randart>();
-    public Dictionary<int, mace> maceStatDict { get; private set; } = new Dictionary<int, mace>();
-    public Dictionary<int, mace_randart> mace_randartStatDict { get; private set; } = new Dictionary<int, mace_randart>();
-    public Dictionary<int, ring> ringStatDict { get; private set; } = new Dictionary<int, ring>();
-    public Dictionary<int, ring_randart> ring_randartStatDict { get; private set; } = new Dictionary<int, ring_randart>();
-    public Dictionary<int, robe> robeStatDict { get; private set; } = new Dictionary<int, robe>();
-    public Dictionary<int, robe_randart> robe_randartStatDict { get; private set; } = new Dictionary<int, robe_randart>();
-    public Dictionary<int, shield> shieldStatDict { get; private set; } = new Dictionary<int, shield>();
-    public Dictionary<int, spear> spearStatDict { get; private set; } = new Dictionary<int, spear>();
-    public Dictionary<int, spear_randart> spear_randartStatDict { get; private set; } = new Dictionary<int, spear_randart>();
-    public Dictionary<int, staff> staffStatDict { get; private set; } = new Dictionary<int, staff>();
-    public Dictionary<int, sword> swordStatDict { get; private set; } = new Dictionary<int, sword>();
-    public Dictionary<int, sword_randart> sword_randartStatDict { get; private set; } = new Dictionary<int, sword_randart>();
+    public Dictionary<int, ItemStat> axeStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> axe_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> bootStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> bowStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> bow_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> gloveStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> helmetStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> helmet_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> maceStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> mace_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> ringStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> ring_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> robeStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> robe_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> shieldStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> spearStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> spear_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> staffStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> swordStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> sword_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
 
     public Dictionary<int, potion> potionStatDict { get; private set; } = new Dictionary<int, potion>();
     public Dictionary<int, scroll> scrollStatDict { get; private set; } = new Dictionary<int, scroll>();
     public Dictionary<int, magic> magicStatDict { get; private set; } = new Dictionary<int, magic>();
 
     //드랍 테이블
-    public Dictionary<string, amulet_ItemTable> amulet_TableDict { get; private set; } = new Dictionary<string, amulet_ItemTable>();
-    public Dictionary<string, armor_ItemTable> armor_TableDict { get; private set; } = new Dictionary<string, armor_ItemTable>();
-    public Dictionary<string, axe_ItemTable> axe_TableDict { get; private set; } = new Dictionary<string, axe_ItemTable>();
-    public Dictionary<string, boot_ItemTable> boot_TableDict { get; private set; } = new Dictionary<string, boot_ItemTable>();
-    public Dictionary<string, bow_ItemTable> bow_TableDict { get; private set; } = new Dictionary<string, bow_ItemTable>();
-    public Dictionary<string, glove_ItemTable> glove_TableDict { get; private set; } = new Dictionary<string, glove_ItemTable>();
-    public Dictionary<string, helmet_ItemTable> helmet_TableDict { get; private set; } = new Dictionary<string, helmet_ItemTable>();
-    public Dictionary<string, mace_ItemTable> mace_TableDict { get; private set; } = new Dictionary<string, mace_ItemTable>();
-    public Dictionary<string, magic_ItemTable> magic_TableDict { get; private set; } = new Dictionary<string, magic_ItemTable>();
-    public Dictionary<string, potion_ItemTable> potion_TableDict { get; private set; } = new Dictionary<string, potion_ItemTable>();
-    public Dictionary<string, ring_ItemTable> ring_TableDict { get; private set; } = new Dictionary<string, ring_ItemTable>();
-    public Dictionary<string, robe_ItemTable> robe_TableDict { get; private set; } = new Dictionary<string, robe_ItemTable>();
-    public Dictionary<string, scroll_ItemTable> scroll_TableDict { get; private set; } = new Dictionary<string, scroll_ItemTable>();
-    public Dictionary<string, shield_ItemTable> shield_TableDict { get; private set; } = new Dictionary<string, shield_ItemTable>();
-    public Dictionary<string, spear_ItemTable> spear_TableDict { get; private set; } = new Dictionary<string, spear_ItemTable>();
-    public Dictionary<string, staff_ItemTable> staff_TableDict { get; private set; } = new Dictionary<string, staff_ItemTable>();
-    public Dictionary<string, sword_ItemTable> sword_TableDict { get; private set; } = new Dictionary<string, sword_ItemTable>();
+    public Dictionary<string, ItemTable> amulet_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> armor_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> axe_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> boot_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> bow_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> glove_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> helmet_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> mace_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> magic_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> potion_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> ring_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> robe_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> scroll_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> shield_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> spear_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> staff_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
+    public Dictionary<string, ItemTable> sword_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
 
 
 
@@ -75,26 +75,26 @@ public class DataManager
         //아이템
         PlayerStatDict = LoadJson<PlayerStatData, int, PlayerStat>("Player/PlayerStatData").MakeDict();
         MonsterStatDict = LoadJson<MonsterStatData, string, MonsterStat>("Monster/MonsterStatData").MakeDict();
-        axeStatDict = LoadJson<axeStatData, int, axe>("Item/axe").MakeDict();
-        axe_randartStatDict = LoadJson<axe_randartStatData, int, axe_randart>("Item/axe_randart").MakeDict();
-        bootStatDict = LoadJson<bootStatData, int, boot>("Item/boot").MakeDict();
-        bowStatDict = LoadJson<bowStatData, int, bow>("Item/bow").MakeDict();
-        bow_randartStatDict = LoadJson<bow_randartStatData, int, bow_randart>("Item/bow_randart").MakeDict();
-        gloveStatDict = LoadJson<gloveStatData, int, glove>("Item/glove").MakeDict();
-        helmetStatDict = LoadJson<helmetStatData, int, helmet>("Item/helmet").MakeDict();
-        helmet_randartStatDict = LoadJson<helmet_randartStatData, int, helmet_randart>("Item/helmet_randart").MakeDict();
-        maceStatDict = LoadJson<maceStatData, int, mace>("Item/mace").MakeDict();
-        mace_randartStatDict = LoadJson<mace_randartStatData, int, mace_randart>("Item/mace_randart").MakeDict();
-        ringStatDict = LoadJson<ringStatData, int, ring>("Item/ring").MakeDict();
-        ring_randartStatDict = LoadJson<ring_randartStatData, int, ring_randart>("Item/ring_randart").MakeDict();
-        robeStatDict = LoadJson<robeStatData, int, robe>("Item/robe").MakeDict();
-        robe_randartStatDict = LoadJson<robe_randartStatData, int, robe_randart>("Item/robe_randart").MakeDict();
-        shieldStatDict = LoadJson<shieldStatData, int, shield>("Item/shield").MakeDict();
-        spearStatDict = LoadJson<spearStatData, int, spear>("Item/spear").MakeDict();
-        spear_randartStatDict = LoadJson<spear_randartStatData, int, spear_randart>("Item/spear_randart").MakeDict();
-        staffStatDict = LoadJson<staffStatData, int, staff>("Item/staff").MakeDict();
-        swordStatDict = LoadJson<swordStatData, int, sword>("Item/sword").MakeDict();
-        sword_randartStatDict = LoadJson<sword_randartStatData, int, sword_randart>("Item/sword_randart").MakeDict();
+        axeStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/axe").MakeDict();
+        axe_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/axe_randart").MakeDict();
+        bootStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/boot").MakeDict();
+        bowStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/bow").MakeDict();
+        bow_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/bow_randart").MakeDict();
+        gloveStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/glove").MakeDict();
+        helmetStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/helmet").MakeDict();
+        helmet_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/helmet_randart").MakeDict();
+        maceStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/mace").MakeDict();
+        mace_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/mace_randart").MakeDict();
+        ringStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/ring").MakeDict();
+        ring_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/ring_randart").MakeDict();
+        robeStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/robe").MakeDict();
+        robe_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/robe_randart").MakeDict();
+        shieldStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/shield").MakeDict();
+        spearStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/spear").MakeDict();
+        spear_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/spear_randart").MakeDict();
+        staffStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/staff").MakeDict();
+        swordStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/sword").MakeDict();
+        sword_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/sword_randart").MakeDict();
         potionStatDict = LoadJson<potionStatData, int, potion>("Item/potion").MakeDict();
         scrollStatDict = LoadJson<scrollStatData, int, scroll>("Item/scroll").MakeDict();
         magicStatDict = LoadJson<magicStatData, int, magic>("Item/magic").MakeDict();
@@ -103,23 +103,23 @@ public class DataManager
 
         //드랍테이블
 
-        amulet_TableDict = LoadJson<amulet_ItemTableData, string, amulet_ItemTable>("itemTable/amulet_table").MakeDict();
-        armor_TableDict = LoadJson<armor_ItemTableData, string, armor_ItemTable>("itemTable/armor_table").MakeDict();
-        axe_TableDict = LoadJson<axe_ItemTableData, string, axe_ItemTable>("itemTable/axe_table").MakeDict();
-        boot_TableDict = LoadJson<boot_ItemTableData, string, boot_ItemTable>("itemTable/boot_table").MakeDict();
-        bow_TableDict = LoadJson<bow_ItemTableData, string, bow_ItemTable>("itemTable/bow_table").MakeDict();
-        glove_TableDict = LoadJson<glove_ItemTableData, string, glove_ItemTable>("itemTable/glove_table").MakeDict();
-        helmet_TableDict = LoadJson<helmet_ItemTableData, string, helmet_ItemTable>("itemTable/helmet_table").MakeDict();
-        mace_TableDict = LoadJson<mace_ItemTableData, string, mace_ItemTable>("itemTable/mace_table").MakeDict();
-        magic_TableDict = LoadJson<magic_ItemTableData, string, magic_ItemTable>("itemTable/magic_table").MakeDict();
-        potion_TableDict = LoadJson<potion_ItemTableData, string, potion_ItemTable>("itemTable/potion_table").MakeDict();
-        ring_TableDict = LoadJson<ring_ItemTableData, string, ring_ItemTable>("itemTable/ring_table").MakeDict();
-        robe_TableDict = LoadJson<robe_ItemTableData, string, robe_ItemTable>("itemTable/robe_table").MakeDict();
-        scroll_TableDict = LoadJson<scroll_ItemTableData, string, scroll_ItemTable>("itemTable/scroll_table").MakeDict();
-        shield_TableDict = LoadJson<shield_ItemTableData, string, shield_ItemTable>("itemTable/shield_table").MakeDict();
-        spear_TableDict = LoadJson<spear_ItemTableData, string, spear_ItemTable>("itemTable/spear_table").MakeDict();
-        staff_TableDict = LoadJson<staff_ItemTableData, string, staff_ItemTable>("itemTable/staff_table").MakeDict();
-        sword_TableDict = LoadJson<sword_ItemTableData, string, sword_ItemTable>("itemTable/sword_table").MakeDict();
+        amulet_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/amulet_table").MakeDict();
+        armor_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/armor_table").MakeDict();
+        axe_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/axe_table").MakeDict();
+        boot_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/boot_table").MakeDict();
+        bow_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/bow_table").MakeDict();
+        glove_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/glove_table").MakeDict();
+        helmet_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/helmet_table").MakeDict();
+        mace_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/mace_table").MakeDict();
+        magic_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/magic_table").MakeDict();
+        potion_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/potion_table").MakeDict();
+        ring_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/ring_table").MakeDict();
+        robe_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/robe_table").MakeDict();
+        scroll_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/scroll_table").MakeDict();
+        shield_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/shield_table").MakeDict();
+        spear_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/spear_table").MakeDict();
+        staff_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/staff_table").MakeDict();
+        sword_TableDict = LoadJson<ItemTableData, string, ItemTable>("itemTable/sword_table").MakeDict();
     }
 
     Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>

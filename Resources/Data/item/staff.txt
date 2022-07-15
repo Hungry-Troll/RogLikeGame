@@ -1,5 +1,5 @@
 ﻿{
-  "staffData": [
+  "itemData": [
     {
       "_No": 1,
       "_Name": "초록 지팡이",

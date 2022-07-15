@@ -75,127 +75,94 @@ public class SummonManager
 
     public void ItemCreate()
     {
-        MapManager.SumPos sumPos = new MapManager.SumPos();
-        int item_No;
-        #region
-        /*        #region NextCoding
-                switch (_itemList)
-                {
-                    case ItemList.Axe: 
-                        break;
-                    case ItemList.Boot:
-                        break;
-                    case ItemList.Bow:
-                        break;
-                    case ItemList.Glove:
-                        break;
-                    case ItemList.Helmet:
-                        break;
-                    case ItemList.Mace:
-                        break;
-                    case ItemList.Ring:
-                        break;
-                    case ItemList.Robe:
-                        break;
-                    case ItemList.Shield:
-                        break;
-                    case ItemList.Spear:
-                        break;
-                    case ItemList.Staff:
-                        break;
-                    case ItemList.Sword:
-                        break;
+        Dictionary<string, ItemTable> _ItemTable;
+        Dictionary<int, ItemStat> _StatDict;
+        string _itemName = null;
 
-                        //case 20: _itemList = Define.ItemList.None; break;
-                }
-        */
+        #region NextCoding
+        switch (_itemList)
+        {
+            //추후 실제 적용 코드임
+            //case ItemList.Axe:
+            //    _ItemTable = GameManager.Data.axe_TableDict;
+            //    if (_itemGrade == ItemGrade.RanArti)
+            //        _StatDict = GameManager.Data.axe_randartStatDict;
+            //    else
+            //        _StatDict = GameManager.Data.axeStatDict;
+            //    break;
+
+            //case ItemList.Boot:
+            //    _ItemTable = GameManager.Data.boot_TableDict;
+            //    _StatDict = GameManager.Data.bootStatDict;
+            //    break;
+
+            //case ItemList.Bow:
+            //    _ItemTable = GameManager.Data.bow_TableDict;
+            //    if (_itemGrade == ItemGrade.RanArti)
+            //        _StatDict = GameManager.Data.bow_randartStatDict;
+            //    else
+            //        _StatDict = GameManager.Data.bowStatDict;
+            //    break;
+
+            //case ItemList.Glove:
+            //    _ItemTable = GameManager.Data.glove_TableDict;
+            //    _StatDict = GameManager.Data.gloveStatDict;
+            //    break;
+
+            //case ItemList.Helmet:
+            //    _ItemTable = GameManager.Data.helmet_TableDict;
+            //    if (_itemGrade == ItemGrade.RanArti)
+            //        _StatDict = GameManager.Data.helmet_randartStatDict;
+            //    else
+            //        _StatDict = GameManager.Data.helmetStatDict;
+            //    break;
+
+            case ItemList.Mace:
+                break;
+            case ItemList.Ring:
+                break;
+            case ItemList.Robe:
+                break;
+            case ItemList.Shield:
+                break;
+            case ItemList.Spear:
+                break;
+            case ItemList.Staff:
+                break;
+            case ItemList.Sword:
+                break;
+
+                //case 20: _itemList = Define.ItemList.None; break;
+        }
+
+        ///////////////////////////////////////////
+        ///나중에 쓸 코드
+        /// ItemStat _itemStat = new ItemStat();
+        // GameObject item = ItemCraateEx(_itemStat, _ItemTable, _StatDict, str);
 
         #endregion
 
-        if (_itemGrade == ItemGrade.RanArti)
+        //_itemGrade = ItemGrade.NoArti;
+        _itemGrade = ItemGrade.RanArti;
+        //_itemGrade = ItemGrade.FickArti;
+
+        ItemStat _itemStat = new ItemStat();
+        _ItemTable = GameManager.Data.helmet_TableDict;
+        _StatDict = GameManager.Data.helmet_randartStatDict;
+        _itemName = "helmet";
+
+        //axe_randartStatDict
+        //axeStatDict
+
+        //ItemTable itemTableDict = null;
 
 
-
-        //string testWord = "axe";
-
-        //int num = AxeCreate();
-        for (int i = 0; i < 23; i++)
+        for (int i = 0; i < 20; i++)
         {
-            //추후 제거할 코드
-
-            
-            axe _axe = GameManager.Data.axeStatDict[1];
-            string NickName =_axe._NickName;
-            GameObject item = GameManager.Resouce.Instantiate($"item/Equip/axe/{NickName}");
-
-
-
-
-            //위에 코드 제거 후 아래 주석 풀어야됨 일단 테스트 용도임
-            //GameObject item = GameManager.Resouce.Instantiate($"Item/Equip/{testWord}/{testWord}{i + 1}");
-            item.name = ($"test");
-            GameManager.Obj.ItemAdd(item);
-            GameManager.Map._mapControll = MapControll.SumItem;
-            sumPos = GameManager.Map.CanSum();
-            
-            Vector3Int itemPos = new Vector3Int()
-            {
-                x = sumPos.x,
-                y = sumPos.y
-            };
-
-            ItemController ic = item.GetOrAddComponent<ItemController>();
-            ic.CellPos = itemPos;
-
+            GameObject item = ItemCraateEx(_itemStat, _ItemTable, _StatDict, _itemName);
         }
 
-    }
 
-
-    // 아이템 테스트용 함수 추후 제거 
-    public glove itemSumTest()
-    {
-        //랜덤아티팩트는 딕셔너리가 다름
-        glove_ItemTable gloveItemTable = GameManager.Data.glove_TableDict["RanArti"];
-
-
-        //glove_ItemTable gloveItemTable= GameManager.Data.glove_TableDict["FirckArti"];
-        //bow_ItemTable bowItemTable = GameManager.Data.bow_TableDict["NoArti"];
-        int startNum = gloveItemTable._startNum;
-        int endNum = gloveItemTable._endNum;
-
-        int random = Random.Range(startNum, endNum + 1);
-
-        //랜덤 아티팩트는 딕셔너리가 다름 리턴값도 변경해야됨, 일단 테스트니까 넘어감
-        //axe_randart axeSumNum = GameManager.Data.axe_randartStatDict[random];
-
-        glove axeSumNum = GameManager.Data.gloveStatDict[random];
-
-        return axeSumNum;
-    }
-
-    // 랜덤 아티팩트 함수 테스트용 추후 제거
-
-    public bow_randart itmeSumTestRandart()
-    {
-        //랜덤아티팩트는 딕셔너리가 다름
-        bow_ItemTable axeItemTable = GameManager.Data.bow_TableDict["RanArti"];
-
-
-
-        //axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["FirckArti"];
-        //axe_ItemTable axeItemTable = GameManager.Data.axe_TableDict["NoArti"];
-        int startNum = axeItemTable._startNum;
-        int endNum = axeItemTable._endNum;
-
-        int random = Random.Range(startNum, endNum + 1);
-
-        //랜덤 아티팩트는 딕셔너리가 다름 리턴값도 변경해야됨, 일단 테스트니까 넘어감
-        bow_randart axeSumNum = GameManager.Data.bow_randartStatDict[random];
-
-        //axe_randart axeSumNum = GameManager.Data.axeStatDict[random];
-
-        return axeSumNum;
     }
 
 
@@ -219,7 +186,6 @@ public class SummonManager
 
 
     }
-
     public void ItemSelect()
     {
         int itemCheck = Random.Range(0, 10);
@@ -228,7 +194,6 @@ public class SummonManager
         else
             ItemEquip();
     }
-
     public void ItemComsum()
     {
         int itemRan = Random.Range(0, 100);
@@ -240,7 +205,6 @@ public class SummonManager
             _itemList = ItemList.Magic;
 
     }
-
     public void ItemEquip()
     {
         int itemRan = Random.Range(0, 12);
@@ -261,7 +225,6 @@ public class SummonManager
                 //case 20: _itemList = Define.ItemList.None; break;
         }
     }
-
     public void ItemGradeCal()
     {
         int ran = Random.Range(1, 101);
@@ -272,419 +235,53 @@ public class SummonManager
         else
             _itemGrade = ItemGrade.NoArti;
     }
-
-
     #region itemCreate
-
-
-    public void ItemCraateEx()
+    //TableDict = axeTableDict, StatDict = axe
+    //기존 딕셔너리로 클래스를 일일히 함수로 만들지 않고 부모클래스로 통합함
+    public GameObject ItemCraateEx(ItemStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, ItemStat> StatDict, string itemName)
     {
-
-    }
-
-
-    public void AxeCreate()
-    {
-        axe_ItemTable axeItemTable = null;
+        ItemTable _itemTableDict = null;
 
         switch(_itemGrade)
         {
             case ItemGrade.NoArti:
-                axeItemTable = GameManager.Data.axe_TableDict["NoArti"];
+                _itemTableDict = TableDict["NoArti"];
                 break;
             case ItemGrade.RanArti:
-                axeItemTable = GameManager.Data.axe_TableDict["RanArti"];
+                _itemTableDict = TableDict["RanArti"];
                 break;
             case ItemGrade.FickArti:
-                axeItemTable = GameManager.Data.axe_TableDict["FirckArti"];
+                _itemTableDict = TableDict["FirckArti"];
                 break;
         }
 
-        int startNum = axeItemTable._startNum; //딕 시작값
-        int endNum = axeItemTable._endNum; //딕 끝값
+        int startNum = _itemTableDict._startNum; //딕 시작값
+        int endNum = _itemTableDict._endNum; //딕 끝값
         int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        string item_name; //리턴용
-        if (_itemGrade == ItemGrade.RanArti)
-        {
-            axe_randart itemNum = GameManager.Data.axe_randartStatDict[random];
-            item_name = itemNum._NickName;
-        }
-        else
-        {
-            axe itemNum = GameManager.Data.axeStatDict[random];
-            item_name = itemNum._NickName;
-        }
-        GameObject item = GameManager.Resouce.Instantiate($"item/Equip/axe/{item_name}");
-    }
-
-    public int BootCreate()
-    {
-        boot_ItemTable bootItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                bootItemTable = GameManager.Data.boot_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                bootItemTable = GameManager.Data.boot_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                bootItemTable = GameManager.Data.boot_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = bootItemTable._startNum; //딕 시작값
-        int endNum = bootItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-
-        //부츠는 랜다트 딕이 없음
-        boot itemNum = GameManager.Data.bootStatDict[random];
-        item_No = itemNum._No;
-
-        return item_No;
-    }
-
-    public int BowCreate()
-    {
-        bow_ItemTable bowItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                bowItemTable = GameManager.Data.bow_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                bowItemTable = GameManager.Data.bow_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                bowItemTable = GameManager.Data.bow_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = bowItemTable._startNum; //딕 시작값
-        int endNum = bowItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-        if (_itemGrade == ItemGrade.RanArti)
-        {
-            bow_randart itemNum = GameManager.Data.bow_randartStatDict[random];
-            item_No = itemNum._No;
-        }
-        else
-        {
-            bow itemNum = GameManager.Data.bowStatDict[random];
-            item_No = itemNum._No;
-        }
-        return item_No;
-    }
-
-    public int GloveCreate()
-    {
-        glove_ItemTable gloveItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                gloveItemTable = GameManager.Data.glove_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                gloveItemTable = GameManager.Data.glove_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                gloveItemTable = GameManager.Data.glove_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = gloveItemTable._startNum; //딕 시작값
-        int endNum = gloveItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-
-        //글러브는 랜다트가 없음
-
-        glove itemNum = GameManager.Data.gloveStatDict[random];
-        item_No = itemNum._No;
+        string nickName; //리턴용
+        ItemStat itemNum = StatDict[random];
+        nickName = itemNum._NickName;
         
-        return item_No;
+        GameObject item = GameManager.Resouce.Instantiate($"item/Equip/{itemName}/{nickName}");
 
+        item.name = (nickName);
+        GameManager.Obj.ItemAdd(item);
+        GameManager.Map._mapControll = MapControll.SumItem;
+        MapManager.SumPos sumPos = new MapManager.SumPos();
+        sumPos = GameManager.Map.CanSum();
+
+        Vector3Int itemPos = new Vector3Int()
+        {
+            x = sumPos.x,
+            y = sumPos.y
+        };
+
+        ItemController ic = item.GetOrAddComponent<ItemController>();
+        ic.CellPos = itemPos;
+        return item;
     }
 
-    public int HelmetCreate()
-    {
-        helmet_ItemTable helmetItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                helmetItemTable = GameManager.Data.helmet_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                helmetItemTable = GameManager.Data.helmet_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                helmetItemTable = GameManager.Data.helmet_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = helmetItemTable._startNum; //딕 시작값
-        int endNum = helmetItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-        if (_itemGrade == ItemGrade.RanArti)
-        {
-            helmet_randart itemNum = GameManager.Data.helmet_randartStatDict[random];
-            item_No = itemNum._No;
-        }
-        else
-        {
-            helmet itemNum = GameManager.Data.helmetStatDict[random];
-            item_No = itemNum._No;
-        }
-        return item_No;
-    }
-
-    public int MaceCreate()
-    {
-        mace_ItemTable maceItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                maceItemTable = GameManager.Data.mace_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                maceItemTable = GameManager.Data.mace_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                maceItemTable = GameManager.Data.mace_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = maceItemTable._startNum; //딕 시작값
-        int endNum = maceItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-        if (_itemGrade == ItemGrade.RanArti)
-        {
-            mace_randart itemNum = GameManager.Data.mace_randartStatDict[random];
-            item_No = itemNum._No;
-        }
-        else
-        {
-            mace itemNum = GameManager.Data.maceStatDict[random];
-            item_No = itemNum._No;
-        }
-        return item_No;
-    }
-
-    public int RingCreate()
-    {
-        ring_ItemTable ringItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                ringItemTable = GameManager.Data.ring_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                ringItemTable = GameManager.Data.ring_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                ringItemTable = GameManager.Data.ring_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = ringItemTable._startNum; //딕 시작값
-        int endNum = ringItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-        if (_itemGrade == ItemGrade.RanArti)
-        {
-            ring_randart itemNum = GameManager.Data.ring_randartStatDict[random];
-            item_No = itemNum._No;
-        }
-        else
-        {
-            ring itemNum = GameManager.Data.ringStatDict[random];
-            item_No = itemNum._No;
-        }
-        return item_No;
-    }
-
-    public int RobeCreate()
-    {
-        robe_ItemTable robeItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                robeItemTable = GameManager.Data.robe_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                robeItemTable = GameManager.Data.robe_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                robeItemTable = GameManager.Data.robe_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = robeItemTable._startNum; //딕 시작값
-        int endNum = robeItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-        if (_itemGrade == ItemGrade.RanArti)
-        {
-            robe_randart itemNum = GameManager.Data.robe_randartStatDict[random];
-            item_No = itemNum._No;
-        }
-        else
-        {
-            robe itemNum = GameManager.Data.robeStatDict[random];
-            item_No = itemNum._No;
-        }
-        return item_No;
-    }
-
-    public int ShieldCreate()
-    {
-        shield_ItemTable shieldItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                shieldItemTable = GameManager.Data.shield_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                shieldItemTable = GameManager.Data.shield_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                shieldItemTable = GameManager.Data.shield_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = shieldItemTable._startNum; //딕 시작값
-        int endNum = shieldItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-
-        shield itemNum = GameManager.Data.shieldStatDict[random];
-        item_No = itemNum._No;
-        
-        return item_No;
-    }
-
-
-    public int SpearCreate()
-    {
-        spear_ItemTable spearItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                spearItemTable = GameManager.Data.spear_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                spearItemTable = GameManager.Data.spear_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                spearItemTable = GameManager.Data.spear_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = spearItemTable._startNum; //딕 시작값
-        int endNum = spearItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-        if (_itemGrade == ItemGrade.RanArti)
-        {
-            spear_randart itemNum = GameManager.Data.spear_randartStatDict[random];
-            item_No = itemNum._No;
-        }
-        else
-        {
-            spear itemNum = GameManager.Data.spearStatDict[random];
-            item_No = itemNum._No;
-        }
-        return item_No;
-    }
-
-
-    public int StaffCreate()
-    {
-        staff_ItemTable staffItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                staffItemTable = GameManager.Data.staff_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                staffItemTable = GameManager.Data.staff_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                staffItemTable = GameManager.Data.staff_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = staffItemTable._startNum; //딕 시작값
-        int endNum = staffItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-
-        staff itemNum = GameManager.Data.staffStatDict[random];
-        item_No = itemNum._No;
-        
-        return item_No;
-    }
-
-    public int SwordCreate()
-    {
-        sword_ItemTable swordItemTable = null;
-
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                swordItemTable = GameManager.Data.sword_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                swordItemTable = GameManager.Data.sword_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                swordItemTable = GameManager.Data.sword_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = swordItemTable._startNum; //딕 시작값
-        int endNum = swordItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-        if (_itemGrade == ItemGrade.RanArti)
-        {
-            sword_randart itemNum = GameManager.Data.sword_randartStatDict[random];
-            item_No = itemNum._No;
-        }
-        else
-        {
-            sword itemNum = GameManager.Data.swordStatDict[random];
-            item_No = itemNum._No;
-        }
-        return item_No;
-    }
-
+/*
     public int PotionCreate()
     {
         potion_ItemTable potionItemTable = null;
@@ -772,7 +369,7 @@ public class SummonManager
 
         return item_No;
     }
-
+*/
 
     #endregion
 }
