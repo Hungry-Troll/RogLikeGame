@@ -117,10 +117,22 @@ public class SummonManager
             //        _StatDict = GameManager.Data.helmetStatDict;
             //    break;
 
-            case ItemList.Mace:
-                break;
-            case ItemList.Ring:
-                break;
+            //case ItemList.Mace:
+            //    _ItemTable = GameManager.Data.mace_TableDict;
+            //    if (_itemGrade == ItemGrade.RanArti)
+            //        _StatDict = GameManager.Data.mace_randartStatDict;
+            //    else
+            //        _StatDict = GameManager.Data.maceStatDict;
+            //    break;
+
+            //case ItemList.Ring:
+            //    _ItemTable = GameManager.Data.ring_TableDict;
+            //    if (_itemGrade == ItemGrade.RanArti)
+            //        _StatDict = GameManager.Data.ring_randartStatDict;
+            //    else
+            //        _StatDict = GameManager.Data.ringStatDict;
+            //    break;
+
             case ItemList.Robe:
                 break;
             case ItemList.Shield:
@@ -142,27 +154,22 @@ public class SummonManager
 
         #endregion
 
-        //_itemGrade = ItemGrade.NoArti;
-        _itemGrade = ItemGrade.RanArti;
+        _itemGrade = ItemGrade.NoArti;
+        //_itemGrade = ItemGrade.RanArti;
         //_itemGrade = ItemGrade.FickArti;
 
         ItemStat _itemStat = new ItemStat();
-        _ItemTable = GameManager.Data.helmet_TableDict;
-        _StatDict = GameManager.Data.helmet_randartStatDict;
-        _itemName = "helmet";
+        _ItemTable = GameManager.Data.robe_TableDict;
+        _StatDict = GameManager.Data.robeStatDict;
+        _itemName = "robe";
 
         //axe_randartStatDict
         //axeStatDict
 
         //ItemTable itemTableDict = null;
 
-
-        for (int i = 0; i < 20; i++)
-        {
-            GameObject item = ItemCraateEx(_itemStat, _ItemTable, _StatDict, _itemName);
-        }
-
-
+        ItemCraateEx(_itemStat, _ItemTable, _StatDict, _itemName);
+      
     }
 
 
@@ -238,10 +245,9 @@ public class SummonManager
     #region itemCreate
     //TableDict = axeTableDict, StatDict = axe
     //기존 딕셔너리로 클래스를 일일히 함수로 만들지 않고 부모클래스로 통합함
-    public GameObject ItemCraateEx(ItemStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, ItemStat> StatDict, string itemName)
+    public void ItemCraateEx(ItemStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, ItemStat> StatDict, string itemName)
     {
         ItemTable _itemTableDict = null;
-
         switch(_itemGrade)
         {
             case ItemGrade.NoArti:
@@ -257,28 +263,55 @@ public class SummonManager
 
         int startNum = _itemTableDict._startNum; //딕 시작값
         int endNum = _itemTableDict._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-        string nickName; //리턴용
-        ItemStat itemNum = StatDict[random];
-        nickName = itemNum._NickName;
-        
-        GameObject item = GameManager.Resouce.Instantiate($"item/Equip/{itemName}/{nickName}");
-
-        item.name = (nickName);
-        GameManager.Obj.ItemAdd(item);
-        GameManager.Map._mapControll = MapControll.SumItem;
-        MapManager.SumPos sumPos = new MapManager.SumPos();
-        sumPos = GameManager.Map.CanSum();
-
-        Vector3Int itemPos = new Vector3Int()
+        //int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
+        if (itemName == "ring")
         {
-            x = sumPos.x,
-            y = sumPos.y
-        };
+            ItemTable _itemTableRandartDict = null;
+            switch (_itemGrade)
+            {
+                case ItemGrade.NoArti:
+                    _itemTableRandartDict = TableDict["NoArti"];
+                    break;
+                case ItemGrade.RanArti:
+                    _itemTableRandartDict = TableDict["RanArti"];
+                    break;
+                case ItemGrade.FickArti:
+                    _itemTableRandartDict = TableDict["FirckArti"];
+                    break;
+            }
 
-        ItemController ic = item.GetOrAddComponent<ItemController>();
-        ic.CellPos = itemPos;
-        return item;
+            int starttemp = _itemTableRandartDict._startNum;
+            int endtemp = _itemTableRandartDict._endNum;
+            // 랜덤 아이콘 추출용 변수가 필요함 
+            //int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
+        }
+
+
+        for (int i = startNum; i < endNum+1; i++)
+        {
+            string nickName; //리턴용
+            ItemStat itemNum = StatDict[i];// 나중에 random으로 수정
+
+            nickName = itemNum._NickName;
+
+            GameObject item = GameManager.Resouce.Instantiate($"item/Equip/{itemName}/{nickName}");
+
+            item.name = (nickName);
+            GameManager.Obj.ItemAdd(item);
+            GameManager.Map._mapControll = MapControll.SumItem;
+            MapManager.SumPos sumPos = new MapManager.SumPos();
+            sumPos = GameManager.Map.CanSum();
+
+            Vector3Int itemPos = new Vector3Int()
+            {
+                x = sumPos.x,
+                y = sumPos.y
+            };
+
+            ItemController ic = item.GetOrAddComponent<ItemController>();
+            ic.CellPos = itemPos;
+            //return item;
+        }
     }
 
 /*
