@@ -99,13 +99,14 @@ public class ItemStatData : ILoader<int, ItemStat>
     }
 }
 
-
-
 [Serializable]
-public class potion : ItemStat
+public class PotionStat : ItemStat
 {
     public int _current_hp;
     public int _current_mp;
+    public int _rage;
+    public int _tree;
+    public int _speed;
     public int _invisible;
     public int _gold;
     public int _Lv;
@@ -113,15 +114,15 @@ public class potion : ItemStat
     public int _turn;
 }
 [Serializable]
-public class potionStatData : ILoader<int, potion>
+public class PotionStatData : ILoader<int, PotionStat>
 {
-    public List<potion> potionData = new List<potion>();
+    public List<PotionStat> itemData = new List<PotionStat>();
 
-    public Dictionary<int, potion> MakeDict()
+    public Dictionary<int, PotionStat> MakeDict()
     {
-        Dictionary<int, potion> dict = new Dictionary<int, potion>();
+        Dictionary<int, PotionStat> dict = new Dictionary<int, PotionStat>();
 
-        foreach (potion stat in potionData)
+        foreach (PotionStat stat in itemData)
             dict.Add(stat._No, stat);
 
         return dict;
@@ -129,17 +130,17 @@ public class potionStatData : ILoader<int, potion>
 }
 
 [Serializable]
-public class scroll : potion { }
+public class scroll : PotionStat { }
 [Serializable]
 public class scrollStatData : ILoader<int, scroll>
 {
-    public List<scroll> scrollData = new List<scroll>();
+    public List<scroll> itemData = new List<scroll>();
 
     public Dictionary<int, scroll> MakeDict()
     {
         Dictionary<int, scroll> dict = new Dictionary<int, scroll>();
 
-        foreach (scroll stat in scrollData)
+        foreach (scroll stat in itemData)
             dict.Add(stat._No, stat);
 
         return dict;

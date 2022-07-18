@@ -19,6 +19,8 @@ public class DataManager
     //아이템 데이터
     public Dictionary<int, PlayerStat> PlayerStatDict { get; private set; } = new Dictionary<int, PlayerStat>();
     public Dictionary<string, MonsterStat> MonsterStatDict { get; private set; } = new Dictionary<string, MonsterStat>();
+    public Dictionary<int, ItemStat> amuletStatDict { get; private set; } = new Dictionary<int, ItemStat>();
+    public Dictionary<int, ItemStat> amulet_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
     public Dictionary<int, ItemStat> axeStatDict { get; private set; } = new Dictionary<int, ItemStat>();
     public Dictionary<int, ItemStat> axe_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
     public Dictionary<int, ItemStat> bootStatDict { get; private set; } = new Dictionary<int, ItemStat>();
@@ -40,7 +42,7 @@ public class DataManager
     public Dictionary<int, ItemStat> swordStatDict { get; private set; } = new Dictionary<int, ItemStat>();
     public Dictionary<int, ItemStat> sword_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
 
-    public Dictionary<int, potion> potionStatDict { get; private set; } = new Dictionary<int, potion>();
+    public Dictionary<int, PotionStat> potionStatDict { get; private set; } = new Dictionary<int, PotionStat>();
     public Dictionary<int, scroll> scrollStatDict { get; private set; } = new Dictionary<int, scroll>();
     public Dictionary<int, magic> magicStatDict { get; private set; } = new Dictionary<int, magic>();
 
@@ -75,6 +77,8 @@ public class DataManager
         //아이템
         PlayerStatDict = LoadJson<PlayerStatData, int, PlayerStat>("Player/PlayerStatData").MakeDict();
         MonsterStatDict = LoadJson<MonsterStatData, string, MonsterStat>("Monster/MonsterStatData").MakeDict();
+        amuletStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/amulet").MakeDict();
+        amulet_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/amulet_randart").MakeDict();
         axeStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/axe").MakeDict();
         axe_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/axe_randart").MakeDict();
         bootStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/boot").MakeDict();
@@ -95,7 +99,7 @@ public class DataManager
         staffStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/staff").MakeDict();
         swordStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/sword").MakeDict();
         sword_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/sword_randart").MakeDict();
-        potionStatDict = LoadJson<potionStatData, int, potion>("Item/potion").MakeDict();
+        potionStatDict = LoadJson<PotionStatData, int, PotionStat>("Item/potion").MakeDict();
         scrollStatDict = LoadJson<scrollStatData, int, scroll>("Item/scroll").MakeDict();
         magicStatDict = LoadJson<magicStatData, int, magic>("Item/magic").MakeDict();
 
