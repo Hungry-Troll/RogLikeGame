@@ -1,29 +1,30 @@
-{
+﻿{
+
   "itemTable": [
     {
       "_No": "NoArti",
-      "_startNum": 1,
-      "_endNum": 4
+      "startNum": 1,
+      "endNum": 3
     },
     {
       "_No": "FirckArti",
-      "_startNum": 14,
-      "_endNum": 14
+      "startNum": 14,
+      "endNum": 14
     },
     {
       "_No": "RanArti",
-      "_startNum": 3,
-      "_endNum": 9
+      "startNum": 4,
+      "endNum": 9
     },
     {
       "_No": "RanArtiOption1",
-      "_startNum": null,
-      "_endNum": null
+      "startNum": null,
+      "endNum": null
     },
     {
       "_No": "RanArtiOption2",
-      "_startNum": null,
-      "_endNum": null
+      "startNum": null,
+      "endNum": null
     }
   ]
 }

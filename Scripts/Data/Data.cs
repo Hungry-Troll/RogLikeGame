@@ -130,17 +130,35 @@ public class PotionStatData : ILoader<int, PotionStat>
 }
 
 [Serializable]
-public class scroll : PotionStat { }
-[Serializable]
-public class scrollStatData : ILoader<int, scroll>
+public class scrollStat
 {
-    public List<scroll> itemData = new List<scroll>();
+    public int _No;
+    public string _Name;
+    public int _cTel;
+    public int _rtel;
+    public int _sum;
+    public int _fear;
+    public int _fog;
+    public int _fireDam;
+    public int _slient;
+    public int _resurrect;
+    public int _amnesia;
+    public int _acquire;
+    public int _avoid;
+    public int _enhance;
+    public int _turn;
+    public int _NickName;
+}
+[Serializable]
+public class scrollStatData : ILoader<int, scrollStat>
+{
+    public List<scrollStat> itemData = new List<scrollStat>();
 
-    public Dictionary<int, scroll> MakeDict()
+    public Dictionary<int, scrollStat> MakeDict()
     {
-        Dictionary<int, scroll> dict = new Dictionary<int, scroll>();
+        Dictionary<int, scrollStat> dict = new Dictionary<int, scrollStat>();
 
-        foreach (scroll stat in itemData)
+        foreach (scrollStat stat in itemData)
             dict.Add(stat._No, stat);
 
         return dict;

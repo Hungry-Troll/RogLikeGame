@@ -78,6 +78,7 @@ public class SummonManager
         Dictionary<string, ItemTable> _ItemTable;
         Dictionary<int, ItemStat> _StatDict; // 아이템용 스텟 딕
         Dictionary<int, PotionStat> _PotionStatDic; // 포션용 스텟 딕
+        PotionStat _potionStat; // 포션용
         string _itemName = null;
 
         #region NextCoding
@@ -190,14 +191,12 @@ public class SummonManager
             //        _StatDict = GameManager.Data.amuletStatDict;
             //    break;  
 
-            //case ItemList.Potion:
-            //    _itemName = "amulet";
-            //    _ItemTable = GameManager.Data.amulet_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.amulet_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.amuletStatDict;
-            //    break;
+            case ItemList.Potion:
+                _itemName = "potion";
+                _potionStat = new PotionStat();
+                _ItemTable = GameManager.Data.potion_TableDict;
+                _PotionStatDic = GameManager.Data.potionStatDict;
+                break;
         }
 
         ///////////////////////////////////////////
@@ -209,7 +208,7 @@ public class SummonManager
 
 
         #region ItemCreateEx
-/*        _itemGrade = ItemGrade.NoArti;
+        _itemGrade = ItemGrade.NoArti;
         //_itemGrade = ItemGrade.RanArti;
         //_itemGrade = ItemGrade.FickArti;
 
@@ -219,17 +218,30 @@ public class SummonManager
         _itemName = "axe";
 
         //아이템 생성 함수
-        ItemCraateEx(_itemStat, _ItemTable, _StatDict, _itemName);*/
+        ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);
         #endregion
 
         // 포션 생성 함수
-        _itemGrade = ItemGrade.RanArti;
-        PotionStat _potionStat = new PotionStat();
+        _itemGrade = ItemGrade.FickArti;
+        _potionStat = new PotionStat();
         _ItemTable = GameManager.Data.potion_TableDict;
         _PotionStatDic = GameManager.Data.potionStatDict;
         _itemName = "potion";
 
-        PotionCraateEx(_potionStat, _ItemTable, _PotionStatDic, _itemName);
+
+        if (_itemName == "potion")
+        {
+            PotionCreateEx(_potionStat, _ItemTable, _PotionStatDic, _itemName);
+        }
+        else if (_itemName == "scroll")
+        {
+            //ScrollCreateEx()
+        }
+        else
+        {
+            ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);
+        }
+        
 
         // 매직 생성 함수
     }
@@ -307,7 +319,7 @@ public class SummonManager
     #region itemCreate
     //TableDict = axeTableDict, StatDict = axe
     //기존 딕셔너리로 클래스를 일일히 함수로 만들지 않고 부모클래스로 통합함
-    public void ItemCraateEx(ItemStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, ItemStat> StatDict, string itemName)
+    public void ItemCreateEx(ItemStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, ItemStat> StatDict, string itemName)
     {
         ItemTable _itemTableDict = null;
         switch(_itemGrade)
@@ -387,7 +399,7 @@ public class SummonManager
         }
     }
 
-    public void PotionCraateEx(PotionStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, PotionStat> StatDict, string itemName)
+    public void PotionCreateEx(PotionStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, PotionStat> StatDict, string itemName)
     {
         ItemTable _itemTableDict = null;
         switch (_itemGrade)
@@ -432,95 +444,52 @@ public class SummonManager
         }
     }
 
-/*
-    public int PotionCreate()
+    public void ScrollCreateEx(PotionStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, PotionStat> StatDict, string itemName)
     {
-        potion_ItemTable potionItemTable = null;
-
+        ItemTable _itemTableDict = null;
         switch (_itemGrade)
         {
             case ItemGrade.NoArti:
-                potionItemTable = GameManager.Data.potion_TableDict["NoArti"];
+                _itemTableDict = TableDict["NoArti"];
                 break;
             case ItemGrade.RanArti:
-                potionItemTable = GameManager.Data.potion_TableDict["RanArti"];
+                _itemTableDict = TableDict["RanArti"];
                 break;
             case ItemGrade.FickArti:
-                potionItemTable = GameManager.Data.potion_TableDict["FirckArti"];
+                _itemTableDict = TableDict["FirckArti"];
                 break;
         }
 
-        int startNum = potionItemTable._startNum; //딕 시작값
-        int endNum = potionItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
+        int startNum = _itemTableDict._startNum; //딕 시작값
+        int endNum = _itemTableDict._endNum; //딕 끝값
+        //int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
 
-        int item_No; //리턴용
-
-        potion itemNum = GameManager.Data.potionStatDict[random];
-        item_No = itemNum._No;
-
-        return item_No;
-    }
-
-
-    public int ScrollCreate()
-    {
-        scroll_ItemTable scrollItemTable = null;
-
-        switch (_itemGrade)
+        for (int i = startNum; i < endNum + 1; i++)
         {
-            case ItemGrade.NoArti:
-                scrollItemTable = GameManager.Data.scroll_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                scrollItemTable = GameManager.Data.scroll_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                scrollItemTable = GameManager.Data.scroll_TableDict["FirckArti"];
-                break;
+            string nickName; //리턴용
+            PotionStat itemNum = StatDict[i];// 나중에 random으로 수정
+            nickName = itemNum._NickName;
+
+            GameObject item = GameManager.Resouce.Instantiate($"item/Consumable/{itemName}/{nickName}");
+
+            item.name = (nickName);
+            GameManager.Obj.ItemAdd(item);
+            GameManager.Map._mapControll = MapControll.SumItem;
+            MapManager.SumPos sumPos = new MapManager.SumPos();
+            sumPos = GameManager.Map.CanSum();
+
+            Vector3Int itemPos = new Vector3Int()
+            {
+                x = sumPos.x,
+                y = sumPos.y
+            };
+
+            ItemController ic = item.GetOrAddComponent<ItemController>();
+            ic.CellPos = itemPos;
         }
-
-        int startNum = scrollItemTable._startNum; //딕 시작값
-        int endNum = scrollItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-
-        scroll itemNum = GameManager.Data.scrollStatDict[random];
-        item_No = itemNum._No;
-
-        return item_No;
     }
 
-    public int MagicCreate()
-    {
-        magic_ItemTable magicItemTable = null;
 
-        switch (_itemGrade)
-        {
-            case ItemGrade.NoArti:
-                magicItemTable = GameManager.Data.magic_TableDict["NoArti"];
-                break;
-            case ItemGrade.RanArti:
-                magicItemTable = GameManager.Data.magic_TableDict["RanArti"];
-                break;
-            case ItemGrade.FickArti:
-                magicItemTable = GameManager.Data.magic_TableDict["FirckArti"];
-                break;
-        }
-
-        int startNum = magicItemTable._startNum; //딕 시작값
-        int endNum = magicItemTable._endNum; //딕 끝값
-        int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
-
-        int item_No; //리턴용
-
-        magic itemNum = GameManager.Data.magicStatDict[random];
-        item_No = itemNum._No;
-
-        return item_No;
-    }
-*/
 
     #endregion
 }
