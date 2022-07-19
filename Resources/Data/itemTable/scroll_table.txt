@@ -3,28 +3,28 @@
   "itemTable": [
     {
       "_No": "NoArti",
-      "startNum": 1,
-      "endNum": 3
+      "_startNum": 1,
+      "_endNum": 3
     },
     {
       "_No": "FirckArti",
-      "startNum": 14,
-      "endNum": 14
+      "_startNum": 14,
+      "_endNum": 14
     },
     {
       "_No": "RanArti",
-      "startNum": 4,
-      "endNum": 9
+      "_startNum": 4,
+      "_endNum": 9
     },
     {
       "_No": "RanArtiOption1",
-      "startNum": null,
-      "endNum": null
+      "_startNum": null,
+      "_endNum": null
     },
     {
       "_No": "RanArtiOption2",
-      "startNum": null,
-      "endNum": null
+      "_startNum": null,
+      "_endNum": null
     }
   ]
 }

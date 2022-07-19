@@ -1,4 +1,5 @@
-{
+﻿{
+
   "magicData": [
     {
       "_No": 1,
@@ -27,7 +28,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Fire6"
+      "_NickName": "magic2",
+      "_icon": "Fire6"
     },
     {
       "_No": 2,
@@ -56,7 +58,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Ice3"
+      "_NickName": "magic3",
+      "_icon": "Ice3"
     },
     {
       "_No": 3,
@@ -85,7 +88,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Sum6"
+      "_NickName": "magic6",
+      "_icon": "Sum6"
     },
     {
       "_No": 4,
@@ -114,7 +118,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Fire1"
+      "_NickName": "magic2",
+      "_icon": "Fire1"
     },
     {
       "_No": 5,
@@ -143,7 +148,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Ice5"
+      "_NickName": "magic3",
+      "_icon": "Ice5"
     },
     {
       "_No": 6,
@@ -172,7 +178,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Venom4"
+      "_NickName": "magic1",
+      "_icon": "Venom4"
     },
     {
       "_No": 7,
@@ -201,7 +208,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "earth4"
+      "_NickName": "magic4",
+      "_icon": "earth4"
     },
     {
       "_No": 8,
@@ -230,7 +238,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Nec5"
+      "_NickName": "magic5",
+      "_icon": "Nec5"
     },
     {
       "_No": 9,
@@ -259,7 +268,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Nec6"
+      "_NickName": "magic5",
+      "_icon": "Nec6"
     },
     {
       "_No": 10,
@@ -288,7 +298,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Sum5"
+      "_NickName": "magic6",
+      "_icon": "Sum5"
     },
     {
       "_No": 11,
@@ -317,7 +328,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Fire5"
+      "_NickName": "magic2",
+      "_icon": "Fire5"
     },
     {
       "_No": 12,
@@ -346,7 +358,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Fire7"
+      "_NickName": "magic2",
+      "_icon": "Fire7"
     },
     {
       "_No": 13,
@@ -375,7 +388,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Fire3"
+      "_NickName": "magic2",
+      "_icon": "Fire3"
     },
     {
       "_No": 14,
@@ -404,7 +418,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Fire4"
+      "_NickName": "magic2",
+      "_icon": "Fire4"
     },
     {
       "_No": 15,
@@ -433,7 +448,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Fire2"
+      "_NickName": "magic2",
+      "_icon": "Fire2"
     },
     {
       "_No": 16,
@@ -462,7 +478,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Ice1"
+      "_NickName": "magic3",
+      "_icon": "Ice1"
     },
     {
       "_No": 17,
@@ -491,7 +508,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Ice2"
+      "_NickName": "magic3",
+      "_icon": "Ice2"
     },
     {
       "_No": 18,
@@ -520,7 +538,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Ice6"
+      "_NickName": "magic3",
+      "_icon": "Ice6"
     },
     {
       "_No": 19,
@@ -549,7 +568,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Ice7"
+      "_NickName": "magic3",
+      "_icon": "Ice7"
     },
     {
       "_No": 20,
@@ -578,7 +598,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Ice8"
+      "_NickName": "magic3",
+      "_icon": "Ice8"
     },
     {
       "_No": 21,
@@ -607,7 +628,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Venom1"
+      "_NickName": "magic1",
+      "_icon": "Venom1"
     },
     {
       "_No": 22,
@@ -636,7 +658,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Venom2"
+      "_NickName": "magic1",
+      "_icon": "Venom2"
     },
     {
       "_No": 23,
@@ -665,7 +688,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Venom3"
+      "_NickName": "magic1",
+      "_icon": "Venom3"
     },
     {
       "_No": 24,
@@ -694,7 +718,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Venom5"
+      "_NickName": "magic1",
+      "_icon": "Venom5"
     },
     {
       "_No": 25,
@@ -723,7 +748,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Venom6"
+      "_NickName": "magic1",
+      "_icon": "Venom6"
     },
     {
       "_No": 26,
@@ -752,7 +778,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "earth5"
+      "_NickName": "magic4",
+      "_icon": "earth5"
     },
     {
       "_No": 27,
@@ -781,7 +808,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "earth1"
+      "_NickName": "magic4",
+      "_icon": "earth1"
     },
     {
       "_No": 28,
@@ -810,7 +838,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "earth2"
+      "_NickName": "magic4",
+      "_icon": "earth2"
     },
     {
       "_No": 29,
@@ -839,7 +868,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "earth3"
+      "_NickName": "magic4",
+      "_icon": "earth3"
     },
     {
       "_No": 30,
@@ -868,7 +898,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Nec1"
+      "_NickName": "magic5",
+      "_icon": "Nec1"
     },
     {
       "_No": 31,
@@ -897,7 +928,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Nec2"
+      "_NickName": "magic5",
+      "_icon": "Nec2"
     },
     {
       "_No": 32,
@@ -926,7 +958,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Nec3"
+      "_NickName": "magic5",
+      "_icon": "Nec3"
     },
     {
       "_No": 33,
@@ -955,7 +988,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Nec4"
+      "_NickName": "magic5",
+      "_icon": "Nec4"
     },
     {
       "_No": 34,
@@ -984,7 +1018,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Sum1"
+      "_NickName": "magic6",
+      "_icon": "Sum1"
     },
     {
       "_No": 35,
@@ -1013,7 +1048,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Sum2"
+      "_NickName": "magic6",
+      "_icon": "Sum2"
     },
     {
       "_No": 36,
@@ -1042,7 +1078,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Sum3"
+      "_NickName": "magic6",
+      "_icon": "Sum3"
     },
     {
       "_No": 37,
@@ -1071,7 +1108,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "Sum4"
+      "_NickName": "magic6",
+      "_icon": "Sum4"
     }
   ]
 }

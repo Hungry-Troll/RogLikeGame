@@ -43,8 +43,8 @@ public class DataManager
     public Dictionary<int, ItemStat> sword_randartStatDict { get; private set; } = new Dictionary<int, ItemStat>();
 
     public Dictionary<int, PotionStat> potionStatDict { get; private set; } = new Dictionary<int, PotionStat>();
-    public Dictionary<int, scrollStat> scrollStatDict { get; private set; } = new Dictionary<int, scrollStat>();
-    public Dictionary<int, magic> magicStatDict { get; private set; } = new Dictionary<int, magic>();
+    public Dictionary<int, ScrollStat> scrollStatDict { get; private set; } = new Dictionary<int, ScrollStat>();
+    public Dictionary<int, MagicStat> magicStatDict { get; private set; } = new Dictionary<int, MagicStat>();
 
     //드랍 테이블
     public Dictionary<string, ItemTable> amulet_TableDict { get; private set; } = new Dictionary<string, ItemTable>();
@@ -100,8 +100,8 @@ public class DataManager
         swordStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/sword").MakeDict();
         sword_randartStatDict = LoadJson<ItemStatData, int, ItemStat>("Item/sword_randart").MakeDict();
         potionStatDict = LoadJson<PotionStatData, int, PotionStat>("Item/potion").MakeDict();
-        scrollStatDict = LoadJson<scrollStatData, int, scrollStat>("Item/scroll").MakeDict();
-        magicStatDict = LoadJson<magicStatData, int, magic>("Item/magic").MakeDict();
+        scrollStatDict = LoadJson<ScrollStatData, int, ScrollStat>("Item/scroll").MakeDict();
+        magicStatDict = LoadJson<MagicStatData, int, MagicStat>("Item/magic").MakeDict();
 
 
 

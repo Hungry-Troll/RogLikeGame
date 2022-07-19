@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class UI_Inven : UI_Scene
 {
-
     enum Buttons
     {
         State_Button,

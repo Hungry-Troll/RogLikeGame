@@ -130,7 +130,7 @@ public class PotionStatData : ILoader<int, PotionStat>
 }
 
 [Serializable]
-public class scrollStat
+public class ScrollStat
 {
     public int _No;
     public string _Name;
@@ -147,18 +147,18 @@ public class scrollStat
     public int _avoid;
     public int _enhance;
     public int _turn;
-    public int _NickName;
+    public string _NickName;
 }
 [Serializable]
-public class scrollStatData : ILoader<int, scrollStat>
+public class ScrollStatData : ILoader<int, ScrollStat>
 {
-    public List<scrollStat> itemData = new List<scrollStat>();
+    public List<ScrollStat> itemData = new List<ScrollStat>();
 
-    public Dictionary<int, scrollStat> MakeDict()
+    public Dictionary<int, ScrollStat> MakeDict()
     {
-        Dictionary<int, scrollStat> dict = new Dictionary<int, scrollStat>();
+        Dictionary<int, ScrollStat> dict = new Dictionary<int, ScrollStat>();
 
-        foreach (scrollStat stat in itemData)
+        foreach (ScrollStat stat in itemData)
             dict.Add(stat._No, stat);
 
         return dict;
@@ -166,7 +166,7 @@ public class scrollStatData : ILoader<int, scrollStat>
 }
 
 [Serializable]
-public class magic 
+public class MagicStat
 {
     public int _No;
     public string _Name;
@@ -195,19 +195,19 @@ public class magic
     public int _accuracy;
     public int _avoid;
     public string _NickName;
-
+    public string _icon;
 }
 
 [Serializable]
-public class magicStatData : ILoader<int, magic>
+public class MagicStatData : ILoader<int, MagicStat>
 {
-    public List<magic> magicData = new List<magic>();
+    public List<MagicStat> magicData = new List<MagicStat>();
 
-    public Dictionary<int, magic> MakeDict()
+    public Dictionary<int, MagicStat> MakeDict()
     {
-        Dictionary<int, magic> dict = new Dictionary<int, magic>();
+        Dictionary<int, MagicStat> dict = new Dictionary<int, MagicStat>();
 
-        foreach (magic stat in magicData)
+        foreach (MagicStat stat in magicData)
             dict.Add(stat._No, stat);
 
         return dict;

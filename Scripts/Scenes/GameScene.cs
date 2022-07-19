@@ -19,7 +19,7 @@ public class GameScene : BaseScene
 
         GameManager.Summon.MonsterCreat();
 
-        GameManager.Summon.ItemCreate();
+        GameManager.Summon.ItemPool();
 
         //UI테스트
         //GameManager.Ui.ShowPopupUI<UI_Button>();

@@ -73,129 +73,152 @@ public class SummonManager
     }
 
 
+    Dictionary<string, ItemTable> _ItemTable;
+    Dictionary<int, ItemStat> _StatDict; // 아이템용 스텟 딕
+    ItemStat _itemStat;
+
+    Dictionary<int, PotionStat> _PotionStatDic; // 포션용 스텟 딕
+    PotionStat _potionStat; // 포션용
+
+    Dictionary<int, ScrollStat> _ScrollStatDic; // 스크롤용 스텟 딕
+    ScrollStat _scrollStat; // 스크롤용
+
+    Dictionary<int, MagicStat> _MagicStatDic; // 스크롤용 스텟 딕
+    MagicStat _magicStat; // 스크롤용
+    string _itemName = null;
+
     public void ItemCreate()
     {
-        Dictionary<string, ItemTable> _ItemTable;
-        Dictionary<int, ItemStat> _StatDict; // 아이템용 스텟 딕
-        Dictionary<int, PotionStat> _PotionStatDic; // 포션용 스텟 딕
-        PotionStat _potionStat; // 포션용
-        string _itemName = null;
 
         #region NextCoding
         switch (_itemList)
         {
             //추후 실제 적용 코드임
 
-            //case ItemList.Axe:
-            //    _itemName = "axe";
-            //    _ItemTable = GameManager.Data.axe_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.axe_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.axeStatDict;
-            //    break;
+            case ItemList.Axe:
+                _itemName = "axe";
+                _ItemTable = GameManager.Data.axe_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.axe_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.axeStatDict;
+                break;
 
-            //case ItemList.Boot:
-            //    _itemName = "boot";
-            //    _ItemTable = GameManager.Data.boot_TableDict;
-            //    _StatDict = GameManager.Data.bootStatDict;
-            //    break;
+            case ItemList.Boot:
+                _itemName = "boot";
+                _ItemTable = GameManager.Data.boot_TableDict;
+                _StatDict = GameManager.Data.bootStatDict;
+                break;
 
-            //case ItemList.Bow:
-            //    _itemName = "Bow";
-            //    _ItemTable = GameManager.Data.bow_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.bow_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.bowStatDict;
-            //    break;
+            case ItemList.Bow:
+                _itemName = "Bow";
+                _ItemTable = GameManager.Data.bow_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.bow_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.bowStatDict;
+                break;
 
-            //case ItemList.Glove:
-            //    _itemName = "glove";
-            //    _ItemTable = GameManager.Data.glove_TableDict;
-            //    _StatDict = GameManager.Data.gloveStatDict;
-            //    break;
+            case ItemList.Glove:
+                _itemName = "glove";
+                _ItemTable = GameManager.Data.glove_TableDict;
+                _StatDict = GameManager.Data.gloveStatDict;
+                break;
 
-            //case ItemList.Helmet:
-            //    _itemName = "helmet";
-            //    _ItemTable = GameManager.Data.helmet_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.helmet_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.helmetStatDict;
-            //    break;
+            case ItemList.Helmet:
+                _itemName = "helmet";
+                _ItemTable = GameManager.Data.helmet_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.helmet_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.helmetStatDict;
+                break;
 
-            //case ItemList.Mace:
-            //    _itemName = "mace";
-            //    _ItemTable = GameManager.Data.mace_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.mace_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.maceStatDict;
-            //    break;
+            case ItemList.Mace:
+                _itemName = "mace";
+                _ItemTable = GameManager.Data.mace_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.mace_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.maceStatDict;
+                break;
 
-            //case ItemList.Ring:
-            //    _itemName = "ring";
-            //    _ItemTable = GameManager.Data.ring_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.ring_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.ringStatDict;
-            //    break;
+            case ItemList.Ring:
+                _itemName = "ring";
+                _ItemTable = GameManager.Data.ring_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.ring_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.ringStatDict;
+                break;
 
-            //case ItemList.Robe:
-            //    _itemName = "Robe";
-            //    _ItemTable = GameManager.Data.robe_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.robe_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.robeStatDict;
-            //    break;
+            case ItemList.Robe:
+                _itemName = "Robe";
+                _ItemTable = GameManager.Data.robe_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.robe_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.robeStatDict;
+                break;
 
-            //case ItemList.Shield:
-            //    _itemName = "shield";
-            //    _ItemTable = GameManager.Data.shield_TableDict;
-            //    _StatDict = GameManager.Data.shieldStatDict;
-            //    break;
+            case ItemList.Shield:
+                _itemName = "shield";
+                _ItemTable = GameManager.Data.shield_TableDict;
+                _StatDict = GameManager.Data.shieldStatDict;
+                break;
 
-            //case ItemList.Spear:
-            //    _itemName = "spear";
-            //    _ItemTable = GameManager.Data.spear_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.spear_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.spearStatDict;
-            //    break;
+            case ItemList.Spear:
+                _itemName = "spear";
+                _ItemTable = GameManager.Data.spear_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.spear_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.spearStatDict;
+                break;
 
-            //case ItemList.Staff:
-            //    _itemName = "staff";
-            //    _ItemTable = GameManager.Data.staff_TableDict;
-            //    _StatDict = GameManager.Data.staffStatDict;
-            //    break;
+            case ItemList.Staff:
+                _itemName = "staff";
+                _ItemTable = GameManager.Data.staff_TableDict;
+                _StatDict = GameManager.Data.staffStatDict;
+                break;
 
-            //case ItemList.Sword:
-            //    _itemName = "sword";
-            //    _ItemTable = GameManager.Data.sword_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.sword_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.swordStatDict;
-            //    break;
+            case ItemList.Sword:
+                _itemName = "sword";
+                _ItemTable = GameManager.Data.sword_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.sword_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.swordStatDict;
+                break;
 
-            //case ItemList.Amulet:
-            //    _itemName = "amulet";
-            //    _ItemTable = GameManager.Data.amulet_TableDict;
-            //    if (_itemGrade == ItemGrade.RanArti)
-            //        _StatDict = GameManager.Data.amulet_randartStatDict;
-            //    else
-            //        _StatDict = GameManager.Data.amuletStatDict;
-            //    break;  
+            case ItemList.Amulet:
+                _itemName = "amulet";
+                _ItemTable = GameManager.Data.amulet_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.amulet_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.amuletStatDict;
+                break;
 
             case ItemList.Potion:
                 _itemName = "potion";
                 _potionStat = new PotionStat();
                 _ItemTable = GameManager.Data.potion_TableDict;
                 _PotionStatDic = GameManager.Data.potionStatDict;
+                break;
+
+            case ItemList.Scroll:
+                _itemName = "scroll";
+                _scrollStat = new ScrollStat();
+                _ItemTable = GameManager.Data.scroll_TableDict;
+                _ScrollStatDic = GameManager.Data.scrollStatDict;
+                break;
+
+            case ItemList.Magic:
+                _itemName = "magic";
+                _magicStat = new MagicStat();
+                _ItemTable = GameManager.Data.magic_TableDict;
+                _MagicStatDic = GameManager.Data.magicStatDict;
                 break;
         }
 
@@ -208,26 +231,18 @@ public class SummonManager
 
 
         #region ItemCreateEx
-        _itemGrade = ItemGrade.NoArti;
+        //_itemGrade = ItemGrade.NoArti;
         //_itemGrade = ItemGrade.RanArti;
         //_itemGrade = ItemGrade.FickArti;
 
-        ItemStat _itemStat = new ItemStat();
-        _ItemTable = GameManager.Data.axe_TableDict;
-        _StatDict = GameManager.Data.axeStatDict;
-        _itemName = "axe";
+        /*        ItemStat _itemStat = new ItemStat();
+                _ItemTable = GameManager.Data.axe_TableDict;
+                _StatDict = GameManager.Data.axeStatDict;
+                _itemName = "axe";
 
-        //아이템 생성 함수
-        ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);
+                //아이템 생성 함수
+                ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);*/
         #endregion
-
-        // 포션 생성 함수
-        _itemGrade = ItemGrade.FickArti;
-        _potionStat = new PotionStat();
-        _ItemTable = GameManager.Data.potion_TableDict;
-        _PotionStatDic = GameManager.Data.potionStatDict;
-        _itemName = "potion";
-
 
         if (_itemName == "potion")
         {
@@ -235,15 +250,17 @@ public class SummonManager
         }
         else if (_itemName == "scroll")
         {
-            //ScrollCreateEx()
+            ScrollCreateEx(_scrollStat, _ItemTable, _ScrollStatDic, _itemName);
+        }
+        else if (_itemName == "magic")
+        {
+            MagicCreateEx(_magicStat, _ItemTable, _MagicStatDic, _itemName);
         }
         else
         {
             ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);
         }
-        
 
-        // 매직 생성 함수
     }
 
 
@@ -255,7 +272,7 @@ public class SummonManager
         //아이템 등급을 결정
         ItemGradeCal();
 
-
+        ItemCreate();
         //아이템 소모품 확률을 어느정도로 할지 생각해야됨 지금은 대충 50%?? 정도 구상
         //플레이어 스킬레벨에 따른 아이템 드랍율도 생각해야됨
 
@@ -444,7 +461,7 @@ public class SummonManager
         }
     }
 
-    public void ScrollCreateEx(PotionStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, PotionStat> StatDict, string itemName)
+    public void ScrollCreateEx(ScrollStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, ScrollStat> StatDict, string itemName)
     {
         ItemTable _itemTableDict = null;
         switch (_itemGrade)
@@ -467,7 +484,52 @@ public class SummonManager
         for (int i = startNum; i < endNum + 1; i++)
         {
             string nickName; //리턴용
-            PotionStat itemNum = StatDict[i];// 나중에 random으로 수정
+            ScrollStat itemNum = StatDict[i];// 나중에 random으로 수정
+            nickName = itemNum._NickName;
+
+            GameObject item = GameManager.Resouce.Instantiate($"item/Consumable/{itemName}/{nickName}");
+
+            item.name = (nickName);
+            GameManager.Obj.ItemAdd(item);
+            GameManager.Map._mapControll = MapControll.SumItem;
+            MapManager.SumPos sumPos = new MapManager.SumPos();
+            sumPos = GameManager.Map.CanSum();
+
+            Vector3Int itemPos = new Vector3Int()
+            {
+                x = sumPos.x,
+                y = sumPos.y
+            };
+
+            ItemController ic = item.GetOrAddComponent<ItemController>();
+            ic.CellPos = itemPos;
+        }
+    }
+
+    public void MagicCreateEx(MagicStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, MagicStat> StatDict, string itemName)
+    {
+        ItemTable _itemTableDict = null;
+        switch (_itemGrade)
+        {
+            case ItemGrade.NoArti:
+                _itemTableDict = TableDict["NoArti"];
+                break;
+            case ItemGrade.RanArti:
+                _itemTableDict = TableDict["RanArti"];
+                break;
+            case ItemGrade.FickArti:
+                _itemTableDict = TableDict["FirckArti"];
+                break;
+        }
+
+        int startNum = _itemTableDict._startNum; //딕 시작값
+        int endNum = _itemTableDict._endNum; //딕 끝값
+        //int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
+
+        for (int i = startNum; i < endNum + 1; i++)
+        {
+            string nickName; //리턴용
+            MagicStat itemNum = StatDict[i];// 나중에 random으로 수정
             nickName = itemNum._NickName;
 
             GameObject item = GameManager.Resouce.Instantiate($"item/Consumable/{itemName}/{nickName}");
