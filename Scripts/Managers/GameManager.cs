@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     public static DataManager Data { get { return Instance._data; } }
 
     #endregion
-
+    #region Core
     SceneManagerEx _scene = new SceneManagerEx();
     ResourceManager _resouce = new ResourceManager();
     TurnManager _Turn = new TurnManager();
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     public static TurnManager TurnM { get { return Instance._Turn; } }
     public static ResourceManager Resouce { get { return Instance._resouce; } }
     public static EventManager evt { get { return Instance._evt; } }
-
+    #endregion
 
     void Awake()
     {
