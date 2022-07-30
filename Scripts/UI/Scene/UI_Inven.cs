@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class UI_Inven : UI_Scene
 {
     //인벤토리좌표관련
-    int[] rPosX;
-    int[] rPosY;
+    List<int> rPosX = new List<int>();
+    List<int> rPosY = new List<int>();
     int rCount;
     GameObject item;
     Vector3 inVec;
@@ -37,8 +37,6 @@ public class UI_Inven : UI_Scene
     public override void Init()
     {
         //인벤토리 좌표 초기화
-        int[] rPosX = new int[23];
-        int[] rPosY = new int[23];
         //int rCount = 23;
 
 
@@ -126,19 +124,20 @@ public class UI_Inven : UI_Scene
     public void InvenArrayF()
     {
         ////인벤토리 아이콘 슬롯 숫자
-        rCount = 8;
+        int rCount = 8;
         ////인벤토리 r트랜스폼 x 좌표
-        rPosX[0] = 45;
-        rPosY[0] = -50;
-        int tmpNum = 0;
+        int x = 45;
+        int y = -50;
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < rCount; j++)
             {
-                rPosX[j] = rPosX[j] - 90;
-                rPosY[j] = rPosY[0] + tmpNum;
+                rPosX.Add(x);
+                rPosY.Add(y);
+                x += 90;
             }
-            tmpNum -= 90;
+            x = 45;
+            y -= 90;
         }
     }
 
