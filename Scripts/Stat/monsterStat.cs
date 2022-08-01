@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mStat : MonoBehaviour
+public class monsterStat : MonoBehaviour
 {
     [SerializeField]
     string _Name = null;

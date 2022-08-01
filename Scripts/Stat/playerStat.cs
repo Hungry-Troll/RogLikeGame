@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pStat : mStat
+public class playerStat : monsterStat
 {
     // 스텟은 추수 컨텐츠에 따라 수정 계속 해야 됨 ex 스킬레벨
 

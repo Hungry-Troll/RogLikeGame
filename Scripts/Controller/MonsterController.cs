@@ -31,7 +31,7 @@ public class MonsterController : CreatureController
     [SerializeField]
     float _serchRage = 5.0f; //몬스터 서칭 범위
 
-    mStat ms;
+    monsterStat ms;
 
     protected override void Init()
     {
@@ -45,7 +45,7 @@ public class MonsterController : CreatureController
         //스텟 초기값 대입
         //string myName = gameObject.name; //이름으로 json 파일에서 불러옴
         MonsterStat msDict = GameManager.Data.MonsterStatDict["Orc"];
-        ms = GetComponent<mStat>();
+        ms = GetComponent<monsterStat>();
         ms.MinAttack = msDict.attack;
         ms.MaxHp = msDict.hp;
         ms.CurrentHp = ms.MaxHp;
@@ -329,7 +329,7 @@ public class MonsterController : CreatureController
     IEnumerator CoStartSkill()
     {
         // 피격판정
-            ms = GetComponent<mStat>();
+            ms = GetComponent<monsterStat>();
         int damage = UnityEngine.Random.Range(ms.MinAttack, ms.MaxAttack + 1);
             PlayerController pc = _target.GetComponent<PlayerController>();
             pc.OnDamaged(damage);
@@ -351,7 +351,7 @@ public class MonsterController : CreatureController
 
     public override void OnDamaged(int damage)
     {
-        ms = GetComponent<mStat>();
+        ms = GetComponent<monsterStat>();
         ms.CurrentHp -= damage;
         Debug.Log("몬스터 hp" + ms.CurrentHp);
     }

@@ -59,7 +59,7 @@ public class ItemController : CreatureController
             destPos = _target.GetComponent<CreatureController>().CellPos;
             State = CreatureState.Dead;
         }
-
+        ////아이템 먹었을 때
         if (position == destPos)
         {
             //추후 사운드 추가 해야 됨

@@ -12,6 +12,9 @@ public class SummonManager
     //아이템 리스트
     public ItemList _itemList = ItemList.None;
 
+    //아이템 스텟용
+    iStat itemStat;
+
     public void Init()
     {
         //플레이어 스텟처럼 지금의 데이터를 가지고 와서 저장할
@@ -411,8 +414,35 @@ public class SummonManager
             };
 
             ItemController ic = item.GetOrAddComponent<ItemController>();
+            itemStat = item.GetOrAddComponent<iStat>();
+            //////////////////////////////////////////////////////////////
+            ///아이템 스텟 넣는 코드
+            ///
+
+            itemStat.No = StatDict[i]._No;
+            itemStat.Name = StatDict[i]._Name;
+            itemStat.max_hp = StatDict[i]._max_hp;
+            itemStat.max_mp = StatDict[i]._max_mp;
+            itemStat.min_attack = StatDict[i]._min_attack;
+            itemStat.max_attack = StatDict[i]._max_attack;
+            itemStat.defence = StatDict[i]._defence;
+            itemStat.min_magic_attack = StatDict[i]._min_magic_attack;
+            itemStat.max_magic_attack = StatDict[i]._max_magic_attack;
+            itemStat.fire_res = StatDict[i]._fire_res;
+            itemStat.cold_res = StatDict[i]._cold_res;
+            itemStat.earth_res = StatDict[i]._earth_res;
+            itemStat.dark_res = StatDict[i]._dark_res;
+            itemStat.poison_res = StatDict[i]._poison_res;
+            itemStat.accuracy = StatDict[i]._accuracy;
+            itemStat.avoid = StatDict[i]._avoid;
+            itemStat.str_limit = StatDict[i]._str_limit;
+            itemStat.dex_limit = StatDict[i]._dex_limit;
+            itemStat.int_limit = StatDict[i]._int_limit;
+            itemStat.Hand = StatDict[i]._Hand;
+            itemStat.enhance_limit = StatDict[i]._enhance_limit;
+            itemStat.NickName = StatDict[i]._NickName;
+
             ic.CellPos = itemPos;
-            //return item;
         }
     }
 
@@ -551,6 +581,32 @@ public class SummonManager
         }
     }
 
+
+    public void itemStatIn(Dictionary<int, ItemStat> StatDict)
+    {
+        //itemStat.No = StatDict[i]._No;
+        //itemStat.Name = StatDict[i]._Name;
+        //itemStat.max_hp = StatDict[i]._max_hp;
+        //itemStat.max_mp = StatDict[i]._max_mp;
+        //itemStat.min_attack = StatDict[i]._min_attack;
+        //itemStat.max_attack = StatDict[i]._max_attack;
+        //itemStat.defence = StatDict[i]._defence;
+        //itemStat.min_magic_attack = StatDict[i]._min_magic_attack;
+        //itemStat.max_magic_attack = StatDict[i]._max_magic_attack;
+        //itemStat.fire_res = StatDict[i]._fire_res;
+        //itemStat.cold_res = StatDict[i]._cold_res;
+        //itemStat.earth_res = StatDict[i]._earth_res;
+        //itemStat.dark_res = StatDict[i]._dark_res;
+        //itemStat.poison_res = StatDict[i]._poison_res;
+        //itemStat.accuracy = StatDict[i]._accuracy;
+        //itemStat.avoid = StatDict[i]._avoid;
+        //itemStat.str_limit = StatDict[i]._str_limit;
+        //itemStat.dex_limit = StatDict[i]._dex_limit;
+        //itemStat.int_limit = StatDict[i]._int_limit;
+        //itemStat.Hand = StatDict[i]._Hand;
+        //itemStat.enhance_limit = StatDict[i]._enhance_limit;
+        //itemStat.NickName = StatDict[i]._NickName;
+    }
 
 
     #endregion

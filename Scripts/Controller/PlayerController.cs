@@ -16,7 +16,7 @@ public class PlayerController : CreatureController
     Coroutine _coSkill;
     Coroutine _coArrow;
 
-    pStat ps;
+    playerStat ps;
 
     //int Level;
 
@@ -32,7 +32,7 @@ public class PlayerController : CreatureController
 
         //나중에 레벨에 따라서 불러오는 값을 변경해야 될 수 있음 Init에 해야되나??
         PlayerStat psDict = GameManager.Data.PlayerStatDict[1];
-        ps = GetComponent<pStat>();
+        ps = GetComponent<playerStat>();
         ps.MaxHp = psDict.hp;
         ps.CurrentHp = ps.MaxHp;
         ps.MinAttack = psDict.attack;
@@ -234,7 +234,7 @@ public class PlayerController : CreatureController
         GameObject go = GameManager.Obj.Find(GetFrontCellPos());
         if (go != null)
         {
-            pStat ps = GetComponent<pStat>();
+            playerStat ps = GetComponent<playerStat>();
             int damage = UnityEngine.Random.Range(ps.MinAttack, ps.MaxAttack + 1);
             MonsterController mc = go.GetComponent<MonsterController>();
             mc.OnDamaged(damage);
@@ -255,7 +255,7 @@ public class PlayerController : CreatureController
 
     public override void OnDamaged(int damage)
     {
-        pStat ps = GetComponent<pStat>();
+        playerStat ps = GetComponent<playerStat>();
         ps.CurrentHp -= damage;
         Debug.Log("플레이어 hp :" + ps.CurrentHp);
     }

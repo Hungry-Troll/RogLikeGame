@@ -39,7 +39,6 @@ public class UI_Inven : UI_Scene
         //인벤토리 좌표 초기화
         //int rCount = 23;
 
-
         base.Init();
         Bind<GameObject>(typeof(GameObjects));
         Bind<Button>(typeof(Buttons));
@@ -58,35 +57,27 @@ public class UI_Inven : UI_Scene
         ///////////인벤토리 위치 정렬코드
         InvenArrayF();
         //추후 실제 인벤토리 정보를 참고해서 인벤토리를 만들어야 함
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 24; i++)
         {
 
-            int random = Random.Range(0, 2);
+            int random = Random.Range(0, 3);
             if (random == 1)
             {
                 item = GameManager.Ui.MakeSubItme<UI_Inven_Item>(parent: gridPanel.transform).gameObject;
             }
-            else
+            else if (random == 2)
             {
                 item = GameManager.Ui.MakeSubItme<UI_Inven_Ring>(parent: gridPanel.transform).gameObject;
+            }
+            else
+            {
+                item = GameManager.Ui.MakeSubItme<UI_Inven_Empty>(parent: gridPanel.transform).gameObject;
             }
             inVec.Set(rPosX[i], rPosY[i], 0);
             item.GetComponent<RectTransform>().anchoredPosition = inVec;
             //GameObject item = GameManager.Ui.MakeSubItme<UI_Inven_Item>(parent : gridPanel.transform).gameObject;
             /*UI_Inven_Item invenItem = item.GetOrAddComponent<UI_Inven_Item>();
             invenItem.SetInfo($"집행검{ i}번");*/
-        }
-
-        for (int i = 0; i < 18; i++)
-        {
-                GameObject item = GameManager.Ui.MakeSubItme<UI_Inven_Empty>(parent: gridPanel.transform).gameObject;
-
-            //GameObject item = GameManager.Ui.MakeSubItme<UI_Inven_Item>(parent : gridPanel.transform).gameObject;
-            /*UI_Inven_Item invenItem = item.GetOrAddComponent<UI_Inven_Item>();
-            invenItem.SetInfo($"집행검{ i}번");*/
-            inVec.Set(rPosX[i], rPosY[i], 0);
-            item.GetComponent<RectTransform>().anchoredPosition = inVec;
-
         }
     }
 
