@@ -8,7 +8,6 @@ public class SummonManager
 {
     //아이템 등급 구분용
     public ItemGrade _itemGrade = ItemGrade.NoArti;
-
     //아이템 리스트
     public ItemList _itemList = ItemList.None;
 
@@ -16,6 +15,7 @@ public class SummonManager
     iStat itemStat;
     pStat potionStat;
     sStat scrollStat;
+    mStat magicStat;
 
     public void Init()
     {
@@ -95,7 +95,7 @@ public class SummonManager
     public void ItemCreate()
     {
         //테스트 코드
-        _itemList = ItemList.Scroll;
+        _itemList = ItemList.Magic;
         #region NextCoding
         switch (_itemList)
         {
@@ -341,7 +341,7 @@ public class SummonManager
 
         //테스트 코드
 
-        _itemGrade = ItemGrade.FickArti;
+        _itemGrade = ItemGrade.NoArti;
     }
     #region itemCreate
     //TableDict = axeTableDict, StatDict = axe
@@ -638,7 +638,39 @@ public class SummonManager
             };
 
             ItemController ic = item.GetOrAddComponent<ItemController>();
+            magicStat = item.GetOrAddComponent<mStat>();
             ic.CellPos = itemPos;
+            //////////////////////////////////////////////////////////////
+            ///아이템 스텟 넣는 코드
+            ///
+            magicStat.No = StatDict[i]._No;
+            magicStat.Name = StatDict[i]._Name;
+            magicStat.base_damage = StatDict[i]._base_damage;
+            magicStat.max_damage = StatDict[i]._max_damage;
+            magicStat.reach = StatDict[i]._reach;
+            magicStat.range = StatDict[i]._range;
+            magicStat.type = StatDict[i]._type;
+            magicStat.mp_consume = StatDict[i]._mp_consume;
+            magicStat.property = StatDict[i]._property;
+            magicStat.skill_level = StatDict[i]._skill_level;
+            magicStat.turn = StatDict[i]._turn;
+            magicStat.effect = StatDict[i]._effect;
+            magicStat.max_hp = StatDict[i]._max_hp;
+            magicStat.max_mp = StatDict[i]._max_mp;
+            magicStat.min_attack = StatDict[i]._min_attack;
+            magicStat.max_attack = StatDict[i]._max_attack;
+            magicStat.defence = StatDict[i]._defence;
+            magicStat.min_magic_attack = StatDict[i]._min_magic_attack;
+            magicStat.max_magic_attack = StatDict[i]._max_magic_attack;
+            magicStat.fire_res = StatDict[i]._fire_res;
+            magicStat.cold_res = StatDict[i]._cold_res;
+            magicStat.earth_res = StatDict[i]._earth_res;
+            magicStat.dark_res = StatDict[i]._dark_res;
+            magicStat.poison_res = StatDict[i]._poison_res;
+            magicStat.accuracy = StatDict[i]._accuracy;
+            magicStat.avoid = StatDict[i]._avoid;
+            magicStat.NickName = StatDict[i]._NickName;
+            magicStat.icon = StatDict[i]._icon;
         }
     }
 

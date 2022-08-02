@@ -19,12 +19,14 @@ public class GameManager : MonoBehaviour
     UIManager _ui = new UIManager();
     SummonManager _summon = new SummonManager();
     DataManager _data = new DataManager();
+    InvenManager _inven = new InvenManager();
 
     public static MapManager Map { get { return Instance._map; } }
     public static ObjectManager Obj { get { return Instance._obj; } }
     public static UIManager Ui { get { return Instance._ui; } }
     public static SummonManager Summon { get { return Instance._summon; } }
     public static DataManager Data { get { return Instance._data; } }
+    public static InvenManager Inven { get { return Instance._inven; } }
 
     #endregion
     #region Core
