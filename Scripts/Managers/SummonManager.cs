@@ -14,6 +14,8 @@ public class SummonManager
 
     //아이템 스텟용
     iStat itemStat;
+    pStat potionStat;
+    sStat scrollStat;
 
     public void Init()
     {
@@ -92,7 +94,8 @@ public class SummonManager
 
     public void ItemCreate()
     {
-
+        //테스트 코드
+        _itemList = ItemList.Scroll;
         #region NextCoding
         switch (_itemList)
         {
@@ -335,6 +338,10 @@ public class SummonManager
             _itemGrade = ItemGrade.RanArti;
         else
             _itemGrade = ItemGrade.NoArti;
+
+        //테스트 코드
+
+        _itemGrade = ItemGrade.FickArti;
     }
     #region itemCreate
     //TableDict = axeTableDict, StatDict = axe
@@ -487,7 +494,40 @@ public class SummonManager
             };
 
             ItemController ic = item.GetOrAddComponent<ItemController>();
+            potionStat = item.GetOrAddComponent<pStat>();
             ic.CellPos = itemPos;
+
+            //////////////////////////////////////////////////////////////
+            ///아이템 스텟 넣는 코드
+            ///
+            potionStat.No = StatDict[i]._No;
+            potionStat.Name = StatDict[i]._Name;
+            potionStat.max_hp = StatDict[i]._max_hp;
+            potionStat.current_hp = StatDict[i]._current_hp;
+            potionStat.max_mp = StatDict[i]._max_mp;
+            potionStat.current_mp = StatDict[i]._current_mp;
+            potionStat.min_attack = StatDict[i]._min_attack;
+            potionStat.max_attack = StatDict[i]._max_attack;
+            potionStat.defence = StatDict[i]._defence;
+            potionStat.min_magic_attack = StatDict[i]._min_magic_attack;
+            potionStat.max_magic_attack = StatDict[i]._max_magic_attack;
+            potionStat.fire_res = StatDict[i]._fire_res;
+            potionStat.cold_res = StatDict[i]._cold_res;
+            potionStat.earth_res = StatDict[i]._earth_res;
+            potionStat.dark_res = StatDict[i]._dark_res;
+            potionStat.poison_res = StatDict[i]._poison_res;
+            potionStat.accuracy = StatDict[i]._accuracy;
+            potionStat.avoid = StatDict[i]._avoid;
+            potionStat.rage = StatDict[i]._rage;
+            potionStat.tree = StatDict[i]._tree;
+            potionStat.speed = StatDict[i]._speed;
+            potionStat.invisible = StatDict[i]._invisible;
+            potionStat.gold = StatDict[i]._gold;
+            potionStat.Lv = StatDict[i]._Lv;
+            potionStat.enhance = StatDict[i]._enhance;
+            potionStat.noMove = StatDict[i]._noMove;
+            potionStat.turn = StatDict[i]._turn;
+            potionStat.NickName = StatDict[i]._NickName;
         }
     }
 
@@ -532,7 +572,28 @@ public class SummonManager
             };
 
             ItemController ic = item.GetOrAddComponent<ItemController>();
+            scrollStat = item.GetOrAddComponent<sStat>();
             ic.CellPos = itemPos;
+
+            //////////////////////////////////////////////////////////////
+            ///아이템 스텟 넣는 코드
+            ///
+            scrollStat.No = StatDict[i]._No;
+            scrollStat.Name = StatDict[i]._Name;
+            scrollStat.cTel = StatDict[i]._cTel;
+            scrollStat.rTel = StatDict[i]._rtel;
+            scrollStat.Sum = StatDict[i]._sum;
+            scrollStat.fear = StatDict[i]._fear;
+            scrollStat.fog = StatDict[i]._fog;
+            scrollStat.fireDam = StatDict[i]._fireDam;
+            scrollStat.slient = StatDict[i]._slient;
+            scrollStat.resurrect = StatDict[i]._resurrect;
+            scrollStat.amnesia = StatDict[i]._amnesia;
+            scrollStat.acquire = StatDict[i]._acquire;
+            scrollStat.avoid = StatDict[i]._avoid;
+            scrollStat.enhance = StatDict[i]._enhance;
+            scrollStat.turn = StatDict[i]._turn;
+            scrollStat.NickName = StatDict[i]._NickName;
         }
     }
 
@@ -581,32 +642,6 @@ public class SummonManager
         }
     }
 
-
-    public void itemStatIn(Dictionary<int, ItemStat> StatDict)
-    {
-        //itemStat.No = StatDict[i]._No;
-        //itemStat.Name = StatDict[i]._Name;
-        //itemStat.max_hp = StatDict[i]._max_hp;
-        //itemStat.max_mp = StatDict[i]._max_mp;
-        //itemStat.min_attack = StatDict[i]._min_attack;
-        //itemStat.max_attack = StatDict[i]._max_attack;
-        //itemStat.defence = StatDict[i]._defence;
-        //itemStat.min_magic_attack = StatDict[i]._min_magic_attack;
-        //itemStat.max_magic_attack = StatDict[i]._max_magic_attack;
-        //itemStat.fire_res = StatDict[i]._fire_res;
-        //itemStat.cold_res = StatDict[i]._cold_res;
-        //itemStat.earth_res = StatDict[i]._earth_res;
-        //itemStat.dark_res = StatDict[i]._dark_res;
-        //itemStat.poison_res = StatDict[i]._poison_res;
-        //itemStat.accuracy = StatDict[i]._accuracy;
-        //itemStat.avoid = StatDict[i]._avoid;
-        //itemStat.str_limit = StatDict[i]._str_limit;
-        //itemStat.dex_limit = StatDict[i]._dex_limit;
-        //itemStat.int_limit = StatDict[i]._int_limit;
-        //itemStat.Hand = StatDict[i]._Hand;
-        //itemStat.enhance_limit = StatDict[i]._enhance_limit;
-        //itemStat.NickName = StatDict[i]._NickName;
-    }
 
 
     #endregion
