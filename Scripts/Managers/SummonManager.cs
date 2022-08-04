@@ -95,7 +95,7 @@ public class SummonManager
     public void ItemCreate()
     {
         //테스트 코드
-        _itemList = ItemList.Magic;
+        _itemList = ItemList.Bow;
         #region NextCoding
         switch (_itemList)
         {
@@ -264,6 +264,23 @@ public class SummonManager
         }
         else
         {
+            //귀찮아서 만든 테스트 코드
+/*            for (int i = 0; i < 3; i++)
+            {
+                switch(i)
+                {
+                    case 0:
+                        _itemGrade = ItemGrade.NoArti;
+                        break;
+                    case 1:
+                        _itemGrade = ItemGrade.RanArti;
+                        break;
+                    case 2:
+                        _itemGrade = ItemGrade.FickArti;
+                        break;
+                }
+                ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);
+            }*/
             ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);
         }
 
@@ -341,13 +358,17 @@ public class SummonManager
 
         //테스트 코드
 
-        _itemGrade = ItemGrade.NoArti;
+        _itemGrade = ItemGrade.RanArti;
     }
     #region itemCreate
     //TableDict = axeTableDict, StatDict = axe
     //기존 딕셔너리로 클래스를 일일히 함수로 만들지 않고 부모클래스로 통합함
     public void ItemCreateEx(ItemStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, ItemStat> StatDict, string itemName)
     {
+        //아이템 부모만들기 위한 임시 코드 나중에 지울수도 있음
+        GameObject go = new GameObject();
+        go.name = _itemGrade.ToString();
+
         ItemTable _itemTableDict = null;
         switch(_itemGrade)
         {
@@ -407,7 +428,7 @@ public class SummonManager
             }
             
             GameObject item = GameManager.Resouce.Instantiate($"item/Equip/{itemName}/{nickName}");
-
+            item.transform.SetParent(go.transform);
             item.name = (nickName);
             GameManager.Obj.ItemAdd(item);
             GameManager.Map._mapControll = MapControll.SumItem;

@@ -70,7 +70,7 @@ public class ItemController : CreatureController
             GameObject.Destroy(effect);
             GameManager.Obj.ItemRemove(gameObject);
             GameManager.Resouce.Destroy(gameObject);
-            
+            //GameManager.Inven
         }
 
     }

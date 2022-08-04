@@ -57,7 +57,7 @@ public class UI_Inven : UI_Scene
         ///////////인벤토리 위치 정렬코드
         InvenArrayF();
         //추후 실제 인벤토리 정보를 참고해서 인벤토리를 만들어야 함
-        for (int i = 0; i < 24; i++)
+        for (int i = 0; i < 12; i++)
         {
 
             int random = Random.Range(0, 3);
@@ -114,26 +114,23 @@ public class UI_Inven : UI_Scene
 
     public void InvenArrayF()
     {
-        ////인벤토리 아이콘 슬롯 숫자
-        int rCount = 8;
+        ////인벤토리 아이콘 슬롯 가로 숫자
+        int rCount = 6;
         ////인벤토리 r트랜스폼 x 좌표
-        int x = 45;
-        int y = -50;
-        for (int i = 0; i < 3; i++)
+        int x = 44;
+        int y = -60;
+        for (int i = 0; i < 2; i++)
         {
             for (int j = 0; j < rCount; j++)
             {
                 rPosX.Add(x);
                 rPosY.Add(y);
-                x += 90;
+                x += 120;
             }
-            x = 45;
-            y -= 90;
+            x = 44;
+            y -= 120;
         }
     }
-
-
-
 }
 
 
