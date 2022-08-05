@@ -94,8 +94,7 @@ public class SummonManager
 
     public void ItemCreate()
     {
-        //테스트 코드
-        _itemList = ItemList.Bow;
+
         #region NextCoding
         switch (_itemList)
         {
@@ -267,7 +266,7 @@ public class SummonManager
             //귀찮아서 만든 테스트 코드
 /*            for (int i = 0; i < 3; i++)
             {
-                switch(i)
+                switch (i)
                 {
                     case 0:
                         _itemGrade = ItemGrade.NoArti;
@@ -295,7 +294,24 @@ public class SummonManager
         //아이템 등급을 결정
         ItemGradeCal();
 
-        ItemCreate();
+        _itemList = ItemList.Helmet;
+        for (int i = 0; i < 3; i++)
+        {
+            if (i == 0)
+            {
+                _itemGrade = ItemGrade.NoArti;
+            }
+            else if (i == 1)
+            {
+                _itemGrade = ItemGrade.RanArti;
+            }
+            else if (i == 2)
+            {
+                _itemGrade = ItemGrade.FickArti;
+            }
+            ItemCreate();
+        }
+        
         //아이템 소모품 확률을 어느정도로 할지 생각해야됨 지금은 대충 50%?? 정도 구상
         //플레이어 스킬레벨에 따른 아이템 드랍율도 생각해야됨
 
@@ -355,10 +371,6 @@ public class SummonManager
             _itemGrade = ItemGrade.RanArti;
         else
             _itemGrade = ItemGrade.NoArti;
-
-        //테스트 코드
-
-        _itemGrade = ItemGrade.RanArti;
     }
     #region itemCreate
     //TableDict = axeTableDict, StatDict = axe
