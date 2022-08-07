@@ -234,7 +234,6 @@ public class SummonManager
 
         #endregion
 
-
         #region ItemCreateEx
         //_itemGrade = ItemGrade.NoArti;
         //_itemGrade = ItemGrade.RanArti;
@@ -293,8 +292,8 @@ public class SummonManager
         ItemSelect();
         //아이템 등급을 결정
         ItemGradeCal();
-
-        _itemList = ItemList.Helmet;
+        //테스트 코드
+        _itemList = ItemList.Sword;
         for (int i = 0; i < 3; i++)
         {
             if (i == 0)
@@ -320,8 +319,6 @@ public class SummonManager
         //특히 랜다트 쪽은 버그가 날 수 있음 주의
 
         // 확률에 따라서 노멀 // 랜다트 // 픽다트 나옴
-
-
     }
     public void ItemSelect()
     {

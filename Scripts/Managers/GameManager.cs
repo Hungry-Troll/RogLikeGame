@@ -67,7 +67,6 @@ public class GameManager : MonoBehaviour
             s_instance = go.GetComponent<GameManager>();
         }
 
-
         s_instance._data.Init();
         s_instance._Turn.Init();
 

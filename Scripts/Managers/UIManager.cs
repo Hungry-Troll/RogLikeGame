@@ -24,7 +24,7 @@ public class UIManager
 
     public void SetCanvase(GameObject go, bool sort = true)
     {
-        Canvas canvas = Util.GetOrAddComponent < Canvas>(go);
+        Canvas canvas = Util.GetOrAddComponent <Canvas>(go);
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
         //overrideSorting = 부모가 어떤값이건 sort오더를 가짐
         canvas.overrideSorting = true;
@@ -56,7 +56,6 @@ public class UIManager
 
     public T ShowSceneUI<T>(string name = null) where T : UI_Scene
     {
-
         if (string.IsNullOrEmpty(name))
             name = typeof(T).Name;
 
