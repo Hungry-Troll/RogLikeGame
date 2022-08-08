@@ -262,23 +262,6 @@ public class SummonManager
         }
         else
         {
-            //귀찮아서 만든 테스트 코드
-/*            for (int i = 0; i < 3; i++)
-            {
-                switch (i)
-                {
-                    case 0:
-                        _itemGrade = ItemGrade.NoArti;
-                        break;
-                    case 1:
-                        _itemGrade = ItemGrade.RanArti;
-                        break;
-                    case 2:
-                        _itemGrade = ItemGrade.FickArti;
-                        break;
-                }
-                ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);
-            }*/
             ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);
         }
 
@@ -293,7 +276,7 @@ public class SummonManager
         //아이템 등급을 결정
         ItemGradeCal();
         //테스트 코드
-        _itemList = ItemList.Sword;
+        _itemList = ItemList.Potion;
         for (int i = 0; i < 3; i++)
         {
             if (i == 0)
@@ -421,7 +404,14 @@ public class SummonManager
             //int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
         }
 
+        // 링 체크용 임시 
+/*        if ((itemName == "ring" && _itemGrade != ItemGrade.FickArti) || (itemName == "amulet" && _itemGrade != ItemGrade.FickArti))
+        {
+            startNum = starttemp;
+            endNum = endtemp;
+        }*/
 
+        ;
         for (int i = startNum; i < endNum+1; i++)
         {
             string nickName; //리턴용
@@ -437,7 +427,7 @@ public class SummonManager
             }
             
             GameObject item = GameManager.Resouce.Instantiate($"item/Equip/{itemName}/{nickName}");
-            item.transform.SetParent(go.transform);
+            item.transform.SetParent(go.transform);//부모설정 임시코드
             item.name = (nickName);
             GameManager.Obj.ItemAdd(item);
             GameManager.Map._mapControll = MapControll.SumItem;
@@ -485,6 +475,10 @@ public class SummonManager
 
     public void PotionCreateEx(PotionStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, PotionStat> StatDict, string itemName)
     {
+        //아이템 부모만들기 위한 임시 코드 나중에 지울수도 있음
+        GameObject go = new GameObject();
+        go.name = _itemGrade.ToString();
+
         ItemTable _itemTableDict = null;
         switch (_itemGrade)
         {
@@ -510,7 +504,7 @@ public class SummonManager
             nickName = itemNum._NickName;
 
             GameObject item = GameManager.Resouce.Instantiate($"item/Consumable/{itemName}/{nickName}");
-
+            item.transform.SetParent(go.transform);//부모설정 임시코드
             item.name = (nickName);
             GameManager.Obj.ItemAdd(item);
             GameManager.Map._mapControll = MapControll.SumItem;
