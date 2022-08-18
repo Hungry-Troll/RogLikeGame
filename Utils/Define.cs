@@ -17,9 +17,11 @@ public class Define
     public enum ItemList
     {
         Axe,
+        Armor,
         Amulet,
         Boot,
         Bow,
+        Etc,
         Glove,
         Helmet,
         Mace,

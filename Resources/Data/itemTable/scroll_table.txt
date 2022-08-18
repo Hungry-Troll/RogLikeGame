@@ -8,13 +8,13 @@
     },
     {
       "_No": "FirckArti",
-      "_startNum": 14,
+      "_startNum": 13,
       "_endNum": 14
     },
     {
       "_No": "RanArti",
       "_startNum": 4,
-      "_endNum": 9
+      "_endNum": 12
     },
     {
       "_No": "RanArtiOption1",

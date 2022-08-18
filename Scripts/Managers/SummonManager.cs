@@ -16,6 +16,7 @@ public class SummonManager
     pStat potionStat;
     sStat scrollStat;
     mStat magicStat;
+    eStat etcStat;
 
     public void Init()
     {
@@ -71,10 +72,8 @@ public class SummonManager
             x = sumPos.x,
             y = sumPos.y
         };
-
         PlayerController pc = player.GetComponent<PlayerController>();
         pc.CellPos = playerPos;
-
     }
 
 
@@ -88,13 +87,18 @@ public class SummonManager
     Dictionary<int, ScrollStat> _ScrollStatDic; // 스크롤용 스텟 딕
     ScrollStat _scrollStat; // 스크롤용
 
-    Dictionary<int, MagicStat> _MagicStatDic; // 스크롤용 스텟 딕
-    MagicStat _magicStat; // 스크롤용
+    Dictionary<int, MagicStat> _MagicStatDic; // 마법용 스텟 딕
+    MagicStat _magicStat; // 마법용
+
+    Dictionary<int, EtcStat> _EtcStatDic; // 기타용 스텟 딕
+    EtcStat _etcStat; // 기타용
+
     string _itemName = null;
+
+    
 
     public void ItemCreate()
     {
-
         #region NextCoding
         switch (_itemList)
         {
@@ -107,6 +111,15 @@ public class SummonManager
                     _StatDict = GameManager.Data.axe_randartStatDict;
                 else
                     _StatDict = GameManager.Data.axeStatDict;
+                break;
+
+            case ItemList.Armor:
+                _itemName = "armor";
+                _ItemTable = GameManager.Data.armor_TableDict;
+                if (_itemGrade == ItemGrade.RanArti)
+                    _StatDict = GameManager.Data.armor_randartStatDict;
+                else
+                    _StatDict = GameManager.Data.armorStatDict;
                 break;
 
             case ItemList.Boot:
@@ -122,6 +135,12 @@ public class SummonManager
                     _StatDict = GameManager.Data.bow_randartStatDict;
                 else
                     _StatDict = GameManager.Data.bowStatDict;
+                break;
+
+            case ItemList.Etc:
+                _itemName = "etc";
+                _ItemTable = GameManager.Data.etc_TableDict;
+                _EtcStatDic = GameManager.Data.etcStatDict;
                 break;
 
             case ItemList.Glove:
@@ -260,11 +279,14 @@ public class SummonManager
         {
             MagicCreateEx(_magicStat, _ItemTable, _MagicStatDic, _itemName);
         }
-        else
+        else if (_itemName == "etc")
+        {
+            EtcCreateEx(_etcStat, _ItemTable, _EtcStatDic, _itemName);
+        }
+        else 
         {
             ItemCreateEx(_itemStat, _ItemTable, _StatDict, _itemName);
         }
-
     }
 
 
@@ -276,7 +298,7 @@ public class SummonManager
         //아이템 등급을 결정
         ItemGradeCal();
         //테스트 코드
-        _itemList = ItemList.Potion;
+        _itemList = ItemList.Axe;
         for (int i = 0; i < 3; i++)
         {
             if (i == 0)
@@ -293,15 +315,12 @@ public class SummonManager
             }
             ItemCreate();
         }
-        
         //아이템 소모품 확률을 어느정도로 할지 생각해야됨 지금은 대충 50%?? 정도 구상
         //플레이어 스킬레벨에 따른 아이템 드랍율도 생각해야됨
-
         //당장은 장비 구현만 우선 해보고 장비 능력치 잘 들어가는지 체크 해볼 것
         //구현만 하고 테스트는 모든 장비를 다 하나씩 불러와서 해야됨 그때는 아이템 풀로 하지말고 하드코딩
         //특히 랜다트 쪽은 버그가 날 수 있음 주의
-
-        // 확률에 따라서 노멀 // 랜다트 // 픽다트 나옴
+        //확률에 따라서 노멀 // 랜다트 // 픽다트 나옴
     }
     public void ItemSelect()
     {
@@ -320,7 +339,6 @@ public class SummonManager
             _itemList = ItemList.Scroll;
         else
             _itemList = ItemList.Magic;
-
     }
     public void ItemEquip()
     {
@@ -403,7 +421,6 @@ public class SummonManager
             // 랜덤 아이콘 추출용 변수가 필요함 
             //int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
         }
-
         // 링 체크용 임시 
 /*        if ((itemName == "ring" && _itemGrade != ItemGrade.FickArti) || (itemName == "amulet" && _itemGrade != ItemGrade.FickArti))
         {
@@ -411,7 +428,6 @@ public class SummonManager
             endNum = endtemp;
         }*/
 
-        ;
         for (int i = startNum; i < endNum+1; i++)
         {
             string nickName; //리턴용
@@ -468,6 +484,7 @@ public class SummonManager
             itemStat.Hand = StatDict[i]._Hand;
             itemStat.enhance_limit = StatDict[i]._enhance_limit;
             itemStat.NickName = StatDict[i]._NickName;
+            itemStat.comment = StatDict[i]._comment;
 
             ic.CellPos = itemPos;
         }
@@ -552,11 +569,16 @@ public class SummonManager
             potionStat.noMove = StatDict[i]._noMove;
             potionStat.turn = StatDict[i]._turn;
             potionStat.NickName = StatDict[i]._NickName;
+            potionStat.comment = StatDict[i]._comment;
         }
     }
 
     public void ScrollCreateEx(ScrollStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, ScrollStat> StatDict, string itemName)
     {
+        //아이템 부모만들기 위한 임시 코드 나중에 지울수도 있음
+        GameObject go = new GameObject();
+        go.name = _itemGrade.ToString();
+
         ItemTable _itemTableDict = null;
         switch (_itemGrade)
         {
@@ -582,7 +604,7 @@ public class SummonManager
             nickName = itemNum._NickName;
 
             GameObject item = GameManager.Resouce.Instantiate($"item/Consumable/{itemName}/{nickName}");
-
+            item.transform.SetParent(go.transform);//부모설정 임시코드
             item.name = (nickName);
             GameManager.Obj.ItemAdd(item);
             GameManager.Map._mapControll = MapControll.SumItem;
@@ -618,11 +640,16 @@ public class SummonManager
             scrollStat.enhance = StatDict[i]._enhance;
             scrollStat.turn = StatDict[i]._turn;
             scrollStat.NickName = StatDict[i]._NickName;
+            scrollStat.comment = StatDict[i]._comment;
         }
     }
 
     public void MagicCreateEx(MagicStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, MagicStat> StatDict, string itemName)
     {
+        //아이템 부모만들기 위한 임시 코드 나중에 지울수도 있음
+        GameObject go = new GameObject();
+        go.name = _itemGrade.ToString();
+
         ItemTable _itemTableDict = null;
         switch (_itemGrade)
         {
@@ -648,7 +675,7 @@ public class SummonManager
             nickName = itemNum._NickName;
 
             GameObject item = GameManager.Resouce.Instantiate($"item/Consumable/{itemName}/{nickName}");
-
+            item.transform.SetParent(go.transform);//부모설정 임시코드
             item.name = (nickName);
             GameManager.Obj.ItemAdd(item);
             GameManager.Map._mapControll = MapControll.SumItem;
@@ -695,10 +722,70 @@ public class SummonManager
             magicStat.avoid = StatDict[i]._avoid;
             magicStat.NickName = StatDict[i]._NickName;
             magicStat.icon = StatDict[i]._icon;
+            magicStat.comment = StatDict[i]._comment;
         }
     }
 
+    public void EtcCreateEx(EtcStat _itemStat, Dictionary<string, ItemTable> TableDict, Dictionary<int, EtcStat> StatDict, string itemName)
+    {
+        //아이템 부모만들기 위한 임시 코드 나중에 지울수도 있음
+        GameObject go = new GameObject();
+        go.name = _itemGrade.ToString();
 
+        ItemTable _itemTableDict = null;
+        switch (_itemGrade)
+        {
+            case ItemGrade.NoArti:
+                _itemTableDict = TableDict["NoArti"];
+                break;
+            case ItemGrade.RanArti:
+                _itemTableDict = TableDict["RanArti"];
+                break;
+            case ItemGrade.FickArti:
+                _itemTableDict = TableDict["FirckArti"];
+                break;
+        }
+
+        int startNum = _itemTableDict._startNum; //딕 시작값
+        int endNum = _itemTableDict._endNum; //딕 끝값
+        //int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
+
+        for (int i = startNum; i < endNum + 1; i++)
+        {
+            string nickName; //리턴용
+            EtcStat itemNum = StatDict[i];// 나중에 random으로 수정
+            nickName = itemNum._NickName;
+
+            GameObject item = GameManager.Resouce.Instantiate($"item/Consumable/{itemName}/{nickName}");
+
+            item.transform.SetParent(go.transform);//부모설정 임시코드
+            item.name = (nickName);
+            GameManager.Obj.ItemAdd(item);
+            GameManager.Map._mapControll = MapControll.SumItem;
+            MapManager.SumPos sumPos = new MapManager.SumPos();
+            sumPos = GameManager.Map.CanSum();
+
+            Vector3Int itemPos = new Vector3Int()
+            {
+                x = sumPos.x,
+                y = sumPos.y
+            };
+
+            ItemController ic = item.GetOrAddComponent<ItemController>();
+            etcStat = item.GetOrAddComponent<eStat>();
+            ic.CellPos = itemPos;
+            //////////////////////////////////////////////////////////////
+            ///아이템 스텟 넣는 코드
+            ///
+            etcStat.No = StatDict[i]._No;
+            etcStat.Name = StatDict[i]._Name;
+            etcStat.Sum = StatDict[i]._sum;
+            etcStat.magic = StatDict[i]._magic;
+            etcStat.gold = StatDict[i]._gold;
+            etcStat.NickName = StatDict[i]._NickName;
+            etcStat.comment = StatDict[i]._comment;
+        }
+    }
 
     #endregion
 }

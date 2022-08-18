@@ -50,7 +50,8 @@ public class iStat : MonoBehaviour
     int _enhance_limit;
     [SerializeField]
     string _NickName;
-
+    [SerializeField]
+    string _comment;
 
     public int No { get { return _No; } set { _No = value; } }
     public string Name { get { return _Name; } set { _Name = value; } }
@@ -75,5 +76,6 @@ public class iStat : MonoBehaviour
     public int Hand { get { return _Hand; } set { _Hand = value; } }
     public int enhance_limit { get { return _enhance_limit; } set { _enhance_limit = value; } }
     public string NickName { get { return _NickName; } set { _NickName = value; } }
+    public string comment { get { return _comment; } set { _comment = value; } }
 
 }

@@ -60,7 +60,8 @@ public class pStat : MonoBehaviour
     int _turn;
     [SerializeField]
     string _NickName;
-
+    [SerializeField]
+    string _comment;
 
     public int No { get { return _No; } set { _No = value; } }
     public string Name { get { return _Name; } set { _Name = value; } }
@@ -90,5 +91,5 @@ public class pStat : MonoBehaviour
     public int noMove { get { return _noMove; } set { _noMove = value; } }
     public int turn { get { return _turn; } set { _turn = value; } }
     public string NickName { get { return _NickName; } set { _NickName = value; } }
-
+    public string comment { get { return _comment; } set { _comment = value; } }
 }

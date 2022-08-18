@@ -36,8 +36,6 @@ public class PlayerController : CreatureController
         ps.MaxHp = psDict.hp;
         ps.CurrentHp = ps.MaxHp;
         ps.MinAttack = psDict.attack;
-
-
     }
     protected override void UpdateController()
     {

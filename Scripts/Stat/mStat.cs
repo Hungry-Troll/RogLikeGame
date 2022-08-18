@@ -60,6 +60,8 @@ public class mStat : MonoBehaviour
     string _NickName;
     [SerializeField]
     string _icon;
+    [SerializeField]
+    string _comment;
 
 
 
@@ -91,4 +93,5 @@ public class mStat : MonoBehaviour
     public int avoid { get { return _avoid; } set { _avoid = value; } }
     public string NickName { get { return _NickName; } set { _NickName = value; } }
     public string icon { get { return _icon; } set { _icon = value; } }
+    public string comment { get { return _comment; } set { _comment = value; } }
 }

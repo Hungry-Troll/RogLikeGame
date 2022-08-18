@@ -1,4 +1,5 @@
-﻿{
+{
+
   "itemData": [
     {
       "_No": 1,
@@ -28,7 +29,8 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 1,
-      "_NickName": "CurePotion"
+      "_NickName": "CurePotion",
+      "_comment": "상태이상을 회복한다."
     },
     {
       "_No": 2,
@@ -58,11 +60,12 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 1,
-      "_NickName": "HealingPotion"
+      "_NickName": "HealingPotion",
+      "_comment": "체력을 회복한다."
     },
     {
       "_No": 3,
-      "_Name": "마나 회복 물약",
+      "_Name": "마력 회복 물약",
       "_max_hp": null,
       "_current_hp": null,
       "_max_mp": null,
@@ -88,7 +91,8 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 1,
-      "_NickName": "ManaPotion"
+      "_NickName": "ManaPotion",
+      "_comment": "마력을 회복한다."
     },
     {
       "_No": 4,
@@ -118,7 +122,8 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 15,
-      "_NickName": "InvisibilityPotion"
+      "_NickName": "InvisibilityPotion",
+      "_comment": "투명하게 변신한다."
     },
     {
       "_No": 5,
@@ -148,7 +153,8 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 20,
-      "_NickName": "PowPotion"
+      "_NickName": "PowPotion",
+      "_comment": "분노에 휩싸여 순간적으로 강해진다."
     },
     {
       "_No": 6,
@@ -178,7 +184,8 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 20,
-      "_NickName": "ResPotion"
+      "_NickName": "ResPotion",
+      "_comment": "마법저항력이 높아진다."
     },
     {
       "_No": 7,
@@ -208,7 +215,8 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 15,
-      "_NickName": "speedPotion"
+      "_NickName": "speedPotion",
+      "_comment": "속도가 증가한다."
     },
     {
       "_No": 8,
@@ -238,7 +246,8 @@
       "_enhance": null,
       "_noMove": 1,
       "_turn": 20,
-      "_NickName": "TreePotion"
+      "_NickName": "TreePotion",
+      "_comment": "나무로 변신한다."
     },
     {
       "_No": 9,
@@ -268,7 +277,8 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 1,
-      "_NickName": "IntPotion"
+      "_NickName": "IntPotion",
+      "_comment": "마법 공격력이 증가한다."
     },
     {
       "_No": 10,
@@ -298,7 +308,8 @@
       "_enhance": null,
       "_noMove": null,
       "_turn": 1,
-      "_NickName": "LvUpPotion"
+      "_NickName": "LvUpPotion",
+      "_comment": "레벨이 오른다."
     }
   ]
 }

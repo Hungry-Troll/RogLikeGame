@@ -81,6 +81,7 @@ public class ItemStat
     public int _Hand;
     public int _enhance_limit;
     public string _NickName;
+    public string _comment;
 }// 상속으로 넘겨줌 나머지는 구분용
 
 [Serializable]
@@ -148,6 +149,7 @@ public class ScrollStat
     public int _enhance;
     public int _turn;
     public string _NickName;
+    public string _comment;
 }
 [Serializable]
 public class ScrollStatData : ILoader<int, ScrollStat>
@@ -196,6 +198,7 @@ public class MagicStat
     public int _avoid;
     public string _NickName;
     public string _icon;
+    public string _comment;
 }
 
 [Serializable]
@@ -214,6 +217,34 @@ public class MagicStatData : ILoader<int, MagicStat>
     }
 }
 
+
+[Serializable]
+public class EtcStat
+{
+    public int _No;
+    public string _Name;
+    public int _sum;
+    public int _magic;
+    public int _gold;
+    public string _NickName;
+    public string _comment;
+}
+
+[Serializable]
+public class EtcStatData : ILoader<int, EtcStat>
+{
+    public List<EtcStat> etcData = new List<EtcStat>();
+
+    public Dictionary<int, EtcStat> MakeDict()
+    {
+        Dictionary<int, EtcStat> dict = new Dictionary<int, EtcStat>();
+
+        foreach (EtcStat stat in etcData)
+            dict.Add(stat._No, stat);
+
+        return dict;
+    }
+}
 
 //이하 드랍테이블
 

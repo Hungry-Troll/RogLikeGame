@@ -1,6 +1,5 @@
 ﻿{
-
-  "magicData": [
+  "magicData":[
     {
       "_No": 1,
       "_Name": "화염 폭풍",
@@ -29,11 +28,12 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic2",
-      "_icon": "Fire6"
+      "_icon": "Fire6",
+      "_comment": "거대한 화염 폭풍을 일으킨다."
     },
     {
       "_No": 2,
-      "_Name": "얼음 폭풍",
+      "_Name": "냉기 폭풍",
       "_base_damage": 40,
       "_max_damage": 200,
       "_reach": 5,
@@ -59,7 +59,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic3",
-      "_icon": "Ice3"
+      "_icon": "Ice3",
+      "_comment": "거대한 냉기 폭풍을 일으킨다."
     },
     {
       "_No": 3,
@@ -89,7 +90,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic6",
-      "_icon": "Sum6"
+      "_icon": "Sum6",
+      "_comment": "대악마를 소환한다."
     },
     {
       "_No": 4,
@@ -119,7 +121,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic2",
-      "_icon": "Fire1"
+      "_icon": "Fire1",
+      "_comment": "화염창을 적에게 발사한다."
     },
     {
       "_No": 5,
@@ -149,7 +152,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic3",
-      "_icon": "Ice5"
+      "_icon": "Ice5",
+      "_comment": "얼음창을 적에게 발사한다."
     },
     {
       "_No": 6,
@@ -179,7 +183,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic1",
-      "_icon": "Venom4"
+      "_icon": "Venom4",
+      "_comment": "거대한 맹독 폭풍을 일으킨다."
     },
     {
       "_No": 7,
@@ -209,7 +214,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic4",
-      "_icon": "earth4"
+      "_icon": "earth4",
+      "_comment": "수정창을 적에게 발사한다."
     },
     {
       "_No": 8,
@@ -239,7 +245,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic5",
-      "_icon": "Nec5"
+      "_icon": "Nec5",
+      "_comment": "적에게 저주를 건다."
     },
     {
       "_No": 9,
@@ -269,7 +276,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic5",
-      "_icon": "Nec6"
+      "_icon": "Nec6",
+      "_comment": "강력한 악마로 변신을 한다."
     },
     {
       "_No": 10,
@@ -299,7 +307,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic6",
-      "_icon": "Sum5"
+      "_icon": "Sum5",
+      "_comment": "악마를 소환한다."
     },
     {
       "_No": 11,
@@ -329,7 +338,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic2",
-      "_icon": "Fire5"
+      "_icon": "Fire5",
+      "_comment": "작은 불꽃으로 적을 공격한다."
     },
     {
       "_No": 12,
@@ -359,11 +369,12 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic2",
-      "_icon": "Fire7"
+      "_icon": "Fire7",
+      "_comment": "화염 화살로 적을 공격한다."
     },
     {
       "_No": 13,
-      "_Name": "화염의 검",
+      "_Name": "화염의 힘",
       "_base_damage": 10,
       "_max_damage": 10,
       "_reach": 0,
@@ -389,11 +400,12 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic2",
-      "_icon": "Fire3"
+      "_icon": "Fire3",
+      "_comment": "무기에 화염의 힘을 더한다."
     },
     {
       "_No": 14,
-      "_Name": "화염 구",
+      "_Name": "화염구",
       "_base_damage": 20,
       "_max_damage": 80,
       "_reach": 4,
@@ -419,7 +431,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic2",
-      "_icon": "Fire4"
+      "_icon": "Fire4",
+      "_comment": "화염구로 적을 공격한다."
     },
     {
       "_No": 15,
@@ -449,11 +462,12 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic2",
-      "_icon": "Fire2"
+      "_icon": "Fire2",
+      "_comment": "화염 벽을 만든다."
     },
     {
       "_No": 16,
-      "_Name": "얼음 갑옷",
+      "_Name": "냉기 갑옷",
       "_base_damage": 10,
       "_max_damage": 10,
       "_reach": 0,
@@ -479,11 +493,12 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic3",
-      "_icon": "Ice1"
+      "_icon": "Ice1",
+      "_comment": "갑옷에 냉기를 더한다."
     },
     {
       "_No": 17,
-      "_Name": "얼음의 손길",
+      "_Name": "냉기의 손길",
       "_base_damage": 10,
       "_max_damage": 10,
       "_reach": 0,
@@ -509,7 +524,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic3",
-      "_icon": "Ice2"
+      "_icon": "Ice2",
+      "_comment": "냉기를 이용해서 적을 공격한다"
     },
     {
       "_No": 18,
@@ -539,7 +555,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic3",
-      "_icon": "Ice6"
+      "_icon": "Ice6",
+      "_comment": "냉기의 힘으로 체력을 회복한다."
     },
     {
       "_No": 19,
@@ -569,7 +586,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic3",
-      "_icon": "Ice7"
+      "_icon": "Ice7",
+      "_comment": "차가운 냉기로 적을 얼린다."
     },
     {
       "_No": 20,
@@ -599,7 +617,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic3",
-      "_icon": "Ice8"
+      "_icon": "Ice8",
+      "_comment": "얼음 화살로 적을 공격한다."
     },
     {
       "_No": 21,
@@ -629,7 +648,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic1",
-      "_icon": "Venom1"
+      "_icon": "Venom1",
+      "_comment": "독침으로 적을 공격한다."
     },
     {
       "_No": 22,
@@ -659,7 +679,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic1",
-      "_icon": "Venom2"
+      "_icon": "Venom2",
+      "_comment": "둥그런 맹독으로 적을 공격한다."
     },
     {
       "_No": 23,
@@ -689,7 +710,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic1",
-      "_icon": "Venom3"
+      "_icon": "Venom3",
+      "_comment": "무기에 맹독을 바른다."
     },
     {
       "_No": 24,
@@ -719,7 +741,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic1",
-      "_icon": "Venom5"
+      "_icon": "Venom5",
+      "_comment": "맹독으로 만든 폭탄을 터트려서 공격한다."
     },
     {
       "_No": 25,
@@ -749,7 +772,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic1",
-      "_icon": "Venom6"
+      "_icon": "Venom6",
+      "_comment": "넓은 범위에 맹독 구름을 소환한다."
     },
     {
       "_No": 26,
@@ -779,7 +803,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic4",
-      "_icon": "earth5"
+      "_icon": "earth5",
+      "_comment": "작은 모래 바람으로 적을 공격한다."
     },
     {
       "_No": 27,
@@ -809,7 +834,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic4",
-      "_icon": "earth1"
+      "_icon": "earth1",
+      "_comment": "암석 화살로 적을 공격한다."
     },
     {
       "_No": 28,
@@ -839,7 +865,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic4",
-      "_icon": "earth2"
+      "_icon": "earth2",
+      "_comment": "적을 마비 시킨다."
     },
     {
       "_No": 29,
@@ -869,7 +896,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic4",
-      "_icon": "earth3"
+      "_icon": "earth3",
+      "_comment": "단단한 석상으로 변신한다."
     },
     {
       "_No": 30,
@@ -899,7 +927,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic5",
-      "_icon": "Nec1"
+      "_icon": "Nec1",
+      "_comment": "해골을 소환한다."
     },
     {
       "_No": 31,
@@ -929,7 +958,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic5",
-      "_icon": "Nec2"
+      "_icon": "Nec2",
+      "_comment": "사악한 기운으로 적을 공격한다."
     },
     {
       "_No": 32,
@@ -959,7 +989,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic5",
-      "_icon": "Nec3"
+      "_icon": "Nec3",
+      "_comment": "좀비를 소환한다."
     },
     {
       "_No": 33,
@@ -989,7 +1020,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic5",
-      "_icon": "Nec4"
+      "_icon": "Nec4",
+      "_comment": "언데드에게 강력한 공격을 한다."
     },
     {
       "_No": 34,
@@ -1019,7 +1051,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic6",
-      "_icon": "Sum1"
+      "_icon": "Sum1",
+      "_comment": "작은 동물을 소환한다."
     },
     {
       "_No": 35,
@@ -1049,7 +1082,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic6",
-      "_icon": "Sum2"
+      "_icon": "Sum2",
+      "_comment": "늑대를 소환한다."
     },
     {
       "_No": 36,
@@ -1079,7 +1113,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic6",
-      "_icon": "Sum3"
+      "_icon": "Sum3",
+      "_comment": "코끼리를 소환한다."
     },
     {
       "_No": 37,
@@ -1109,7 +1144,8 @@
       "_accuracy": null,
       "_avoid": null,
       "_NickName": "magic6",
-      "_icon": "Sum4"
+      "_icon": "Sum4",
+      "_comment": "요정을 소환한다."
     }
   ]
 }
