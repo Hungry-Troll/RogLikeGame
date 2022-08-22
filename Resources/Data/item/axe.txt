@@ -1,5 +1,5 @@
 ﻿{
-  "itemData": [
+  "itemData" : [
     {
       "_No": 1,
       "_Name": "돌도끼",
@@ -23,7 +23,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "axe1"
+      "_NickName": "axe1",
+      "_comment": "돌로 만든 도끼."
     },
     {
       "_No": 2,
@@ -48,7 +49,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "axe4"
+      "_NickName": "axe4",
+      "_comment": "평범한 작은 도끼."
     },
     {
       "_No": 3,
@@ -73,7 +75,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "axe2"
+      "_NickName": "axe2",
+      "_comment": "군인들이 사용하는 도끼."
     },
     {
       "_No": 4,
@@ -98,7 +101,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "axe3"
+      "_NickName": "axe3",
+      "_comment": "전투도끼를 강화한 도끼."
     },
     {
       "_No": 5,
@@ -123,7 +127,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "axe5"
+      "_NickName": "axe5",
+      "_comment": "양날이 달린 도끼"
     },
     {
       "_No": 6,
@@ -148,7 +153,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "axe8"
+      "_NickName": "axe8",
+      "_comment": "커다란 양날이 달린 도끼."
     },
     {
       "_No": 7,
@@ -173,7 +179,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "axe12"
+      "_NickName": "axe12",
+      "_comment": "처형인이 사용하는 거대한 도끼."
     },
     {
       "_No": 8,
@@ -198,7 +205,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "axe6"
+      "_NickName": "axe6",
+      "_comment": "전투도끼를 강화한 푸른빛의 도끼."
     },
     {
       "_No": 9,
@@ -223,7 +231,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "axe10"
+      "_NickName": "axe10",
+      "_comment": "커다란 양날이 달린 푸른빛의 도끼."
     },
     {
       "_No": 10,
@@ -248,57 +257,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "axe11"
-    },
-    {
-      "_No": 11,
-      "_Name": "base_item",
-      "_max_hp": 1,
-      "_max_mp": 7,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_dex_limit": null,
-      "_int_limit": null,
-      "_Hand": null,
-      "_enhance_limit": null,
-      "_NickName": ""
-    },
-    {
-      "_No": 12,
-      "_Name": "pick_dart",
-      "_max_hp": 8,
-      "_max_mp": 10,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_dex_limit": null,
-      "_int_limit": null,
-      "_Hand": null,
-      "_enhance_limit": null,
-      "_NickName": ""
+      "_NickName": "axe11",
+      "_comment": "커다란 양날이 달린 붉은빛의 도끼."
     }
   ]
 }
