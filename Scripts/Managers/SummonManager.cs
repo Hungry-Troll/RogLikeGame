@@ -298,7 +298,7 @@ public class SummonManager
         //아이템 등급을 결정
         ItemGradeCal();
         //테스트 코드
-        _itemList = ItemList.Bow;
+        _itemList = ItemList.Mace;
         for (int i = 0; i < 3; i++)
         {
             if (i == 0)

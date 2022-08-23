@@ -303,8 +303,6 @@ public class MapManager
                         continue;
                 }
 
-                
-                
                 // 이미 방문한 곳이면 스킵
                 if (closed[next.Y, next.X])
                     continue;
@@ -322,8 +320,6 @@ public class MapManager
                 parent[next.Y, next.X] = new Pos(node.Y, node.X);
                 count++;
             }
-
-            
         }
         return CalcCellPathFromParent(parent, dest, count);
     }

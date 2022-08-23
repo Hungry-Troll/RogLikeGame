@@ -1,8 +1,8 @@
 ﻿{
-  "itemData": [
+  "itemData" : [
     {
       "_No": 1,
-      "_Name": "철투구",
+      "_Name": "철 투구",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -22,11 +22,12 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "helmet1"
+      "_NickName": "helmet1",
+      "_comment": "철로 만든 투구."
     },
     {
       "_No": 2,
-      "_Name": "기사도 투구",
+      "_Name": "기사 투구",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -46,11 +47,12 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "helmet2"
+      "_NickName": "helmet2",
+      "_comment": "기사가 사용하는 투구."
     },
     {
       "_No": 3,
-      "_Name": "대장 기사 투구",
+      "_Name": "기사단장 투구",
       "_max_hp": 20,
       "_max_mp": null,
       "_min_attack": null,
@@ -70,7 +72,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "helmet4"
+      "_NickName": "helmet4",
+      "_comment": "기사단장이 사용하는 투구."
     },
     {
       "_No": 4,
@@ -94,7 +97,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "helmet5"
+      "_NickName": "helmet5",
+      "_comment": "황금으로 만든 투구."
     },
     {
       "_No": 5,
@@ -118,7 +122,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "helmet6"
+      "_NickName": "helmet6",
+      "_comment": "돌로만든 고대의 가면."
     },
     {
       "_No": 6,
@@ -142,11 +147,12 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "helmet7"
+      "_NickName": "helmet7",
+      "_comment": "이상한 모양의 금테."
     },
     {
       "_No": 7,
-      "_Name": "전쟁광의 투구",
+      "_Name": "투사의 투구",
       "_max_hp": 20,
       "_max_mp": null,
       "_min_attack": 10,
@@ -166,7 +172,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "helmet11"
+      "_NickName": "helmet11",
+      "_comment": "투지가 상승하는 투구."
     },
     {
       "_No": 8,
@@ -190,7 +197,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "helmet13"
+      "_NickName": "helmet13",
+      "_comment": "코볼트킹이 사용하는 왕관."
     },
     {
       "_No": 9,
@@ -214,7 +222,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 5,
-      "_NickName": "helmet8"
+      "_NickName": "helmet8",
+      "_comment": "마술사가 사용하는 모자."
     },
     {
       "_No": 10,
@@ -238,7 +247,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 5,
-      "_NickName": "helmet9"
+      "_NickName": "helmet9",
+      "_comment": "요리사가 사용하는 모자."
     },
     {
       "_No": 11,
@@ -262,7 +272,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 5,
-      "_NickName": "helmet12"
+      "_NickName": "helmet12",
+      "_comment": "광대가 사용하는 모자."
     },
     {
       "_No": 12,
@@ -286,7 +297,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 5,
-      "_NickName": "helmet14"
+      "_NickName": "helmet14",
+      "_comment": "마법사가 사용하는 모자."
     },
     {
       "_No": 13,
@@ -310,7 +322,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 5,
-      "_NickName": "helmet16"
+      "_NickName": "helmet16",
+      "_comment": "사냥꾼이 사용하는 모자."
     },
     {
       "_No": 14,
@@ -334,7 +347,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 5,
-      "_NickName": "helmet17"
+      "_NickName": "helmet17",
+      "_comment": "탐험가가 사용하는 모자."
     },
     {
       "_No": 15,
@@ -358,55 +372,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 5,
-      "_NickName": "helmet18"
-    },
-    {
-      "_No": 16,
-      "_Name": "기본 아이템",
-      "_max_hp": 1,
-      "_max_mp": 2,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_dex_limit": null,
-      "_int_limit": null,
-      "_enhance_limit": null,
-      "_NickName": ""
-    },
-    {
-      "_No": 17,
-      "_Name": "픽다트",
-      "_max_hp": 3,
-      "_max_mp": 16,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_dex_limit": null,
-      "_int_limit": null,
-      "_enhance_limit": null,
-      "_NickName": ""
+      "_NickName": "helmet18",
+      "_comment": "대마도사가 사용하는 모자."
     }
   ]
 }

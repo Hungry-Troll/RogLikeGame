@@ -1,6 +1,8 @@
 ﻿{
-  "itemData" : [
+
+  "itemData": [
     {
+      "_No": 1,
       "_Name": "작은 활",
       "_max_hp": null,
       "_max_mp": null,
@@ -26,6 +28,7 @@
       "_comment": "크기가 작은 활."
     },
     {
+      "_No": 2,
       "_Name": "큰 활",
       "_max_hp": null,
       "_max_mp": null,
@@ -51,6 +54,7 @@
       "_comment": "크기가 큰 활."
     },
     {
+      "_No": 3,
       "_Name": "뇌신의 활",
       "_max_hp": null,
       "_max_mp": null,
@@ -76,6 +80,7 @@
       "_comment": "뇌신의 기운이 깃든 활."
     },
     {
+      "_No": 4,
       "_Name": "얼음 귀신의 활",
       "_max_hp": null,
       "_max_mp": null,
@@ -101,6 +106,7 @@
       "_comment": "얼음 귀신의 힘이 깃든 활."
     },
     {
+      "_No": 5,
       "_Name": "사냥꾼의 활",
       "_max_hp": null,
       "_max_mp": null,
