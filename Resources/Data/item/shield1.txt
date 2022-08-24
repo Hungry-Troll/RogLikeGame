@@ -1,6 +1,5 @@
 ﻿{
-  
-  "itemData" : [
+  "itemData": [
     {
       "_No": 1,
       "_Name": "소형 방패",
@@ -23,8 +22,7 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield3",
-      "_comment": "나무에 금속을 덧댄 작은 방패"
+      "_NickName": "shield3"
     },
     {
       "_No": 2,
@@ -48,8 +46,7 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield1",
-      "_comment": "금속을 개량한 작은 방패."
+      "_NickName": "shield1"
     },
     {
       "_No": 3,
@@ -73,8 +70,7 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield6",
-      "_comment": "커다란 방패."
+      "_NickName": "shield6"
     },
     {
       "_No": 4,
@@ -98,8 +94,7 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield2",
-      "_comment": "엘프가 사용하는 작은 방패."
+      "_NickName": "shield2"
     },
     {
       "_No": 5,
@@ -123,8 +118,7 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield4",
-      "_comment": "나무와 금속으로 만든 방패."
+      "_NickName": "shield4"
     },
     {
       "_No": 6,
@@ -148,8 +142,7 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield5",
-      "_comment": "저항력이 높은 방패."
+      "_NickName": "shield5"
     },
     {
       "_No": 7,
@@ -173,8 +166,7 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield7",
-      "_comment": "무지막지하게 큰 방패."
+      "_NickName": "shield7"
     },
     {
       "_No": 8,
@@ -198,8 +190,7 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield8",
-      "_comment": "죽음의 기운이 깃든 방패."
+      "_NickName": "shield8"
     },
     {
       "_No": 9,
@@ -223,12 +214,11 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield9",
-      "_comment": "기사가 사용하는 방패."
+      "_NickName": "shield9"
     },
     {
       "_No": 10,
-      "_Name": "왕가의 방패",
+      "_Name": "왕가의 문장이 새겨진 방패",
       "_max_hp": 20,
       "_max_mp": null,
       "_min_attack": null,
@@ -248,8 +238,55 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": 9,
-      "_NickName": "shield10",
-      "_comment": "왕가의 문양이 새겨진 방패."
+      "_NickName": "shield10"
+    },
+    {
+      "_No": 11,
+      "_Name": "기본 아이템",
+      "_max_hp": 1,
+      "_max_mp": 3,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_enhance": null,
+      "_str_limit": null,
+      "_dex_limit": null,
+      "_int_limit": null,
+      "_enhance_limit": null,
+      "_NickName": ""
+    },
+    {
+      "_No": 12,
+      "_Name": "픽다트",
+      "_max_hp": 4,
+      "_max_mp": 10,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_enhance": null,
+      "_str_limit": null,
+      "_dex_limit": null,
+      "_int_limit": null,
+      "_enhance_limit": null,
+      "_NickName": ""
     }
   ]
 }

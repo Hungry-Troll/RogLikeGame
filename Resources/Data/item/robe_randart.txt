@@ -1,5 +1,6 @@
 ﻿{
-  "itemData": [
+  
+  "itemData" : [
     {
       "_No": 1,
       "_Name": "튼튼한",
@@ -22,7 +23,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 2,
@@ -46,7 +48,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 3,
@@ -70,7 +73,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 4,
@@ -94,7 +98,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 5,
@@ -118,7 +123,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 6,
@@ -142,7 +148,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 7,
@@ -166,7 +173,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 8,
@@ -190,7 +198,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 9,
@@ -214,7 +223,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 10,
@@ -238,7 +248,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 11,
@@ -262,7 +273,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 12,
@@ -286,7 +298,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 13,
@@ -310,7 +323,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 14,
@@ -334,7 +348,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 15,
@@ -358,7 +373,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 16,
@@ -382,7 +398,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 17,
@@ -406,7 +423,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 18,
@@ -430,7 +448,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 19,
@@ -454,7 +473,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 20,
@@ -478,7 +498,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 21,
@@ -502,7 +523,8 @@
       "_dex_limit": null,
       "_int_limit": null,
       "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": null,
+      "_comment": null
     },
     {
       "_No": 22,
@@ -526,79 +548,8 @@
       "_dex_limit": null,
       "_int_limit": 5,
       "_enhance_limit": 9,
-      "_NickName": "Robe3"
-    },
-    {
-      "_No": 23,
-      "_Name": "랜다트 아이콘",
-      "_max_hp": 22,
-      "_max_mp": null,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_dex_limit": null,
-      "_int_limit": null,
-      "_enhance_limit": null,
-      "_NickName": null
-    },
-    {
-      "_No": 24,
-      "_Name": "랜다트 옵션1",
-      "_max_hp": 1,
-      "_max_mp": 11,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_dex_limit": null,
-      "_int_limit": null,
-      "_enhance_limit": null,
-      "_NickName": null
-    },
-    {
-      "_No": 25,
-      "_Name": "랜다트 옵션2",
-      "_max_hp": 12,
-      "_max_mp": 21,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_dex_limit": null,
-      "_int_limit": null,
-      "_enhance_limit": null,
-      "_NickName": null
+      "_NickName": "Robe3",
+      "_comment": "가벼운 천으로 만든 옷."
     }
   ]
 }

@@ -72,8 +72,6 @@ public class MapEditor
                             writer.Write("3");
                         else if (_Trap != null)
                             writer.Write("4");
-
-
                     }
                     writer.WriteLine();
                 }

@@ -298,7 +298,7 @@ public class SummonManager
         //아이템 등급을 결정
         ItemGradeCal();
         //테스트 코드
-        _itemList = ItemList.Mace;
+        _itemList = ItemList.Spear;
         for (int i = 0; i < 3; i++)
         {
             if (i == 0)
@@ -627,7 +627,7 @@ public class SummonManager
             scrollStat.No = StatDict[i]._No;
             scrollStat.Name = StatDict[i]._Name;
             scrollStat.cTel = StatDict[i]._cTel;
-            scrollStat.rTel = StatDict[i]._rtel;
+            scrollStat.rTel = StatDict[i]._rTel;
             scrollStat.Sum = StatDict[i]._sum;
             scrollStat.fear = StatDict[i]._fear;
             scrollStat.fog = StatDict[i]._fog;

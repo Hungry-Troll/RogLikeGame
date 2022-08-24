@@ -136,7 +136,7 @@ public class ScrollStat
     public int _No;
     public string _Name;
     public int _cTel;
-    public int _rtel;
+    public int _rTel;
     public int _sum;
     public int _fear;
     public int _fog;

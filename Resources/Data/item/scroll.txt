@@ -78,7 +78,7 @@
     },
     {
       "_No": 5,
-      "_Name": "축복받은 무기 강화 주문서",
+      "_Name": "축복받은 강화 주문서",
       "_cTel": null,
       "_rTel": null,
       "_sum": null,
@@ -93,7 +93,7 @@
       "_enhance": 3,
       "_turn": null,
       "_NickName": "scroll2",
-      "_comment": "무기를 더욱 강화한다."
+      "_comment": "무기나 방어구를 더욱 강화한다."
     },
     {
       "_No": 6,
