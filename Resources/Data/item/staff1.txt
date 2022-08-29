@@ -1,5 +1,5 @@
 ﻿{
-  "itemData" : [
+  "itemData": [
     {
       "_No": 1,
       "_Name": "초록 지팡이",
@@ -24,8 +24,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff1",
-      "_etc": "",
-      "_comment": "초록색 지팡이."
+      "_etc": ""
     },
     {
       "_No": 2,
@@ -51,8 +50,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff2",
-      "_etc": "",
-      "_comment": "붉은색 지팡이."
+      "_etc": ""
     },
     {
       "_No": 3,
@@ -78,8 +76,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff3",
-      "_etc": "",
-      "_comment": "검은색 지팡이."
+      "_etc": ""
     },
     {
       "_No": 4,
@@ -105,8 +102,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff4",
-      "_etc": "",
-      "_comment": "파란색 지팡이"
+      "_etc": ""
     },
     {
       "_No": 5,
@@ -132,8 +128,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff7",
-      "_etc": "",
-      "_comment": "마력이 깃든 지팡이."
+      "_etc": ""
     },
     {
       "_No": 6,
@@ -159,8 +154,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff5",
-      "_etc": "땅 대미지 증가.",
-      "_comment": "대지의 힘이 깃든 지팡이."
+      "_etc": "땅 대미지 증가"
     },
     {
       "_No": 7,
@@ -186,8 +180,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff6",
-      "_etc": "불 대미지 증가.",
-      "_comment": "불꽃의 기운이 깃든 지팡이."
+      "_etc": "불 대미지 증가"
     },
     {
       "_No": 8,
@@ -213,8 +206,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff8",
-      "_etc": "어둠 대미지 증가. / 강령술 강화.",
-      "_comment": "어두운 힘이 깃든 지팡이."
+      "_etc": "어둠 대미지 증가 / 강령술 포함"
     },
     {
       "_No": 9,
@@ -240,8 +232,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff12",
-      "_etc": "냉기 대미지 증가.",
-      "_comment": "냉기의 기운이 깃든 지팡이."
+      "_etc": "냉기 대미지 증가"
     },
     {
       "_No": 10,
@@ -267,8 +258,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff9",
-      "_etc": "소환술 강화.",
-      "_comment": "요정의 힘이 깃든 지팡이."
+      "_etc": "소환술 강화"
     },
     {
       "_No": 11,
@@ -294,8 +284,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff10",
-      "_etc": "",
-      "_comment": "정의로운 능력을 가진 지팡이."
+      "_etc": ""
     },
     {
       "_No": 12,
@@ -321,8 +310,7 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff11",
-      "_etc": "독 대미지 증가.",
-      "_comment": "파초잎으로 만들어진 도구."
+      "_etc": ""
     },
     {
       "_No": 13,
@@ -348,8 +336,85 @@
       "_Hand": 2,
       "_enhance_limit": 9,
       "_NickName": "staff13",
-      "_etc": "",
-      "_comment": "악의 저주를 받은 지팡이."
+      "_etc": ""
+    },
+    {
+      "_No": 14,
+      "_Name": "기본 아이템",
+      "_max_hp": 1,
+      "_max_mp": 5,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_enhance": null,
+      "_str_limit": null,
+      "_dex_limit": null,
+      "_int_limit": null,
+      "_Hand": null,
+      "_enhance_limit": null,
+      "_NickName": "",
+      "_etc": ""
+    },
+    {
+      "_No": 15,
+      "_Name": "픽다트",
+      "_max_hp": 10,
+      "_max_mp": 13,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_enhance": null,
+      "_str_limit": null,
+      "_dex_limit": null,
+      "_int_limit": null,
+      "_Hand": null,
+      "_enhance_limit": null,
+      "_NickName": "",
+      "_etc": ""
+    },
+    {
+      "_No": 16,
+      "_Name": "랜다트",
+      "_max_hp": 6,
+      "_max_mp": 9,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_enhance": null,
+      "_str_limit": null,
+      "_dex_limit": null,
+      "_int_limit": null,
+      "_Hand": null,
+      "_enhance_limit": null,
+      "_NickName": "",
+      "_etc": ""
     }
   ]
 }
