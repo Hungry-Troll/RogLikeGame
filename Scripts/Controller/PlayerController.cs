@@ -130,7 +130,7 @@ public class PlayerController : CreatureController
 
     private void LateUpdate()
     {
-        Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+        Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y -1.5f, -10);
     }
 
     protected override void UpdateIdle()

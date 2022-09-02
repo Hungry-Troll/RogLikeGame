@@ -217,6 +217,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_DirButton
       objectReference: {fileID: 0}
+    - target: {fileID: 748707862091079323, guid: 527e564fef5bfc949a742cc166d619e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 527e564fef5bfc949a742cc166d619e5, type: 3}
 --- !u!224 &1351472124891796774 stripped
