@@ -1,5 +1,5 @@
 ﻿{
-  "itemData": [
+  "itemData" : [
     {
       "_No": 1,
       "_Name": "단검",
@@ -23,7 +23,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword2"
+      "_NickName": "sword2",
+      "_comment": "작은 단검."
     },
     {
       "_No": 2,
@@ -48,7 +49,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword1"
+      "_NickName": "sword1",
+      "_comment": "강철로 강화한 단검."
     },
     {
       "_No": 3,
@@ -73,7 +75,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword5"
+      "_NickName": "sword5",
+      "_comment": "길다란 검."
     },
     {
       "_No": 4,
@@ -98,7 +101,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword4"
+      "_NickName": "sword4",
+      "_comment": "강철로 강화한 장검."
     },
     {
       "_No": 5,
@@ -123,11 +127,12 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword8"
+      "_NickName": "sword8",
+      "_comment": "날이 살짝 휘어진 장검."
     },
     {
       "_No": 6,
-      "_Name": "강철 검",
+      "_Name": "투사의 검",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": 30,
@@ -148,7 +153,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword13"
+      "_NickName": "sword13",
+      "_comment": "투지가 상승하는 검."
     },
     {
       "_No": 7,
@@ -173,7 +179,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "sword11"
+      "_NickName": "sword11",
+      "_comment": "큰 양손검."
     },
     {
       "_No": 8,
@@ -198,7 +205,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "sword14"
+      "_NickName": "sword14",
+      "_comment": "강철로 강화한 양손검"
     },
     {
       "_No": 9,
@@ -223,7 +231,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword7"
+      "_NickName": "sword7",
+      "_comment": "요리사가 사용하는 검."
     },
     {
       "_No": 10,
@@ -248,7 +257,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword9"
+      "_NickName": "sword9",
+      "_comment": "냉기의 기운이 깃든 검."
     },
     {
       "_No": 11,
@@ -273,7 +283,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword10"
+      "_NickName": "sword10",
+      "_comment": "불꽃의 기운이 깃든 검."
     },
     {
       "_No": 12,
@@ -298,7 +309,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "sword15"
+      "_NickName": "sword15",
+      "_comment": "기사가 사용하는 양손검"
     },
     {
       "_No": 13,
@@ -323,7 +335,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "sword17"
+      "_NickName": "sword17",
+      "_comment": "얼음의 힘을 가진 양손검."
     },
     {
       "_No": 14,
@@ -348,7 +361,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "sword18"
+      "_NickName": "sword18",
+      "_comment": "화염의 힘을 가진 양손검."
     },
     {
       "_No": 15,
@@ -373,7 +387,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "sword19"
+      "_NickName": "sword19",
+      "_comment": "날카로운 톱날을 가진 양손검."
     },
     {
       "_No": 16,
@@ -398,7 +413,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "sword20"
+      "_NickName": "sword20",
+      "_comment": "악마의 저주를 받은 양손검."
     },
     {
       "_No": 17,
@@ -423,7 +439,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "sword21"
+      "_NickName": "sword21",
+      "_comment": "마왕이 사용하는 양손검."
     },
     {
       "_No": 18,
@@ -448,7 +465,8 @@
       "_int_limit": null,
       "_Hand": 1,
       "_enhance_limit": 9,
-      "_NickName": "sword22"
+      "_NickName": "sword22",
+      "_comment": "암살자가 사용하는 검."
     },
     {
       "_No": 19,
@@ -473,57 +491,8 @@
       "_int_limit": null,
       "_Hand": 2,
       "_enhance_limit": 9,
-      "_NickName": "sword23"
-    },
-    {
-      "_No": 20,
-      "_Name": "기본 아이템",
-      "_max_hp": 1,
-      "_max_mp": 8,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_dex_limit": null,
-      "_int_limit": null,
-      "_Hand": null,
-      "_enhance_limit": null,
-      "_NickName": ""
-    },
-    {
-      "_No": 21,
-      "_Name": "픽다트",
-      "_max_hp": 10,
-      "_max_mp": 19,
-      "_min_attack": null,
-      "_max_attack": null,
-      "_defence": null,
-      "_min_magic_attack": null,
-      "_max_magic_attack": null,
-      "_fire_res": null,
-      "_cold_res": null,
-      "_earth_res": null,
-      "_dark_res": null,
-      "_poison_res": null,
-      "_accuracy": null,
-      "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_dex_limit": null,
-      "_int_limit": null,
-      "_Hand": null,
-      "_enhance_limit": null,
-      "_NickName": ""
+      "_NickName": "sword23",
+      "_comment": "차가운 서리로 만든 양손검."
     }
   ]
 }

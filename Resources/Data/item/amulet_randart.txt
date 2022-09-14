@@ -1,6 +1,6 @@
 ﻿{
-
-  "itemData": [
+ 
+  "itemData" : [
     {
       "_No": 1,
       "_Name": "튼튼한",
@@ -18,7 +18,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 2,
@@ -37,7 +38,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 3,
@@ -56,7 +58,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 4,
@@ -75,7 +78,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 5,
@@ -94,7 +98,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 6,
@@ -113,7 +118,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 7,
@@ -132,7 +138,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 8,
@@ -151,7 +158,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 9,
@@ -170,7 +178,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 10,
@@ -189,7 +198,8 @@
       "_poison_res": 1,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 11,
@@ -208,7 +218,8 @@
       "_poison_res": null,
       "_accuracy": 10,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 12,
@@ -227,7 +238,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": 10,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 13,
@@ -246,7 +258,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 14,
@@ -265,7 +278,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 15,
@@ -284,7 +298,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 16,
@@ -303,7 +318,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 17,
@@ -322,7 +338,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 18,
@@ -341,7 +358,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 19,
@@ -360,7 +378,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 20,
@@ -379,7 +398,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 21,
@@ -398,7 +418,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 22,
@@ -417,7 +438,8 @@
       "_poison_res": 1,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 23,
@@ -436,7 +458,8 @@
       "_poison_res": null,
       "_accuracy": 10,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 24,
@@ -455,7 +478,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": 10,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 25,
@@ -474,7 +498,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 26,
@@ -493,7 +518,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 27,
@@ -512,7 +538,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": ""
+      "_NickName": "",
+      "_comment": ""
     },
     {
       "_No": 28,
@@ -531,7 +558,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "amulet7"
+      "_NickName": "amulet7",
+      "_comment": "희귀한 목걸이."
     },
     {
       "_No": 29,
@@ -550,7 +578,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "amulet8"
+      "_NickName": "amulet8",
+      "_comment": "특이한 목걸이."
     },
     {
       "_No": 30,
@@ -569,7 +598,8 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_NickName": "amulet9"
+      "_NickName": "amulet9",
+      "_comment": "이상한 목걸이."
     }
   ]
 }

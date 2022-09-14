@@ -1,5 +1,5 @@
 ﻿{
-  "itemData" : [
+  "itemData": [
     {
       "_No": 1,
       "_Name": "튼튼한",
@@ -20,8 +20,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 2,
@@ -43,8 +43,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 3,
@@ -66,8 +66,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 4,
@@ -89,8 +89,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 5,
@@ -112,8 +112,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 6,
@@ -135,8 +135,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 7,
@@ -158,8 +158,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 8,
@@ -181,8 +181,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 9,
@@ -204,8 +204,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 10,
@@ -227,8 +227,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 11,
@@ -250,8 +250,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 12,
@@ -273,8 +273,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 13,
@@ -296,8 +296,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 14,
@@ -319,8 +319,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 15,
@@ -342,8 +342,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 16,
@@ -365,8 +365,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 17,
@@ -388,8 +388,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 18,
@@ -411,8 +411,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 19,
@@ -434,8 +434,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 20,
@@ -457,8 +457,8 @@
       "_enhance": null,
       "_str_limit": null,
       "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_type": null,
+      "_NickName": ""
     },
     {
       "_No": 21,
@@ -480,8 +480,8 @@
       "_enhance": 3,
       "_str_limit": 3,
       "_Hand": 1,
-      "_NickName": "sword3",
-      "_comment": "작은 단검."
+      "_type": null,
+      "_NickName": "sword3"
     },
     {
       "_No": 22,
@@ -503,8 +503,8 @@
       "_enhance": 5,
       "_str_limit": 7,
       "_Hand": 1,
-      "_NickName": "sword6",
-      "_comment": "작게 빛나는 장검."
+      "_type": null,
+      "_NickName": "sword6"
     },
     {
       "_No": 23,
@@ -526,8 +526,8 @@
       "_enhance": 5,
       "_str_limit": 9,
       "_Hand": 1,
-      "_NickName": "sword12",
-      "_comment": "이상하게 생긴 검."
+      "_type": null,
+      "_NickName": "sword12"
     },
     {
       "_No": 24,
@@ -549,8 +549,77 @@
       "_enhance": 5,
       "_str_limit": 13,
       "_Hand": 2,
-      "_NickName": "sword16",
-      "_comment": "큰 양손검."
+      "_type": null,
+      "_NickName": "sword16"
+    },
+    {
+      "_No": 25,
+      "_Name": "랜다트 아이콘",
+      "_max_hp": 21,
+      "_max_mp": 24,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_enhance": null,
+      "_str_limit": null,
+      "_Hand": null,
+      "_type": null,
+      "_NickName": ""
+    },
+    {
+      "_No": 26,
+      "_Name": "랜다트 옵션1",
+      "_max_hp": 1,
+      "_max_mp": 10,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_enhance": null,
+      "_str_limit": null,
+      "_Hand": null,
+      "_type": null,
+      "_NickName": ""
+    },
+    {
+      "_No": 27,
+      "_Name": "랜다트 옵션2",
+      "_max_hp": 11,
+      "_max_mp": 20,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_enhance": null,
+      "_str_limit": null,
+      "_Hand": null,
+      "_type": null,
+      "_NickName": ""
     }
   ]
 }

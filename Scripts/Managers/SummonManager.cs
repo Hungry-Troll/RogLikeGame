@@ -298,7 +298,7 @@ public class SummonManager
         //아이템 등급을 결정
         ItemGradeCal();
         //테스트 코드
-        _itemList = ItemList.Sword;
+        _itemList = ItemList.Amulet;
         for (int i = 0; i < 3; i++)
         {
             if (i == 0)
@@ -379,14 +379,21 @@ public class SummonManager
         GameObject go = new GameObject();
         go.name = _itemGrade.ToString();
 
+        //아이템 테이블 딕
         ItemTable _itemTableDict = null;
-        switch(_itemGrade)
+        //랜 아이템 테이블 딕
+        ItemTable _itemTableDictRanOp1 = null;
+        ItemTable _itemTableDictRanOp2 = null;
+        switch (_itemGrade)
         {
             case ItemGrade.NoArti:
                 _itemTableDict = TableDict["NoArti"];
                 break;
             case ItemGrade.RanArti:
                 _itemTableDict = TableDict["RanArti"];
+                //랜다트 옵션 가지오 오는 용도
+                _itemTableDictRanOp1 = TableDict["RanArtiOption1"];
+                _itemTableDictRanOp2 = TableDict["RanArtiOption2"];
                 break;
             case ItemGrade.FickArti:
                 _itemTableDict = TableDict["FirckArti"];
@@ -399,6 +406,36 @@ public class SummonManager
 
         int starttemp = 0; //링 아뮬렛 아이템 닉네임 찾는 용도 0으로 한 이유는 if 문 돌리려고
         int endtemp = 0; // 링 아뮬렛 아이템 닉네임 찾는 용도
+
+        //랜다트 옵션 변수들
+        int RandartOption1StartNum = 0;
+        int RandartOption1EndNum = 0;
+        int RandartOption2StartNum = 0;
+        int RandartOption2EndNum = 0;
+        //랜덤 숫자 용
+        int RanOption1 = 0;
+        int RanOption2 = 0;
+        //랜덤 숫자 반복문용 배열
+        int[] RanOptionNumArray = new int[2];
+        //랜다트 옵션 딕이 널이 아니면 변수에 대입
+        if (_itemTableDictRanOp1 != null && _itemTableDictRanOp2 != null)
+        {
+            //딕에서 시작 숫자 끝 숫자 가지고옴
+            RandartOption1StartNum = _itemTableDictRanOp1._startNum;
+            RandartOption1EndNum = _itemTableDictRanOp1._endNum;
+            RandartOption2StartNum = _itemTableDictRanOp2._startNum;
+            RandartOption2EndNum = _itemTableDictRanOp2._endNum;
+            //랜덤 랜덤 숫자 뽑음
+            RanOption1 = Random.Range(RandartOption1StartNum, RandartOption1EndNum);
+            RanOption2 = Random.Range(RandartOption2StartNum, RandartOption2EndNum);
+            //반복문을 위한 배열로 처리
+            RanOptionNumArray[0] = RanOption1;
+            RanOptionNumArray[1] = RanOption2;
+        }
+        // 이후 변수에 맞는 옵션을 넣어주면 될 듯
+        
+
+        // 랜덤 아이템 아이콘 코드
         if (itemName == "ring" || itemName == "amulet")
         {
             ItemTable _itemTableRandartDict = null;
@@ -487,6 +524,41 @@ public class SummonManager
             itemStat.comment = StatDict[i]._comment;
 
             ic.CellPos = itemPos;
+
+            // 랜다트 스텟 넣는 코드
+            if(RandartOption1StartNum != 0)
+            {
+                // 아이템 이름 버그 수정
+                itemStat.Name = null;
+                for (int j = 0; j < 2; j++)
+                {
+                    itemStat.Name += StatDict[RanOptionNumArray[j]]._Name;
+                    itemStat.Name += " "; // 접두사 접미사 붙는 텍스트 버그 수정
+                    itemStat.max_hp += StatDict[RanOptionNumArray[j]]._max_hp;
+                    itemStat.max_mp += StatDict[RanOptionNumArray[j]]._max_mp;
+                    itemStat.min_attack += StatDict[RanOptionNumArray[j]]._min_attack;
+                    itemStat.max_attack += StatDict[RanOptionNumArray[j]]._max_attack;
+                    itemStat.defence += StatDict[RanOptionNumArray[j]]._defence;
+                    itemStat.min_magic_attack += StatDict[RanOptionNumArray[j]]._min_magic_attack;
+                    itemStat.max_magic_attack += StatDict[RanOptionNumArray[j]]._max_magic_attack;
+                    itemStat.fire_res += StatDict[RanOptionNumArray[j]]._fire_res;
+                    itemStat.cold_res += StatDict[RanOptionNumArray[j]]._cold_res;
+                    itemStat.earth_res += StatDict[RanOptionNumArray[j]]._earth_res;
+                    itemStat.dark_res += StatDict[RanOptionNumArray[j]]._dark_res;
+                    itemStat.poison_res += StatDict[RanOptionNumArray[j]]._poison_res;
+                    itemStat.accuracy += StatDict[RanOptionNumArray[j]]._accuracy;
+                    itemStat.avoid += StatDict[RanOptionNumArray[j]]._avoid;
+                    itemStat.str_limit += StatDict[RanOptionNumArray[j]]._str_limit;
+                    itemStat.dex_limit += StatDict[RanOptionNumArray[j]]._dex_limit;
+                    itemStat.int_limit += StatDict[RanOptionNumArray[j]]._int_limit;
+                    itemStat.Hand += StatDict[RanOptionNumArray[j]]._Hand;
+                    itemStat.enhance_limit += StatDict[RanOptionNumArray[j]]._enhance_limit;
+                    itemStat.NickName += StatDict[RanOptionNumArray[j]]._NickName;
+                    itemStat.comment += StatDict[RanOptionNumArray[j]]._comment;
+                }
+
+            }
+
         }
     }
 

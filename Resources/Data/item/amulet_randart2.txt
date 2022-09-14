@@ -1,5 +1,6 @@
 ﻿{
-  "itemData" : [
+
+  "itemData": [
     {
       "_No": 1,
       "_Name": "튼튼한",
@@ -17,11 +18,7 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
       "_No": 2,
@@ -40,14 +37,29 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
       "_No": 3,
+      "_Name": "강력한",
+      "_max_hp": null,
+      "_max_mp": null,
+      "_min_attack": 10,
+      "_max_attack": 10,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_NickName": ""
+    },
+    {
+      "_No": 4,
       "_Name": "수동적인",
       "_max_hp": null,
       "_max_mp": null,
@@ -63,14 +75,29 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 4,
+      "_No": 5,
+      "_Name": "마력이 있는",
+      "_max_hp": null,
+      "_max_mp": null,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": 10,
+      "_max_magic_attack": 10,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_NickName": ""
+    },
+    {
+      "_No": 6,
       "_Name": "뜨거운",
       "_max_hp": null,
       "_max_mp": null,
@@ -86,14 +113,10 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 5,
+      "_No": 7,
       "_Name": "차가운",
       "_max_hp": null,
       "_max_mp": null,
@@ -109,14 +132,10 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 6,
+      "_No": 8,
       "_Name": "단단한",
       "_max_hp": null,
       "_max_mp": null,
@@ -132,14 +151,10 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 7,
+      "_No": 9,
       "_Name": "어두운",
       "_max_hp": null,
       "_max_mp": null,
@@ -155,14 +170,10 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 8,
+      "_No": 10,
       "_Name": "위험한",
       "_max_hp": null,
       "_max_mp": null,
@@ -178,14 +189,10 @@
       "_poison_res": 1,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 9,
+      "_No": 11,
       "_Name": "정확한",
       "_max_hp": null,
       "_max_mp": null,
@@ -201,14 +208,10 @@
       "_poison_res": null,
       "_accuracy": 10,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 10,
+      "_No": 12,
       "_Name": "날렵한",
       "_max_hp": null,
       "_max_mp": null,
@@ -224,15 +227,11 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": 10,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 11,
-      "_Name": "피의",
+      "_No": 13,
+      "_Name": "피의 목걸이",
       "_max_hp": 20,
       "_max_mp": null,
       "_min_attack": null,
@@ -247,15 +246,11 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 12,
-      "_Name": "마력의",
+      "_No": 14,
+      "_Name": "마력의 목걸이",
       "_max_hp": null,
       "_max_mp": 20,
       "_min_attack": null,
@@ -270,15 +265,30 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 13,
-      "_Name": "수비의",
+      "_No": 15,
+      "_Name": "파괴의 목걸이",
+      "_max_hp": null,
+      "_max_mp": null,
+      "_min_attack": 10,
+      "_max_attack": 10,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_NickName": ""
+    },
+    {
+      "_No": 16,
+      "_Name": "수비의 목걸이",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -293,15 +303,11 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 14,
-      "_Name": "마법 공격의",
+      "_No": 17,
+      "_Name": "마법 공격의 목걸이",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -316,15 +322,11 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 15,
-      "_Name": "불의",
+      "_No": 18,
+      "_Name": "불의 목걸이",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -339,15 +341,11 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 16,
-      "_Name": "얼음의",
+      "_No": 19,
+      "_Name": "얼음의 목걸이",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -362,15 +360,11 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 17,
-      "_Name": "바위의",
+      "_No": 20,
+      "_Name": "바위의 목걸이",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -385,15 +379,11 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 18,
-      "_Name": "암흑 저항의",
+      "_No": 21,
+      "_Name": "암흑 저항의 목걸이",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -408,15 +398,30 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 19,
-      "_Name": "적중의",
+      "_No": 22,
+      "_Name": "맹독의 목걸이",
+      "_max_hp": null,
+      "_max_mp": null,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": 1,
+      "_accuracy": null,
+      "_avoid": null,
+      "_NickName": ""
+    },
+    {
+      "_No": 23,
+      "_Name": "적중의 목걸이",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -431,15 +436,11 @@
       "_poison_res": null,
       "_accuracy": 10,
       "_avoid": null,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 20,
-      "_Name": "회피의",
+      "_No": 24,
+      "_Name": "회피의 목걸이",
       "_max_hp": null,
       "_max_mp": null,
       "_min_attack": null,
@@ -454,19 +455,15 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": 10,
-      "_enhance": null,
-      "_str_limit": null,
-      "_Hand": null,
-      "_NickName": "",
-      "_comment": ""
+      "_NickName": ""
     },
     {
-      "_No": 21,
-      "_Name": "푸른 단검",
-      "_max_hp": null,
-      "_max_mp": null,
-      "_min_attack": 10,
-      "_max_attack": 15,
+      "_No": 25,
+      "_Name": "랜다트 옵션1",
+      "_max_hp": 1,
+      "_max_mp": 12,
+      "_min_attack": null,
+      "_max_attack": null,
       "_defence": null,
       "_min_magic_attack": null,
       "_max_magic_attack": null,
@@ -477,19 +474,15 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": 3,
-      "_str_limit": 3,
-      "_Hand": 1,
-      "_NickName": "sword3",
-      "_comment": "작은 단검."
+      "_NickName": ""
     },
     {
-      "_No": 22,
-      "_Name": "빛나는 장검",
-      "_max_hp": null,
-      "_max_mp": null,
-      "_min_attack": 20,
-      "_max_attack": 25,
+      "_No": 26,
+      "_Name": "랜다트 옵션2",
+      "_max_hp": 13,
+      "_max_mp": 24,
+      "_min_attack": null,
+      "_max_attack": null,
       "_defence": null,
       "_min_magic_attack": null,
       "_max_magic_attack": null,
@@ -500,19 +493,15 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": 5,
-      "_str_limit": 7,
-      "_Hand": 1,
-      "_NickName": "sword6",
-      "_comment": "작게 빛나는 장검."
+      "_NickName": ""
     },
     {
-      "_No": 23,
-      "_Name": "요도",
-      "_max_hp": null,
-      "_max_mp": null,
-      "_min_attack": 25,
-      "_max_attack": 30,
+      "_No": 27,
+      "_Name": "랜다트 아이콘",
+      "_max_hp": 28,
+      "_max_mp": 30,
+      "_min_attack": null,
+      "_max_attack": null,
       "_defence": null,
       "_min_magic_attack": null,
       "_max_magic_attack": null,
@@ -523,19 +512,15 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": 5,
-      "_str_limit": 9,
-      "_Hand": 1,
-      "_NickName": "sword12",
-      "_comment": "이상하게 생긴 검."
+      "_NickName": ""
     },
     {
-      "_No": 24,
-      "_Name": "대검",
+      "_No": 28,
+      "_Name": "랜다트 닉네임1",
       "_max_hp": null,
       "_max_mp": null,
-      "_min_attack": 35,
-      "_max_attack": 40,
+      "_min_attack": null,
+      "_max_attack": null,
       "_defence": null,
       "_min_magic_attack": null,
       "_max_magic_attack": null,
@@ -546,11 +531,45 @@
       "_poison_res": null,
       "_accuracy": null,
       "_avoid": null,
-      "_enhance": 5,
-      "_str_limit": 13,
-      "_Hand": 2,
-      "_NickName": "sword16",
-      "_comment": "큰 양손검."
+      "_NickName": "amulet7"
+    },
+    {
+      "_No": 29,
+      "_Name": "랜다트 닉네임2",
+      "_max_hp": null,
+      "_max_mp": null,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_NickName": "amulet8"
+    },
+    {
+      "_No": 30,
+      "_Name": "랜다트 닉네임3",
+      "_max_hp": null,
+      "_max_mp": null,
+      "_min_attack": null,
+      "_max_attack": null,
+      "_defence": null,
+      "_min_magic_attack": null,
+      "_max_magic_attack": null,
+      "_fire_res": null,
+      "_cold_res": null,
+      "_earth_res": null,
+      "_dark_res": null,
+      "_poison_res": null,
+      "_accuracy": null,
+      "_avoid": null,
+      "_NickName": "amulet9"
     }
   ]
 }
