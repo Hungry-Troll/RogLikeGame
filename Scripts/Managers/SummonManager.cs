@@ -298,7 +298,7 @@ public class SummonManager
         //아이템 등급을 결정
         ItemGradeCal();
         //테스트 코드
-        _itemList = ItemList.Amulet;
+        _itemList = ItemList.Ring;
         for (int i = 0; i < 3; i++)
         {
             if (i == 0)
@@ -458,12 +458,6 @@ public class SummonManager
             // 랜덤 아이콘 추출용 변수가 필요함 
             //int random = Random.Range(startNum, endNum + 1); //랜덤 _No 추출용
         }
-        // 링 체크용 임시 
-/*        if ((itemName == "ring" && _itemGrade != ItemGrade.FickArti) || (itemName == "amulet" && _itemGrade != ItemGrade.FickArti))
-        {
-            startNum = starttemp;
-            endNum = endtemp;
-        }*/
 
         for (int i = startNum; i < endNum+1; i++)
         {
@@ -528,8 +522,11 @@ public class SummonManager
             // 랜다트 스텟 넣는 코드
             if(RandartOption1StartNum != 0)
             {
-                // 아이템 이름 버그 수정
+                // 아이템 이름 저장하는 임시 변수 랜다트 아이템 마지막에 넣을 것/ 반지랑 링은 제외
+                string itemTempName = null;
+                itemTempName = itemStat.Name;
                 itemStat.Name = null;
+
                 for (int j = 0; j < 2; j++)
                 {
                     itemStat.Name += StatDict[RanOptionNumArray[j]]._Name;
@@ -556,7 +553,12 @@ public class SummonManager
                     itemStat.NickName += StatDict[RanOptionNumArray[j]]._NickName;
                     itemStat.comment += StatDict[RanOptionNumArray[j]]._comment;
                 }
-
+                // 링하고 아뮬렛만 렌다트 아이템 끝 공백문자 제거
+                if (itemName == "ring" || itemName == "amulet")
+                    itemStat.Name = itemStat.Name.Substring(0, itemStat.Name.Length - 1);
+                // 나머지 아이템은 옵션 다음에 이름이 붙기 때문에 공백문자 제거 x
+                else
+                    itemStat.Name += itemTempName;
             }
 
         }

@@ -123,7 +123,7 @@
       "_int_limit": null,
       "_enhance_limit": 9,
       "_NickName": "helmet6",
-      "_comment": "돌로만든 고대의 가면."
+      "_comment": "돌로 만든 고대의 가면."
     },
     {
       "_No": 6,
