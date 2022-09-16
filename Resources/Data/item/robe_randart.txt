@@ -533,7 +533,7 @@
       "_max_mp": null,
       "_min_attack": null,
       "_max_attack": null,
-      "_defence": null,
+      "_defence": 4,
       "_min_magic_attack": null,
       "_max_magic_attack": null,
       "_fire_res": null,

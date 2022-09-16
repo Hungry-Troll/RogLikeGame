@@ -14,6 +14,8 @@ public class UI_Inven : UI_Scene
     Vector3 inVec;
 
 
+    GameObject gridPanel;
+
     enum Buttons
     {
         State_Button,
@@ -42,7 +44,7 @@ public class UI_Inven : UI_Scene
         base.Init();
         Bind<GameObject>(typeof(GameObjects));
         Bind<Button>(typeof(Buttons));
-        GameObject gridPanel = Get<GameObject>((int)GameObjects.GridPanel);
+        gridPanel = Get<GameObject>((int)GameObjects.GridPanel);
 
         //foreach (Transform child in gridPanel.transform)
             //GameManager.Resouce.Destroy(child.gameObject);
@@ -54,9 +56,21 @@ public class UI_Inven : UI_Scene
         GetButton((int)Buttons.Skill_Button).gameObject.BindEvent(SkillButtonClicked);
         GetButton((int)Buttons.Controller_Button).gameObject.BindEvent(ControllerButtonClicked);
 
-        ///////////인벤토리 위치 정렬코드
+        GameManager.Ui.ShowSceneUI<UI_DirBase>();
+
+    }
+
+    public void StateButtonClicked(PointerEventData data)
+    {
+       
+    }
+
+    public void BagButtonClicked(PointerEventData data)
+    {
+        GameManager.Ui.CloseSceneUI();
+        GameManager.Ui.ShowSceneUI<UI_Bag>();
+/*        ///////////인벤토리 위치 정렬코드
         InvenArrayF();
-        //추후 실제 인벤토리 정보를 참고해서 인벤토리를 만들어야 함
         for (int i = 0; i < 12; i++)
         {
 
@@ -76,19 +90,9 @@ public class UI_Inven : UI_Scene
             inVec.Set(rPosX[i], rPosY[i], 0);
             item.GetComponent<RectTransform>().anchoredPosition = inVec;
             //GameObject item = GameManager.Ui.MakeSubItme<UI_Inven_Item>(parent : gridPanel.transform).gameObject;
-            /*UI_Inven_Item invenItem = item.GetOrAddComponent<UI_Inven_Item>();
-            invenItem.SetInfo($"집행검{ i}번");*/
-        }
-    }
-
-    public void StateButtonClicked(PointerEventData data)
-    {
-       
-    }
-
-    public void BagButtonClicked(PointerEventData data)
-    {
-
+            *//*UI_Inven_Item invenItem = item.GetOrAddComponent<UI_Inven_Item>();
+            invenItem.SetInfo($"집행검{ i}번");*//*
+        }*/
     }
 
     public void PotionButtonClicked(PointerEventData data)
@@ -103,12 +107,12 @@ public class UI_Inven : UI_Scene
 
     public void SkillButtonClicked(PointerEventData data)
     {
-        GameManager.Ui.CloseSceneUI();
+
     }
 
     public void ControllerButtonClicked(PointerEventData data)
     {
-
+        GameManager.Ui.CloseSceneUI();
         GameManager.Ui.ShowSceneUI<UI_DirBase>();
     }
 

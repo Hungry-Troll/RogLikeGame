@@ -298,7 +298,7 @@ public class SummonManager
         //아이템 등급을 결정
         ItemGradeCal();
         //테스트 코드
-        _itemList = ItemList.Ring;
+        _itemList = ItemList.Sword;
         for (int i = 0; i < 3; i++)
         {
             if (i == 0)
@@ -461,16 +461,18 @@ public class SummonManager
 
         for (int i = startNum; i < endNum+1; i++)
         {
-            string nickName; //리턴용
+            string nickName; // 아이템 생성용 변수
+            int ringAmuletIconNum = 0; // 링 아뮬렛 닉네임 코멘트 넣는 용도 변수
             ItemStat itemNum = StatDict[i];// 나중에 random으로 수정
             nickName = itemNum._NickName;
 
             // 링, 아뮬렛 전용 코드 아이템 아이콘을 가지고 오는 코드
+            // 닉네임 코멘트도 이것으로 가지고 옴
             if (starttemp != 0)
             {
-                nickName = StatDict[starttemp]._NickName;
-                if (starttemp < endtemp)// 테스트용 코드
-                starttemp++;// 테스트용 코드
+                //랜덤으로 뽑는 것으로 수정 
+                ringAmuletIconNum = Random.Range(starttemp, endtemp+1);
+                nickName = StatDict[ringAmuletIconNum]._NickName;
             }
             
             GameObject item = GameManager.Resouce.Instantiate($"item/Equip/{itemName}/{nickName}");
@@ -553,9 +555,16 @@ public class SummonManager
                     itemStat.NickName += StatDict[RanOptionNumArray[j]]._NickName;
                     itemStat.comment += StatDict[RanOptionNumArray[j]]._comment;
                 }
-                // 링하고 아뮬렛만 렌다트 아이템 끝 공백문자 제거
+                
                 if (itemName == "ring" || itemName == "amulet")
+                {   // 링하고 아뮬렛만 렌다트 아이템 끝 공백문자 제거
                     itemStat.Name = itemStat.Name.Substring(0, itemStat.Name.Length - 1);
+                    // 랜덤 comment 생성
+                    itemStat.comment = StatDict[ringAmuletIconNum]._comment;
+                    // 닉네임 넣기
+                    itemStat.NickName = StatDict[ringAmuletIconNum]._NickName;
+                }
+
                 // 나머지 아이템은 옵션 다음에 이름이 붙기 때문에 공백문자 제거 x
                 else
                     itemStat.Name += itemTempName;

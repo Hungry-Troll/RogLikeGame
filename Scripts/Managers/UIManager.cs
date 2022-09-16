@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIManager
 {
     //팝업관리 매니저
-    int _order = 10;
+    public int _order = 10;
 
     Stack<UI_Popup> _popupStack = new Stack<UI_Popup>();
     UI_Scene _sceneUI = null;
