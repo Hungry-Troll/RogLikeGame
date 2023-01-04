@@ -33,6 +33,7 @@ public class UI_Bag : UI_Scene
             int random = Random.Range(0, 3);
             if (random == 1)
             {
+                // MakeSubItem<이름> 으로 생성 //동일한 스크립트를 만들어야됨
                 item = GameManager.Ui.MakeSubItme<UI_Inven_Item>(parent : bagPanel.transform).gameObject;
             }
             else if (random == 2)
@@ -61,18 +62,19 @@ public class UI_Bag : UI_Scene
         ////인벤토리 아이콘 슬롯 가로 숫자
         int rCount = 6;
         ////인벤토리 r트랜스폼 x 좌표
-        int x = 44;
-        int y = -60;
+        int x = 74;
+        int y = -90;
         for (int i = 0; i < 2; i++)
         {
             for (int j = 0; j < rCount; j++)
             {
                 rPosX.Add(x);
                 rPosY.Add(y);
-                x += 120;
+                x += 220;
             }
-            x = 44;
-            y -= 120;
+            x = 74;
+            y -= 220;
         }
     }
 }
+

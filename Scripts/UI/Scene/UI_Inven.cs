@@ -62,7 +62,8 @@ public class UI_Inven : UI_Scene
 
     public void StateButtonClicked(PointerEventData data)
     {
-       
+        GameManager.Ui.CloseSceneUI();
+        GameManager.Ui.ShowSceneUI<UI_State>();
     }
 
     public void BagButtonClicked(PointerEventData data)

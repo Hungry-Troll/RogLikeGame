@@ -132,7 +132,7 @@ public class MapManager
         DestroyMap();
 
         //int mapId = RandomMap();
-        int mapId = 7;
+        int mapId = 22;
         Debug.Log(mapId + "맵");
 
         string mapName = "Map_" + mapId.ToString("000");
